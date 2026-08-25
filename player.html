@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Nordic Chair · HD Design Replays</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0d1117;
+      color: #f0f6fc;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #0d1117;
+    }
+
+    main {
+      width: min(1600px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 72px;
+    }
+
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    h1, h2, p { margin: 0; }
+
+    h1 {
+      font-size: clamp(22px, 3vw, 34px);
+      letter-spacing: -0.025em;
+    }
+
+    header a {
+      color: #58a6ff;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .replay {
+      scroll-margin-top: 24px;
+      margin-top: 30px;
+    }
+
+    .replay:first-of-type { margin-top: 0; }
+
+    .replay-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(18px, 2vw, 24px);
+      letter-spacing: -0.015em;
+    }
+
+    .meta {
+      color: #8b949e;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: calc(100vh - 140px);
+      margin: 0 auto;
+      border: 1px solid #30363d;
+      background: #000;
+      object-fit: contain;
+    }
+
+    #editable video { aspect-ratio: 2132 / 1808; }
+    #agent video { aspect-ratio: 16 / 9; }
+
+    @media (max-width: 680px) {
+      main { width: min(100% - 20px, 1600px); padding-top: 18px; }
+      header, .replay-heading { align-items: flex-start; flex-direction: column; gap: 6px; }
+      .meta { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Nordic Chair · HD Design Replays</h1>
+      <a href="https://github.com/yejy53/Editable-Design">Back to GitHub</a>
+    </header>
+
+    <section class="replay" id="editable">
+      <div class="replay-heading">
+        <h2>Editable Display</h2>
+        <p class="meta">2132 × 1808 · 60fps · original MP4</p>
+      </div>
+      <video controls playsinline preload="metadata" poster="./gallery/nordic-chair/editable-display-poster.jpg">
+        <source src="./gallery/nordic-chair/editable-display.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section class="replay" id="agent">
+      <div class="replay-heading">
+        <h2>Agent Design Replay</h2>
+        <p class="meta">3840 × 2160 · 60fps · original MP4</p>
+      </div>
+      <video controls playsinline preload="metadata" poster="./gallery/nordic-chair/agent-design-replay-poster.jpg">
+        <source src="./gallery/nordic-chair/agent-design-replay.mp4" type="video/mp4">
+      </video>
+    </section>
+  </main>
+</body>
+</html>

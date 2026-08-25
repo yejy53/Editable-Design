@@ -10,19 +10,21 @@ A high-end Nordic furniture campaign rebuilt as an editable visual artifact with
 
 Campaigns · 1080 × 1920 · 11 editable layers · HTML + PNG
 
+Click a replay preview to play the original 60fps MP4.
+
 <p align="center">
   <a href="./gallery/nordic-chair/final.png">
     <img src="./gallery/nordic-chair/final.png" width="31%" alt="Final Coding Design">
   </a>
   &nbsp;
-  <a href="./gallery/nordic-chair/editable-display.mp4">
-    <img src="./gallery/nordic-chair/editable-display.webp" width="64%" alt="Editable Display">
+  <a href="https://yejy53.github.io/Editable-Design/player.html#editable">
+    <img src="./gallery/nordic-chair/editable-display-poster.jpg" width="64%" alt="Play Editable Display in HD">
   </a>
 </p>
 
 <p align="center">
-  <a href="./gallery/nordic-chair/agent-design-replay.mp4">
-    <img src="./gallery/nordic-chair/agent-design-replay.webp" width="100%" alt="Agent Design Replay">
+  <a href="https://yejy53.github.io/Editable-Design/player.html#agent">
+    <img src="./gallery/nordic-chair/agent-design-replay-poster.jpg" width="100%" alt="Play Agent Design Replay in HD">
   </a>
 </p>
 <p align="center"><strong>Agent&nbsp;Design&nbsp;Replay</strong></p>
