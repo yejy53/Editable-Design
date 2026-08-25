@@ -10,15 +10,13 @@ A high-end Nordic furniture campaign rebuilt as an editable visual artifact with
 
 Campaigns · 1080 × 1920 · 11 editable layers · HTML + PNG
 
-Click a replay preview to play the original 60fps MP4.
-
 <p align="center">
   <a href="./gallery/nordic-chair/final.png">
-    <img src="./gallery/nordic-chair/final.png" width="31%" alt="Final Coding Design">
+    <img src="./gallery/nordic-chair/final.png" width="30.7%" alt="Final Coding Design">
   </a>
   &nbsp;
   <a href="https://yejy53.github.io/Editable-Design/player.html#editable">
-    <img src="./gallery/nordic-chair/editable-display-poster.jpg" width="64%" alt="Play Editable Display in HD">
+    <img src="./gallery/nordic-chair/editable-display-poster.jpg" width="64.3%" alt="Play Editable Display in HD">
   </a>
 </p>
 
@@ -29,8 +27,8 @@ Click a replay preview to play the original 60fps MP4.
 </p>
 <p align="center"><strong>Agent&nbsp;Design&nbsp;Replay</strong></p>
 
-<details>
-  <summary><strong>Original Prompt</strong></summary>
-  <br>
-  设计一张高端北欧家具产品长图海报，主角为一把深海军蓝色织物休闲椅，圆润包裹式椅背，胡桃木椅腿。整体采用米白、暖灰与深蓝配色，温暖自然光，现代北欧客厅场景，精致家居杂志质感。海报包含：顶部大幅生活场景与品牌标题、中部产品卖点和极简线性图标、座椅面料与木质结构的细节特写、底部完整空间展示。留白充足，黑色优雅衬线字体，网格化排版，简约、温暖、高级、真实产品摄影，电商详情页风格，竖版 9:16，高清。
-</details>
+**Prompt:**
+
+```text
+设计一张高端北欧家具产品长图海报，主角为一把深海军蓝色织物休闲椅，圆润包裹式椅背，胡桃木椅腿。整体采用米白、暖灰与深蓝配色，温暖自然光，现代北欧客厅场景，精致家居杂志质感。海报包含：顶部大幅生活场景与品牌标题、中部产品卖点和极简线性图标、座椅面料与木质结构的细节特写、底部完整空间展示。留白充足，黑色优雅衬线字体，网格化排版，简约、温暖、高级、真实产品摄影，电商详情页风格，竖版 9:16，高清。
+```
