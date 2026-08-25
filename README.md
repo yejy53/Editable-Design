@@ -6,7 +6,22 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 
 ## Overview
 
-<video src="https://github.com/user-attachments/assets/06fce84d-3abf-40a7-b925-c78b28c07244" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/e67109f9-0042-409a-b3e3-41b1de888d8a" width="100%" controls></video>
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Why Editable Visual Design](#why-editable-visual-design)
+- [Three Core Ideas](#three-core-ideas)
+- [How It Works](#how-it-works)
+- [Gallery](#gallery)
+  - [🎯 Campaigns](#campaigns)
+  - [📚 Information Design](#information-design)
+  - [✍️ Text-led Design](#text-led-design)
+  - [📰 Poster](#poster)
+  - [🎨 Art Design](#art-design)
+- [Quick Start](#quick-start)
+- [Acknowledgements](#acknowledgements)
 
 ## Why Editable Visual Design
 
@@ -41,21 +56,6 @@ Prompt → Understand & Plan → Visual Prior → Clean Assets + Semantic HTML
 ```
 
 The PNG is only a rendering. The deliverable is the structured project behind it: the final HTML, editable interface, independent assets, real text, rendered output, and evidence-backed Agent Design Replay.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Why Editable Visual Design](#why-editable-visual-design)
-- [Three Core Ideas](#three-core-ideas)
-- [How It Works](#how-it-works)
-- [Gallery](#gallery)
-  - [🎯 Campaigns](#campaigns)
-  - [📚 Information Design](#information-design)
-  - [✍️ Text-led Design](#text-led-design)
-  - [📰 Poster](#poster)
-  - [🎨 Art Design](#art-design)
-- [Quick Start](#quick-start)
-- [Acknowledgements](#acknowledgements)
 
 ---
 
