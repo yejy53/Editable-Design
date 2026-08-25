@@ -13,9 +13,12 @@ Campaigns · 1080 × 1920 · 11 editable layers · HTML + PNG
 <table role="presentation" width="100%">
   <tr>
     <td width="35.5%" align="center" valign="top">
-      <a href="./gallery/nordic-chair/final.png">
-        <img src="./gallery/nordic-chair/final.png" width="100%" alt="Final Coding Design">
-      </a>
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/nordic-chair/final.png">
+          <img src="./gallery/nordic-chair/final.png" width="100%" alt="Final Coding Design">
+        </a>
+      </details>
     </td>
     <td width="64.5%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/f8a0a631-a5d1-4ee0-a058-bb8dead1f188" width="100%" controls></video>
