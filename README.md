@@ -21,7 +21,7 @@ Campaigns · 1080 × 1920 · 11 editable layers · HTML + PNG
     <tr>
       <td align="center" valign="top">
         <a href="./gallery/nordic-chair/final.png">
-          <img src="./gallery/nordic-chair/final-coding-design.jpg" width="100%" alt="Final Coding Design">
+          <img src="./gallery/nordic-chair/final-coding-design-github.jpg" width="100%" alt="Final Coding Design">
         </a>
       </td>
       <td align="center" valign="top">
