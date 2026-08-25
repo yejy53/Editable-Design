@@ -1,21 +1,5 @@
 # Creative Journey — Original Prompt
 
 ```text
-Create a wide 16:9 poster featuring exactly five tall white rounded cards arranged as a symmetrical fan.
-
-The center card is the largest, highest, and perfectly upright. The two cards beside it tilt slightly outward, while the two outer cards tilt farther outward and sit slightly lower. Let the cards overlap gently like a hand of playing cards, with soft shadows beneath them to create a floating layered effect.
-
-Style: playful contemporary editorial illustration with loose hand-drawn black outlines, simple white characters, minimal details, and irregular high-saturation color blobs. Combine flat 2D drawings with realistic soft card shadows. Clean warm-white background, bold condensed typography, modern creative-studio aesthetic.
-
-Card content from left to right:
-
-1. DISCOVER — a curious person catching glowing ideas with a butterfly net, cobalt-blue background blob, button text “LOOK”.
-2. CONNECT — two hands joining geometric puzzle pieces, yellow background blob, button text “LINK”.
-3. GROW — a friendly robot watering a young plant, coral-red background blob, button text “BUILD”.
-4. EXPLORE — a traveler crossing water on stepping stones, cyan background blob, button text “MOVE”.
-5. IMAGINE — a paper airplane flying through a circular portal, mint-green background blob, button text “DREAM”.
-
-Each card contains one large illustration in the upper half, one bold uppercase title below it, and one dark navy pill button with yellow text.
-
-Original artwork only. Keep all five cards fully visible. No logo, watermark, gradients, photorealism, dashboard elements, extra cards, or excessive text.
+Create a polished wide 16:9 contemporary editorial poster on a clean warm-white background. At the top center, place a small irregular yellow outlined pill reading “THE CREATIVE JOURNEY”, followed by the large bold condensed navy headline “FROM SPARK TO POSSIBILITY” with a coral-red offset print shadow and loose yellow underline; surround it with only a few playful hand-drawn starbursts, colored dots, a dashed orbit and curved arrow. Below, arrange exactly five tall white rounded cards as a symmetrical overlapping fan with realistic soft floating shadows: the upright center card is largest and highest, the adjacent cards tilt slightly outward, and the outer cards tilt farther outward and sit lower. From left to right: DISCOVER shows a curious person catching glowing ideas with a butterfly net on a cobalt-blue blob, button “LOOK”; CONNECT shows two hands joining puzzle pieces on a yellow blob, button “LINK”; GROW shows a friendly robot watering a young plant on a coral-red blob, button “BUILD”; EXPLORE shows a traveler crossing water on stepping stones on a cyan blob, button “MOVE”; IMAGINE shows a paper airplane flying through a circular portal on a mint-green blob, button “DREAM”. Use loose black hand-drawn outlines, simple white characters, minimal details, saturated irregular color blobs, bold navy condensed titles and dark navy pill buttons with yellow text. Beneath the cards, add a thin navy dashed progress track with five colored nodes matching the cards and a small arrow, followed by the slogan “START CURIOUS. KEEP MOVING.” with two short coral strokes. Keep all cards fully visible and all supplied text exactly spelled; no extra text, extra cards, logos, watermarks, gradients, photorealism, dashboard elements or clutter.
 ```

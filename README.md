@@ -69,9 +69,12 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
 
 ```text
 生成一张高质量的 9:16 竖版 KFC 联名宣传海报。
+
 画面中央是一只真实可爱的长毛猫，穿着红色 KFC 员工制服和黑红色工作帽，站在餐厅收银台前，一只爪子抬起打招呼，另一只爪子抱着装满炸鸡的 KFC 欢乐桶。前景摆放炸鸡汉堡、薯条、炸鸡、可乐等套餐，背景是轻微虚化的 KFC 点餐屏和餐厅环境。
+
 顶部放置“KFC × 77”，主标题为“77 营业中！”，副标题为“美味上新 · 快乐加倍”。加入少量圆角推荐卡片、猫爪图标和对话框“欢迎光临肯德基！”
-整体使用经典红白配色，商业摄影质感，活泼可爱，信息层级清晰，中文字体醒目，食物诱人，版面丰富但不杂乱。保持猫咪外形自然，不要卡通化，不要多余人物或错误文字，如果一些艺术字不好看，你可以用生图模型生产分层小组件结果。
+
+整体使用经典红白配色，商业摄影质感，活泼可爱，信息层级清晰，中文字体醒目，食物诱人，版面丰富但不杂乱。保持猫咪外形自然，不要卡通化，不要多余人物或错误文字。
 ```
 
 ### 澄光维稳精华
@@ -162,13 +165,7 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
 **Prompt:**
 
 ```text
-生成一张高质量的竖版“纽约 3 天旅游攻略”信息图，参考图片的旅行手账与城市攻略排版风格。
-
-顶部使用醒目的中文标题“纽约 3 天旅游攻略”，搭配纽约天际线、自由女神像、黄色出租车和布鲁克林大桥等城市元素。内容按 Day 1、Day 2、Day 3 分区，简要介绍曼哈顿经典地标、中央公园与博物馆、布鲁克林街区等路线，并搭配对应的城市照片或精致插画。
-
-加入简洁的路线箭头、地铁标识和每日行程亮点，让浏览顺序更加直观。每一天可以包含上午、下午、晚上以及美食推荐，但文字保持简短清晰。
-
-底部加入纽约必吃清单、交通建议、预算参考和实用 Tips。整体采用明亮清爽的蓝色、黄色与暖白色，使用圆角信息卡、小图标和手绘旅行装饰，信息丰富但清晰易读，具有精致、轻松、适合收藏分享的城市旅行指南质感。
+Create a vertical editorial travel infographic poster titled “纽约3天旅游攻略,” using a warm ivory paper background with navy blue, sky blue and taxi yellow accents. Divide the composition into four clear sections: a large top hero area with bold Chinese typography on the left and a watercolor-photo collage of the New York skyline, Statue of Liberty, Brooklyn Bridge, ferry and yellow taxi on the right; three stacked rounded itinerary cards for DAY 1 Manhattan landmarks, DAY 2 Central Park and museums, and DAY 3 Brooklyn and DUMBO; and a compact bottom row containing four practical cards for local food, transportation, budget and travel tips. Each daily card should include one framed watercolor city image, a pale-blue route bar, three columns labeled morning, afternoon and evening, yellow divider lines, a small food recommendation and a highlighted travel note. Alternate the image position between left and right to create rhythm, and connect the three days with a dotted yellow itinerary line along the outer edge. Use a clean modular grid, generous margins, subtle shadows, rounded corners, small friendly icons and strong typographic hierarchy. Blend polished tourism-guide design with hand-painted watercolor textures, torn brush edges and light paper grain; informative, cheerful, organized and easy to scan.
 ```
 
 ### Abs Training Plan
@@ -215,7 +212,7 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
 **Prompt:**
 
 ```text
-生成包含完整的《滕王阁序》的海报。
+生成包含完整的滕王阁序的海报
 ```
 
 ### AI Team Love Letter
@@ -229,78 +226,77 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
 **Prompt:**
 
 ```text
-请根据参考图，设计一张 2:3 竖版中文 AI 团队招聘长图海报，尺寸 1080×1620 px。
+请设计一张 2:3 竖版中文 AI 团队招聘长图海报，尺寸 1080×1620 px。
 
 【设计主题】
 “写给未来同行者的一封情书”
 整体不是传统企业招聘广告，而是一封温柔、真诚、富有理想主义的邀请信。画面应同时具有科技感、青春感、未来感和人情味。
 
 【视觉风格】
-清新高级的蓝白色系，搭配少量粉色、紫色、青绿色和暖黄色点缀；柔和水彩插画结合现代科技信息图表；留白充足，轻盈通透。使用圆角白色卡片、浅蓝阴影、渐变丝带、圆形彩色图标。避免过度商业化、廉价科技蓝和拥挤杂乱。
+采用清新高级的蓝白色系，搭配少量粉色、紫色、青绿色和暖黄色点缀；将柔和水彩插画与现代科技信息图表相结合。留白充足，整体轻盈通透。使用圆角白色卡片、浅蓝色阴影、蓝紫渐变丝带和圆形彩色图标。避免过度商业化、廉价科技蓝、强烈企业宣传感以及拥挤杂乱的排版。
 
 【顶部主视觉】
-顶部约占画面 20%：
-左侧使用蓝色手写书法字体显示大标题：
-“写给未来同行者
-的一封情书”
-标题旁加入粉色爱心曲线、纸飞机或风筝元素。
-右侧绘制梦幻未来城市、高塔、云层、蓝色鲸鱼，以及两位并肩坐着眺望城市的年轻人；人物穿带有 AI 团队标志的连帽衫，背影构图，营造“共同奔赴未来”的感觉。
+顶部约占画面高度的 20%。左侧使用蓝色手写书法字体显示大标题：“写给未来同行者的一封情书”标题旁加入粉色爱心曲线、纸飞机或风筝元素。右侧绘制梦幻未来城市、高塔、云层和一只飞翔在天空中的蓝色鲸鱼。画面前景是两位并肩坐着、眺望城市的年轻人，采用背影构图。人物穿着带有抽象 AI 图形标志的连帽衫，不出现任何真实企业名称、品牌 Logo 或商业标识，营造“共同奔赴未来”的感觉。
 
 【主体布局】
-采用清晰的左右双栏排版，左栏约 40%，右栏约 60%。
+采用清晰的左右双栏排版，左栏约占 40%，右栏约占 60%。左栏是一封招聘情书。开头文字：“各位友友们，大家好：
+见字如面。”
 
-左栏是一封招聘情书：
-开头为“各位友友们，大家好：见字如面。”
-正文表达：我们是蚂蚁百灵基座模型团队，希望寻找真正热爱 AI、愿意追问技术本质、敢于探索无人区、希望创造长期价值的年轻人。
-中间用三个粉色爱心项目符号突出：
+正文内容：
+“我们是一支专注于基座模型研究与探索的 AI 团队。
+我们希望寻找真正热爱 AI、愿意追问技术本质、敢于探索无人区，也希望创造长期价值的年轻人。”
+
+中间使用三个粉色爱心作为项目符号，突出以下内容：
 “如果你也曾在深夜盯着 loss curve 心跳加速”
 “如果你也曾因为一个模型突然‘懂了’而久久不能平静”
-“如果你也相信今天的问题可能成为明天智能世界的一部分”
+“如果你也相信今天的问题，可能成为明天智能世界的一部分”
+
 随后使用蓝色手写字体强调：
 “那我们很想认识你。”
 
-左栏下方设置圆角招聘信息框，顶部蓝色丝带标题：
+【招聘对象】
+左栏下方设置圆角招聘信息框，顶部使用蓝色渐变丝带标题：
 “我们目前面向以下同学开放招聘：”
-框内两项：
-1. 2027 届应届毕业生，以及 Plan A 人才计划
+框内包含两项：
+1. 2027 届应届毕业生
 2. 2028 届及以后毕业的日常实习生
-分别搭配毕业帽和人物图标。
+两项分别搭配毕业帽图标和年轻人物图标。
 
-右栏顶部设置蓝色丝带标题：
+【探索方向】
+右栏顶部设置蓝色渐变丝带标题：
 “我们正在探索的方向，包括但不限于：”
-
-下方纵向排列 6 张白色圆角信息卡，每张左侧为彩色圆形图标，右侧为标题和简短说明：
+下方纵向排列 6 张白色圆角信息卡。每张卡片左侧为彩色圆形图标，右侧为标题和简短说明。
 
 1. 预训练数据策略
-蓝色数据库图标；数据筛选、质量评估、数据合成、数据配比，以及文本和多模态数据。
+使用蓝色数据库图标。说明文字：
+“探索数据筛选、质量评估、数据合成、数据配比，以及文本和多模态数据。”
 
 2. MoE 架构与训练优化
-紫色神经网络图标；探索更高效、更稳定、更易扩展的模型架构与训练方法。
+使用紫色神经网络图标。说明文字：
+“探索更高效、更稳定、更易扩展的模型架构与训练方法。”
 
 3. Agent 长程任务与 Harness
-青绿色机器人图标；提升模型的规划、推理、工具使用和长期任务执行能力。
+使用青绿色机器人图标。说明文字：
+“提升模型的规划、推理、工具使用和长期任务执行能力。”
 
 4. 模型机制分析与可解释性
-橙黄色放大镜图标；理解模型能力如何形成、为何失败，以及模型内部机制。
+使用橙黄色放大镜图标。说明文字：
+“理解模型能力如何形成、为何失败，以及模型内部的运行机制。”
 
 5. Model Self-Evolving
-青绿色上升趋势图标；探索持续学习、自我改进和自主进化的新范式。
+使用青绿色上升趋势图标。说明文字：
+“探索持续学习、自我改进和自主进化的新范式。”
 
 6. 模型价值观与可靠性对齐
-粉红色盾牌图标；涵盖价值观对齐、幻觉治理、事实性、安全性和可信推理。
+使用粉红色盾牌图标。说明文字：
+“涵盖价值观对齐、幻觉治理、事实性、安全性和可信推理。”
 
 【底部区域】
-设置一个横跨页面的浅色大圆角引用框，左右分栏，中间用浅灰色虚线分隔。
-左侧表达：我们不以论文数量、学校标签或标准答案定义候选人；真实的问题、长期的开源贡献，以及暂时未被理解的想法，都值得被看见。
-右侧加入浅蓝色纸飞机图标，并写：
-“所以，如果你也对这些方向心动，欢迎来找我们聊聊。也许一开始只是一次私信、一次交流、一封简历，但谁知道呢——也许这就是我们一起奔赴下一代智能世界的开始。”
+设置一个横跨页面的浅色大圆角引用框。引用框采用左右分栏布局，中间使用浅灰蓝色虚线分隔。左侧文字：“我们不以论文数量、学校标签或标准答案定义候选人。真实的问题、长期的开源贡献，以及那些暂时未被理解的想法，都值得被看见。”右侧加入浅蓝色纸飞机图标，并写：“所以，如果你也对这些方向心动，欢迎来找我们聊聊。也许一开始只是一次私信、一次交流、一封简历，但谁知道呢——也许这就是我们一起奔赴下一代智能世界的开始。”
 
 底部居中放置蓝色结束语：
 “期待遇见你。也期待和你一起，把模型能力的边界，再往前推一点点。”
 末尾增加一颗粉色爱心。
-
-【排版要求】
-中文正文必须清楚易读，标题有手写情书感，正文使用现代中文黑体；层级明确、行距舒适、对齐规整。所有文字必须使用简体中文，严格避免错别字、乱码、伪文字、重复文字或缺字。整体达到成熟互联网大厂招聘海报和高质量社交媒体长图的完成度。
 ```
 
 ### Nebula AI Recruitment
@@ -398,12 +394,6 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
 下方放置二维码占位框，并标注：
 “扫码投递简历”
 “hr@nebula-ai.com”
-
-【字体与排版】
-使用现代无衬线中文字体，主标题粗壮有力量，章节标题清晰，正文简洁易读。信息层级明确，左右对齐规范，卡片间距统一，留白充足。不要让内容显得拥挤，不使用细小难辨认的文字。
-
-【严格生成要求】
-所有中文和英文必须准确呈现，严格使用以上文案，不得改写、遗漏或新增内容。禁止乱码、错别字、随机英文、错误符号和重复文字。不要使用蚂蚁集团或其他真实公司的名称、Logo及商标。不要出现人物照片，不要使用卡通风格。最终效果应像专业设计师制作的正式科技招聘海报，可直接用于社交媒体发布。
 ```
 
 ### Summer Music
@@ -417,7 +407,7 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
 **Prompt:**
 
 ```text
-做一张 2:3 竖版夏日音乐主题海报，整体明亮、梦幻，带有轻松活泼的 3D 效果。画面中心是一副悬浮的金棕色耳机，后方为粉色几何小屋，周围环绕银色线条和音乐符号。下方是开满橙色、黄色和粉色花朵的绿色草地，蓝天中点缀热气球、泡泡和黄色涂鸦。加入“HAPPY DAY”“SUMMER DAY”“SEE THE COLORS”，以及醒目的中文“和你的夏天 有场约会”“想看五月的颜色”，整体以天空蓝、亮黄、粉色和绿色为主。
+Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D look. Place a floating pair of gold-and-tan headphones in the center, with a pink geometric house behind them and silver lines and musical notes swirling around the scene. Fill the lower area with green grass and orange, yellow, and pink flowers, while adding a hot-air balloon, bubbles, and yellow doodles to the blue sky. Include the text “HAPPY DAY,” “SUMMER DAY,” “SEE THE COLORS,” “和你的夏天 有场约会,” and “想看五月的颜色,” using sky blue, bright yellow, pink, and green as the main colors.
 ```
 
 ---
@@ -472,8 +462,6 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
 栏目标题使用粗窄体无衬线字体，白色与金黄色交替；正文使用清晰简洁的白色无衬线字体；搭配细金色分隔线。排版专业、紧凑、有呼吸感，所有文字避开鹦鹉的眼睛、鸟喙和主体轮廓。
 
 超写实自然摄影，电影级光影，精细羽毛，真实植物纹理，高级杂志印刷质感，视觉焦点明确，构图平衡，4K细节。
-
-避免：多余的鸟、重复翅膀、错误爪子、畸形鸟喙、尾羽被裁切、卡通感、插画感、塑料质感、过度锐化、杂乱背景、文字乱码、错误拼写、多余文字、Logo、水印。
 ```
 
 ### Chongqing Rain Night
@@ -533,23 +521,7 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
 **Prompt:**
 
 ```text
-Create a wide 16:9 poster featuring exactly five tall white rounded cards arranged as a symmetrical fan.
-
-The center card is the largest, highest, and perfectly upright. The two cards beside it tilt slightly outward, while the two outer cards tilt farther outward and sit slightly lower. Let the cards overlap gently like a hand of playing cards, with soft shadows beneath them to create a floating layered effect.
-
-Style: playful contemporary editorial illustration with loose hand-drawn black outlines, simple white characters, minimal details, and irregular high-saturation color blobs. Combine flat 2D drawings with realistic soft card shadows. Clean warm-white background, bold condensed typography, modern creative-studio aesthetic.
-
-Card content from left to right:
-
-1. DISCOVER — a curious person catching glowing ideas with a butterfly net, cobalt-blue background blob, button text “LOOK”.
-2. CONNECT — two hands joining geometric puzzle pieces, yellow background blob, button text “LINK”.
-3. GROW — a friendly robot watering a young plant, coral-red background blob, button text “BUILD”.
-4. EXPLORE — a traveler crossing water on stepping stones, cyan background blob, button text “MOVE”.
-5. IMAGINE — a paper airplane flying through a circular portal, mint-green background blob, button text “DREAM”.
-
-Each card contains one large illustration in the upper half, one bold uppercase title below it, and one dark navy pill button with yellow text.
-
-Original artwork only. Keep all five cards fully visible. No logo, watermark, gradients, photorealism, dashboard elements, extra cards, or excessive text.
+Create a polished wide 16:9 contemporary editorial poster on a clean warm-white background. At the top center, place a small irregular yellow outlined pill reading “THE CREATIVE JOURNEY”, followed by the large bold condensed navy headline “FROM SPARK TO POSSIBILITY” with a coral-red offset print shadow and loose yellow underline; surround it with only a few playful hand-drawn starbursts, colored dots, a dashed orbit and curved arrow. Below, arrange exactly five tall white rounded cards as a symmetrical overlapping fan with realistic soft floating shadows: the upright center card is largest and highest, the adjacent cards tilt slightly outward, and the outer cards tilt farther outward and sit lower. From left to right: DISCOVER shows a curious person catching glowing ideas with a butterfly net on a cobalt-blue blob, button “LOOK”; CONNECT shows two hands joining puzzle pieces on a yellow blob, button “LINK”; GROW shows a friendly robot watering a young plant on a coral-red blob, button “BUILD”; EXPLORE shows a traveler crossing water on stepping stones on a cyan blob, button “MOVE”; IMAGINE shows a paper airplane flying through a circular portal on a mint-green blob, button “DREAM”. Use loose black hand-drawn outlines, simple white characters, minimal details, saturated irregular color blobs, bold navy condensed titles and dark navy pill buttons with yellow text. Beneath the cards, add a thin navy dashed progress track with five colored nodes matching the cards and a small arrow, followed by the slogan “START CURIOUS. KEEP MOVING.” with two short coral strokes. Keep all cards fully visible and all supplied text exactly spelled; no extra text, extra cards, logos, watermarks, gradients, photorealism, dashboard elements or clutter.
 ```
 
 ### TC 2024

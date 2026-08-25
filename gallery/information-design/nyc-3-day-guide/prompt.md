@@ -1,11 +1,5 @@
 # NYC 3-Day Guide — Original Prompt
 
 ```text
-生成一张高质量的竖版“纽约 3 天旅游攻略”信息图，参考图片的旅行手账与城市攻略排版风格。
-
-顶部使用醒目的中文标题“纽约 3 天旅游攻略”，搭配纽约天际线、自由女神像、黄色出租车和布鲁克林大桥等城市元素。内容按 Day 1、Day 2、Day 3 分区，简要介绍曼哈顿经典地标、中央公园与博物馆、布鲁克林街区等路线，并搭配对应的城市照片或精致插画。
-
-加入简洁的路线箭头、地铁标识和每日行程亮点，让浏览顺序更加直观。每一天可以包含上午、下午、晚上以及美食推荐，但文字保持简短清晰。
-
-底部加入纽约必吃清单、交通建议、预算参考和实用 Tips。整体采用明亮清爽的蓝色、黄色与暖白色，使用圆角信息卡、小图标和手绘旅行装饰，信息丰富但清晰易读，具有精致、轻松、适合收藏分享的城市旅行指南质感。
+Create a vertical editorial travel infographic poster titled “纽约3天旅游攻略,” using a warm ivory paper background with navy blue, sky blue and taxi yellow accents. Divide the composition into four clear sections: a large top hero area with bold Chinese typography on the left and a watercolor-photo collage of the New York skyline, Statue of Liberty, Brooklyn Bridge, ferry and yellow taxi on the right; three stacked rounded itinerary cards for DAY 1 Manhattan landmarks, DAY 2 Central Park and museums, and DAY 3 Brooklyn and DUMBO; and a compact bottom row containing four practical cards for local food, transportation, budget and travel tips. Each daily card should include one framed watercolor city image, a pale-blue route bar, three columns labeled morning, afternoon and evening, yellow divider lines, a small food recommendation and a highlighted travel note. Alternate the image position between left and right to create rhythm, and connect the three days with a dotted yellow itinerary line along the outer edge. Use a clean modular grid, generous margins, subtle shadows, rounded corners, small friendly icons and strong typographic hierarchy. Blend polished tourism-guide design with hand-painted watercolor textures, torn brush edges and light paper grain; informative, cheerful, organized and easy to scan.
 ```
