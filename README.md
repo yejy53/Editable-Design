@@ -10,13 +10,18 @@ A high-end Nordic furniture campaign rebuilt as an editable visual artifact with
 
 Campaigns · 1080 × 1920 · 11 editable layers · HTML + PNG
 
-<p align="center">
-  <a href="./gallery/nordic-chair/final.png">
-    <img src="./gallery/nordic-chair/final.png" width="30.7%" alt="Final Coding Design">
-  </a>
-  &nbsp;
-  <video src="https://github.com/user-attachments/assets/f8a0a631-a5d1-4ee0-a058-bb8dead1f188" width="64.3%" controls></video>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <a href="./gallery/nordic-chair/final.png">
+        <img src="./gallery/nordic-chair/final.png" width="100%" alt="Final Coding Design">
+      </a>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/f8a0a631-a5d1-4ee0-a058-bb8dead1f188" width="100%" controls></video>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <video src="https://github.com/user-attachments/assets/c85d5a04-58dc-48c5-8a6f-e88b4030acc5" width="100%" controls></video>
