@@ -11,10 +11,6 @@ A high-end Nordic furniture campaign rebuilt as an editable visual artifact with
 Campaigns · 1080 × 1920 · 11 editable layers · HTML + PNG
 
 <table>
-  <colgroup>
-    <col width="35%">
-    <col width="65%">
-  </colgroup>
   <thead>
     <tr>
       <th>Final&nbsp;Coding&nbsp;Design</th>
