@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Design Replay video placeholder</title>
+  <desc id="desc">Placeholder for a future agent design replay video.</desc>
+  <defs>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#d0d7de" opacity="0.75"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <rect x="2" y="2" width="1596" height="896" rx="20" fill="none" stroke="#d0d7de" stroke-width="4"/>
+  <g transform="translate(800 380)" fill="none" stroke="#57606a" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="0" cy="0" r="112"/>
+    <path d="M -28 -48 L 58 0 L -28 48 Z" fill="#57606a" stroke="none"/>
+    <path d="M -180 0 H -270 M 180 0 H 270" opacity="0.45"/>
+  </g>
+  <text x="800" y="570" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="48" font-weight="700" fill="#24292f" letter-spacing="3">AGENT DESIGN REPLAY</text>
+  <text x="800" y="630" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="28" fill="#57606a" letter-spacing="2">VIDEO COMING SOON</text>
+</svg>

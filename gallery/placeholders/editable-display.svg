@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Editable Display video placeholder</title>
+  <desc id="desc">Placeholder for a future editable design demonstration video.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d8dee4" stroke-width="1" opacity="0.55"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#f6f8fa"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <rect x="2" y="2" width="1596" height="896" rx="20" fill="none" stroke="#d0d7de" stroke-width="4"/>
+  <g transform="translate(800 390)" fill="none" stroke="#57606a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-94" y="-64" width="142" height="128" rx="20"/>
+    <path d="M 48 -35 L 116 -74 L 116 74 L 48 35 Z"/>
+  </g>
+  <text x="800" y="570" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="48" font-weight="700" fill="#24292f" letter-spacing="3">EDITABLE DISPLAY</text>
+  <text x="800" y="630" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="28" fill="#57606a" letter-spacing="2">VIDEO COMING SOON</text>
+</svg>

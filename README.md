@@ -45,11 +45,31 @@ Agent-driven creation of editable, tastefully crafted visual artifacts.
 
 ### 山柚观音
 
-<p align="center">
-  <a href="./gallery/campaigns/shanyou-guanyin-tea/final.png">
-    <img src="./gallery/campaigns/shanyou-guanyin-tea/preview.webp" width="70%" alt="山柚观音">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/campaigns/shanyou-guanyin-tea/final.png">
+          <img src="./gallery/campaigns/shanyou-guanyin-tea/preview.webp" width="100%" alt="山柚观音">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
+
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
 
 **Prompt:**
 
@@ -59,13 +79,34 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
 
 ### KFC × 77
 
-<p align="center">
-  <a href="./gallery/campaigns/kfc-77/final.png">
-    <img src="./gallery/campaigns/kfc-77/preview.webp" width="55%" alt="KFC × 77">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/campaigns/kfc-77/final.png">
+          <img src="./gallery/campaigns/kfc-77/preview.webp" width="100%" alt="KFC × 77">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
 
-**Prompt:**
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
+
+<details>
+<summary><strong>Prompt</strong></summary>
 
 ```text
 生成一张高质量的 9:16 竖版 KFC 联名宣传海报。
@@ -77,15 +118,38 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
 整体使用经典红白配色，商业摄影质感，活泼可爱，信息层级清晰，中文字体醒目，食物诱人，版面丰富但不杂乱。保持猫咪外形自然，不要卡通化，不要多余人物或错误文字。
 ```
 
+</details>
+
 ### 澄光维稳精华
 
-<p align="center">
-  <a href="./gallery/campaigns/chengguang-serum/final.png">
-    <img src="./gallery/campaigns/chengguang-serum/preview.webp" width="70%" alt="澄光维稳精华">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/campaigns/chengguang-serum/final.png">
+          <img src="./gallery/campaigns/chengguang-serum/preview.webp" width="100%" alt="澄光维稳精华">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
 
-**Prompt:**
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
+
+<details>
+<summary><strong>Prompt</strong></summary>
 
 ```text
 Create a high-end skincare e-commerce hero poster for "澄光维稳精华" ("Clarifying Stabilizing Essence"). The style should be clean, light-luxury, and strongly science-skincare oriented. In the center, place a semi-transparent frosted-glass essence bottle filled with golden liquid and subtle water-droplet reflections. Use an off-white to warm gray gradient background with liquid-flow elements and microscopic molecular-structure decoration.
@@ -118,19 +182,42 @@ Fine print:
 Focus on product selling points, pricing hierarchy, gift-list modules, product naming, and short functional phrases. The result should feel premium and not tacky or overly live-commerce styled.
 ```
 
+</details>
+
 ---
 
 ## Information Design
 
 ### Red Panda Field Guide
 
-<p align="center">
-  <a href="./gallery/information-design/red-panda-field-guide/final.png">
-    <img src="./gallery/information-design/red-panda-field-guide/preview.webp" width="60%" alt="Red Panda Field Guide">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/information-design/red-panda-field-guide/final.png">
+          <img src="./gallery/information-design/red-panda-field-guide/preview.webp" width="100%" alt="Red Panda Field Guide">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
 
-**Prompt:**
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
+
+<details>
+<summary><strong>Prompt</strong></summary>
 
 ```text
 Generate a high-quality vertical encyclopedia-style infographic about the red panda.
@@ -154,13 +241,35 @@ use a clean light background, soft forest-inspired colors, subtle shadows, refin
 Do not make it look like a commercial zoo poster or an overly cute cartoon. Emphasize accurate wildlife representation, knowledge organization, modular information, and a natural-history field-guide presentation.
 ```
 
+</details>
+
 ### NYC 3-Day Guide
 
-<p align="center">
-  <a href="./gallery/information-design/nyc-3-day-guide/final.png">
-    <img src="./gallery/information-design/nyc-3-day-guide/preview.webp" width="60%" alt="NYC 3-Day Guide">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/information-design/nyc-3-day-guide/final.png">
+          <img src="./gallery/information-design/nyc-3-day-guide/preview.webp" width="100%" alt="NYC 3-Day Guide">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
+
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
 
 **Prompt:**
 
@@ -170,13 +279,34 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 ### Abs Training Plan
 
-<p align="center">
-  <a href="./gallery/information-design/abs-training-plan/final.png">
-    <img src="./gallery/information-design/abs-training-plan/preview.webp" width="70%" alt="Abs Training Plan">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/information-design/abs-training-plan/final.png">
+          <img src="./gallery/information-design/abs-training-plan/preview.webp" width="100%" alt="Abs Training Plan">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
 
-**Prompt:**
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
+
+<details>
+<summary><strong>Prompt</strong></summary>
 
 ```text
 生成一张竖版（4:5）中文健身信息图海报，主题「腹肌训练计划」。
@@ -197,17 +327,39 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 每个分区带圆形编号徽标和图标；文字全部为真实可读的简体中文，禁止乱码或占位文本。
 ```
 
+</details>
+
 ---
 
 ## Text-led Design
 
 ### 滕王阁序
 
-<p align="center">
-  <a href="./gallery/text-led-design/tengwang-ge-xu/final.png">
-    <img src="./gallery/text-led-design/tengwang-ge-xu/preview.webp" width="55%" alt="滕王阁序">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/text-led-design/tengwang-ge-xu/final.png">
+          <img src="./gallery/text-led-design/tengwang-ge-xu/preview.webp" width="100%" alt="滕王阁序">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
+
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
 
 **Prompt:**
 
@@ -217,13 +369,34 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 ### AI Team Love Letter
 
-<p align="center">
-  <a href="./gallery/text-led-design/ai-team-love-letter/final.png">
-    <img src="./gallery/text-led-design/ai-team-love-letter/preview.webp" width="60%" alt="AI Team Love Letter">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/text-led-design/ai-team-love-letter/final.png">
+          <img src="./gallery/text-led-design/ai-team-love-letter/preview.webp" width="100%" alt="AI Team Love Letter">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
 
-**Prompt:**
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
+
+<details>
+<summary><strong>Prompt</strong></summary>
 
 ```text
 请设计一张 2:3 竖版中文 AI 团队招聘长图海报，尺寸 1080×1620 px。
@@ -299,15 +472,38 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 末尾增加一颗粉色爱心。
 ```
 
+</details>
+
 ### Nebula AI Recruitment
 
-<p align="center">
-  <a href="./gallery/text-led-design/nebula-ai-recruitment/final.png">
-    <img src="./gallery/text-led-design/nebula-ai-recruitment/preview.webp" width="55%" alt="Nebula AI Recruitment">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/text-led-design/nebula-ai-recruitment/final.png">
+          <img src="./gallery/text-led-design/nebula-ai-recruitment/preview.webp" width="100%" alt="Nebula AI Recruitment">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
 
-**Prompt:**
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
+
+<details>
+<summary><strong>Prompt</strong></summary>
 
 ```text
 设计一张专业的科技公司招聘信息长海报。
@@ -396,13 +592,35 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 “hr@nebula-ai.com”
 ```
 
+</details>
+
 ### Summer Music
 
-<p align="center">
-  <a href="./gallery/text-led-design/summer-music/final.png">
-    <img src="./gallery/text-led-design/summer-music/preview.webp" width="60%" alt="Summer Music">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/text-led-design/summer-music/final.png">
+          <img src="./gallery/text-led-design/summer-music/preview.webp" width="100%" alt="Summer Music">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
+
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
 
 **Prompt:**
 
@@ -416,13 +634,34 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 ### E-Design
 
-<p align="center">
-  <a href="./gallery/poster/e-design/final.png">
-    <img src="./gallery/poster/e-design/preview.webp" width="60%" alt="E-Design">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/poster/e-design/final.png">
+          <img src="./gallery/poster/e-design/preview.webp" width="100%" alt="E-Design">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
 
-**Prompt:**
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
+
+<details>
+<summary><strong>Prompt</strong></summary>
 
 ```text
 生成一张竖版 2:3 的高端自然探索杂志封面，写实摄影风格。
@@ -464,13 +703,35 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 超写实自然摄影，电影级光影，精细羽毛，真实植物纹理，高级杂志印刷质感，视觉焦点明确，构图平衡，4K细节。
 ```
 
+</details>
+
 ### Chongqing Rain Night
 
-<p align="center">
-  <a href="./gallery/poster/chongqing-rain-night/final.png">
-    <img src="./gallery/poster/chongqing-rain-night/preview.webp" width="70%" alt="Chongqing Rain Night">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/poster/chongqing-rain-night/final.png">
+          <img src="./gallery/poster/chongqing-rain-night/preview.webp" width="100%" alt="Chongqing Rain Night">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
+
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
 
 **Prompt:**
 
@@ -480,11 +741,31 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 ### Beijing Winter Atlas
 
-<p align="center">
-  <a href="./gallery/poster/beijing-winter-atlas/final.png">
-    <img src="./gallery/poster/beijing-winter-atlas/preview.webp" width="70%" alt="Beijing Winter Atlas">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/poster/beijing-winter-atlas/final.png">
+          <img src="./gallery/poster/beijing-winter-atlas/preview.webp" width="100%" alt="Beijing Winter Atlas">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
+
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
 
 **Prompt:**
 
@@ -498,11 +779,31 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 ### Sky Archive
 
-<p align="center">
-  <a href="./gallery/art-design/sky-archive/final.png">
-    <img src="./gallery/art-design/sky-archive/preview.webp" width="72%" alt="Sky Archive">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/art-design/sky-archive/final.png">
+          <img src="./gallery/art-design/sky-archive/preview.webp" width="100%" alt="Sky Archive">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
+
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
 
 **Prompt:**
 
@@ -512,11 +813,31 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
 
 ### Creative Journey
 
-<p align="center">
-  <a href="./gallery/art-design/creative-journey/final.png">
-    <img src="./gallery/art-design/creative-journey/preview.webp" width="100%" alt="Creative Journey">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/art-design/creative-journey/final.png">
+          <img src="./gallery/art-design/creative-journey/preview.webp" width="100%" alt="Creative Journey">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
+
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
 
 **Prompt:**
 
@@ -526,13 +847,34 @@ Create a polished wide 16:9 contemporary editorial poster on a clean warm-white 
 
 ### TC 2024
 
-<p align="center">
-  <a href="./gallery/art-design/tc-2024/final.png">
-    <img src="./gallery/art-design/tc-2024/preview.webp" width="60%" alt="TC 2024">
-  </a>
-</p>
+<table role="presentation" width="100%">
+  <tr>
+    <td width="35.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/art-design/tc-2024/final.png">
+          <img src="./gallery/art-design/tc-2024/preview.webp" width="100%" alt="TC 2024">
+        </a>
+      </details>
+    </td>
+    <td width="64.5%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
+        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
+      </details>
+    </td>
+  </tr>
+</table>
 
-**Prompt:**
+<details open>
+<summary><strong>🎬 agent-design-replay.mp4</strong></summary>
+
+<img src="./gallery/placeholders/agent-design-replay.svg" width="100%" alt="Agent Design Replay video coming soon">
+
+</details>
+
+<details>
+<summary><strong>Prompt</strong></summary>
 
 ```text
 Please generate a 2:3 aspect ratio Memphis Style poster. The poster is a vibrant, grid‑style design in electric blue, neon green, magenta, and orange. It mixes tech and pop‑culture icons: a Pac‑Man and ghost, an atom symbol, a human head with circuit traces, connected nodes and shapes, arrows, speech bubbles, stylized turbines or trees, “VR” beside goggles, and a DNA double helix along the right edge.
@@ -553,3 +895,5 @@ Program highlights listed on the left:
 
 There is Chinese text near the middle reading “文化科技大會,” and additional organizer/sponsor credits in Chinese at the bottom. The overall look is playful and futuristic, combining geometric shapes and bright color blocks.
 ```
+
+</details>
