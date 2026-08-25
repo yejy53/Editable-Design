@@ -1,16 +1,67 @@
-# Editable Design
+# Editable Visual Design
 
-Agent-driven creation of editable, tastefully crafted visual artifacts.
+**Coding-agent-driven creation of editable, tastefully crafted visual artifacts.**
+
+Editable Visual Design turns a prompt into a structured design artifact with real text, independent assets, semantic HTML layers, and a replayable creation process—instead of shipping a flattened image.
+
+## Overview
+
+<video src="https://github.com/user-attachments/assets/06fce84d-3abf-40a7-b925-c78b28c07244" width="100%" controls></video>
+
+## Why Editable Visual Design
+
+Image generation can quickly produce beautiful designs, but a local change often means regenerating the whole image. Direct coding provides structure, but its visual finish is inconsistent. Editable Visual Design combines visual direction and editable structure in one artifact.
+
+| | Image generation | Direct coding | Editable Visual Design |
+|---|---|---|---|
+| Art-directed visual quality | Strong | Inconsistent | Strong |
+| Real text and semantic layers | No | Yes | Yes |
+| Local edits without regeneration | No | Yes | Yes |
+| Replayable creation path | No | Partial | Yes |
+
+## Three Core Ideas
+
+### 1. Coding-Agent-Driven Design
+
+One persistent Coding Agent owns the artifact from intent to repair: understanding the brief, planning the composition, generating assets, implementing HTML, rendering, observing, and fixing the result. Agent Design Replay makes that path visible and traceable.
+
+### 2. Visual Prior, Without Pixel Shipping
+
+An image model provides art direction—composition, hierarchy, color, and spatial relationships—but its reference pixels never enter the delivered design. The agent generates clean assets and rebuilds typography and layout in HTML.
+
+### 3. Editable and Quality-Gated Artifacts
+
+The result contains real text, semantic layers, and independent assets that can be selected, moved, edited, and exported. Deterministic checks cover the canvas, fonts, layer contracts, rendering, and editor round trips.
+
+## How It Works
+
+```text
+Prompt → Understand & Plan → Visual Prior → Clean Assets + Semantic HTML
+       → Render & Observe ↺ Repair → Editable Artifact + Agent Design Replay
+```
+
+The PNG is only a rendering. The deliverable is the structured project behind it: the final HTML, editable interface, independent assets, real text, rendered output, and evidence-backed Agent Design Replay.
 
 ## Table of Contents
 
-- [🎯 Campaigns](#campaigns)
-- [📚 Information Design](#information-design)
-- [✍️ Text-led Design](#text-led-design)
-- [📰 Poster](#poster)
-- [🎨 Art Design](#art-design)
+- [Overview](#overview)
+- [Why Editable Visual Design](#why-editable-visual-design)
+- [Three Core Ideas](#three-core-ideas)
+- [How It Works](#how-it-works)
+- [Gallery](#gallery)
+  - [🎯 Campaigns](#campaigns)
+  - [📚 Information Design](#information-design)
+  - [✍️ Text-led Design](#text-led-design)
+  - [📰 Poster](#poster)
+  - [🎨 Art Design](#art-design)
+- [Quick Start](#quick-start)
+- [Acknowledgements](#acknowledgements)
 
 ---
+
+## Gallery
+
+Seventeen prompts across five visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
 
 ## Campaigns
 
@@ -961,3 +1012,18 @@ There is Chinese text near the middle reading “文化科技大會,” and addi
 ```
 
 </details>
+
+---
+
+## Quick Start
+
+Editable Visual Design is implemented as the `poster-building` skill. The installable skill package and a reproducible starter project are being prepared for the public release. Until then, the Gallery publishes the original prompts and rendered outcomes, with editable demonstrations and Agent Design Replays being added case by case.
+
+## Acknowledgements
+
+We are grateful to the open-source projects that have helped shape the public conversation around AI-native visual creation, including:
+
+- [awesome-gpt-image](https://github.com/ZeroLu/awesome-gpt-image), whose clear prompt-and-result gallery helped inspire the presentation of this Gallery.
+- [OpenDesign](https://github.com/EthanGuo2022/OpenDesign), for advancing open, agent-driven, editable visual artifacts and visible design trajectories.
+
+And thanks to the broader open-source design and Coding Agent communities for making this work possible.
