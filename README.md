@@ -15,15 +15,11 @@ Campaigns · 1080 × 1920 · 11 editable layers · HTML + PNG
     <img src="./gallery/nordic-chair/final.png" width="30.7%" alt="Final Coding Design">
   </a>
   &nbsp;
-  <a href="https://yejy53.github.io/Editable-Design/player.html#editable">
-    <img src="./gallery/nordic-chair/editable-display-poster.jpg" width="64.3%" alt="Play Editable Display in HD">
-  </a>
+  <video src="https://github.com/user-attachments/assets/f8a0a631-a5d1-4ee0-a058-bb8dead1f188" width="64.3%" controls></video>
 </p>
 
 <p align="center">
-  <a href="https://yejy53.github.io/Editable-Design/player.html#agent">
-    <img src="./gallery/nordic-chair/agent-design-replay-poster.jpg" width="100%" alt="Play Agent Design Replay in HD">
-  </a>
+  <video src="https://github.com/user-attachments/assets/c85d5a04-58dc-48c5-8a6f-e88b4030acc5" width="100%" controls></video>
 </p>
 <p align="center"><strong>Agent&nbsp;Design&nbsp;Replay</strong></p>
 
