@@ -105,8 +105,16 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
 
 </details>
 
+**Prompt:**
+
+```text
+生成一张高质量的 9:16 竖版 KFC 联名宣传海报。
+画面中央是一只真实可爱的长毛猫，穿着红色 KFC 员工制服和黑红色工作帽，站在餐厅收银台前，一只爪子抬起打招呼，另一只爪子抱着装满炸鸡的 KFC 欢乐桶。前景摆放炸鸡汉堡、薯条、炸鸡、可乐等套餐，背景是轻微虚化的 KFC 点餐屏和餐厅环境。
+顶部放置“KFC × 77”，主标题为“77 营业中！”，副标题为“美味上新 · 快乐加倍”。加入少量圆角推荐卡片、猫爪图标和对话框“欢迎光临肯德基！”
+```
+
 <details>
-<summary><strong>Prompt</strong></summary>
+<summary><strong>Show full prompt</strong></summary>
 
 ```text
 生成一张高质量的 9:16 竖版 KFC 联名宣传海报。
@@ -148,8 +156,16 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
 
 </details>
 
+**Prompt:**
+
+```text
+Create a high-end skincare e-commerce hero poster for "澄光维稳精华" ("Clarifying Stabilizing Essence"). The style should be clean, light-luxury, and strongly science-skincare oriented. In the center, place a semi-transparent frosted-glass essence bottle filled with golden liquid and subtle water-droplet reflections. Use an off-white to warm gray gradient background with liquid-flow elements and microscopic molecular-structure decoration.
+The poster must include the following exact Chinese copy:
+"澄光"
+```
+
 <details>
-<summary><strong>Prompt</strong></summary>
+<summary><strong>Show full prompt</strong></summary>
 
 ```text
 Create a high-end skincare e-commerce hero poster for "澄光维稳精华" ("Clarifying Stabilizing Essence"). The style should be clean, light-luxury, and strongly science-skincare oriented. In the center, place a semi-transparent frosted-glass essence bottle filled with golden liquid and subtle water-droplet reflections. Use an off-white to warm gray gradient background with liquid-flow elements and microscopic molecular-structure decoration.
@@ -216,8 +232,16 @@ Focus on product selling points, pricing hierarchy, gift-list modules, product n
 
 </details>
 
+**Prompt:**
+
+```text
+Generate a high-quality vertical encyclopedia-style infographic about the red panda.
+This should not be a normal animal poster or a simple illustration. It should feel like a modular wildlife field guide that combines the clarity of an encyclopedia page, the polish of a lifestyle knowledge card, and the shareability of a strong social-media explainer.
+The image should include:
+```
+
 <details>
-<summary><strong>Prompt</strong></summary>
+<summary><strong>Show full prompt</strong></summary>
 
 ```text
 Generate a high-quality vertical encyclopedia-style infographic about the red panda.
@@ -305,8 +329,16 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 </details>
 
+**Prompt:**
+
+```text
+生成一张竖版（4:5）中文健身信息图海报，主题「腹肌训练计划」。
+风格：教学手册式信息图，白底，深蓝 + 橙色双主色，圆角白卡片配细边框，无衬线黑体，
+信息密度高但排版整齐对齐。
+```
+
 <details>
-<summary><strong>Prompt</strong></summary>
+<summary><strong>Show full prompt</strong></summary>
 
 ```text
 生成一张竖版（4:5）中文健身信息图海报，主题「腹肌训练计划」。
@@ -395,8 +427,16 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 </details>
 
+**Prompt:**
+
+```text
+请设计一张 2:3 竖版中文 AI 团队招聘长图海报，尺寸 1080×1620 px。
+【设计主题】
+“写给未来同行者的一封情书”
+```
+
 <details>
-<summary><strong>Prompt</strong></summary>
+<summary><strong>Show full prompt</strong></summary>
 
 ```text
 请设计一张 2:3 竖版中文 AI 团队招聘长图海报，尺寸 1080×1620 px。
@@ -502,8 +542,16 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 </details>
 
+**Prompt:**
+
+```text
+设计一张专业的科技公司招聘信息长海报。
+【画布】
+尺寸为 1080×1920px，9:16 手机竖版，适合朋友圈、小红书和招聘社群发布。整体为高完成度的商业招聘海报，不是简单的信息表格。
+```
+
 <details>
-<summary><strong>Prompt</strong></summary>
+<summary><strong>Show full prompt</strong></summary>
 
 ```text
 设计一张专业的科技公司招聘信息长海报。
@@ -632,7 +680,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 ## Poster
 
-### E-Design
+### E-design
 
 <table role="presentation" width="100%">
   <tr>
@@ -640,7 +688,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/poster/e-design/final.png">
-          <img src="./gallery/poster/e-design/preview.webp" width="100%" alt="E-Design">
+          <img src="./gallery/poster/e-design/preview.webp" width="100%" alt="E-design">
         </a>
       </details>
     </td>
@@ -660,8 +708,16 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 </details>
 
+**Prompt:**
+
+```text
+生成一张竖版 2:3 的高端自然探索杂志封面，写实摄影风格。
+画面主体是一只色彩艳丽的猩红金刚鹦鹉，完整全身，停在一根覆盖青苔的粗树枝上。鹦鹉位于画面中央偏下，身体呈优雅的三分之四侧面，头转向右侧，长尾羽自然延伸至画面底部。羽毛由鲜红、橙黄、金黄、青绿和深蓝组成，层次丰富，羽毛纹理极其清晰，眼睛、鸟喙和爪子结构真实准确。
+背景是茂密幽深的热带雨林，深墨绿色植物与巨大棕榈叶环绕画面，右上方的金色阳光穿过树冠，形成明显的丁达尔光束、薄雾和自然散景，整体具有电影感、神秘感和高级自然杂志摄影质感。色调以深森林绿、金黄色和鹦鹉的高饱和红蓝色为主。
+```
+
 <details>
-<summary><strong>Prompt</strong></summary>
+<summary><strong>Show full prompt</strong></summary>
 
 ```text
 生成一张竖版 2:3 的高端自然探索杂志封面，写实摄影风格。
@@ -672,7 +728,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 画面必须具有清晰的空间分层：第一层是高清锐利的鹦鹉与青苔树枝，主体轮廓完整、羽毛边缘清楚，方便后期抠图；第二层是稍微虚化的中景雨林植物；第三层是柔焦的森林深处、雾气与阳光。鹦鹉与背景之间具有明显的景深分离和暖色轮廓光，不要让背景树叶与鹦鹉羽毛粘连。
 
-采用高级时尚杂志封面排版。顶部放置超大的金黄色高对比衬线体标题“Seedream”，横跨画面宽度；左上角放置小字“EXPLORE THE WILD, INSPIRE THE SOUL.”；右上角排版“VOL. 01”和“SUMMER 2026”。
+采用高级时尚杂志封面排版。顶部放置超大的金黄色高对比衬线体标题“E-design”，横跨画面宽度；左上角放置小字“EXPLORE THE WILD, INSPIRE THE SOUL.”；右上角排版“VOL. 01”和“SUMMER 2026”。
 
 左侧中部排版：
 “WILD”
@@ -873,8 +929,16 @@ Create a polished wide 16:9 contemporary editorial poster on a clean warm-white 
 
 </details>
 
+**Prompt:**
+
+```text
+Please generate a 2:3 aspect ratio Memphis Style poster. The poster is a vibrant, grid‑style design in electric blue, neon green, magenta, and orange. It mixes tech and pop‑culture icons: a Pac‑Man and ghost, an atom symbol, a human head with circuit traces, connected nodes and shapes, arrows, speech bubbles, stylized turbines or trees, “VR” beside goggles, and a DNA double helix along the right edge.
+Main text:
+- TC 2024
+```
+
 <details>
-<summary><strong>Prompt</strong></summary>
+<summary><strong>Show full prompt</strong></summary>
 
 ```text
 Please generate a 2:3 aspect ratio Memphis Style poster. The poster is a vibrant, grid‑style design in electric blue, neon green, magenta, and orange. It mixes tech and pop‑culture icons: a Pac‑Man and ghost, an atom symbol, a human head with circuit traces, connected nodes and shapes, arrows, speech bubbles, stylized turbines or trees, “VR” beside goggles, and a DNA double helix along the right edge.
