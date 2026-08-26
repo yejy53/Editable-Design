@@ -57,7 +57,7 @@ Seventeen prompts across five visual-design categories, with final renderings, e
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="33.8%" align="center" valign="top">
+    <td width="33.96%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/campaigns/nordic-chair/final.png">
@@ -65,7 +65,7 @@ Seventeen prompts across five visual-design categories, with final renderings, e
         </a>
       </details>
     </td>
-    <td width="66.2%" align="center" valign="top">
+    <td width="66.04%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/f8a0a631-a5d1-4ee0-a058-bb8dead1f188" width="100%" controls></video>
     </td>
   </tr>
@@ -86,7 +86,7 @@ Seventeen prompts across five visual-design categories, with final renderings, e
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="38.7%" align="center" valign="top">
+    <td width="38.39%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/campaigns/shanyou-guanyin-tea/final.png">
@@ -94,7 +94,7 @@ Seventeen prompts across five visual-design categories, with final renderings, e
         </a>
       </details>
     </td>
-    <td width="61.3%" align="center" valign="top">
+    <td width="61.61%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/bca30fb1-16c2-4e3a-b71d-3c7ee0c1df38" width="100%" controls></video>
     </td>
   </tr>
@@ -117,7 +117,7 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="33.8%" align="center" valign="top">
+    <td width="33.98%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/campaigns/kfc-77/final.png">
@@ -125,7 +125,7 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
         </a>
       </details>
     </td>
-    <td width="66.2%" align="center" valign="top">
+    <td width="66.02%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/ce2a83ef-a274-4325-a3b8-097d75c1daef" width="100%" controls></video>
     </td>
   </tr>
@@ -165,7 +165,7 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="39.3%" align="center" valign="top">
+    <td width="38.94%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/campaigns/chengguang-serum/final.png">
@@ -173,7 +173,7 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
         </a>
       </details>
     </td>
-    <td width="60.7%" align="center" valign="top">
+    <td width="61.06%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/aeac388b-ee86-45b5-8cb7-0cc78c3c3842" width="100%" controls></video>
     </td>
   </tr>
@@ -238,7 +238,7 @@ Focus on product selling points, pricing hierarchy, gift-list modules, product n
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="37.5%" align="center" valign="top">
+    <td width="37.36%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/information-design/red-panda-field-guide/final.png">
@@ -246,7 +246,7 @@ Focus on product selling points, pricing hierarchy, gift-list modules, product n
         </a>
       </details>
     </td>
-    <td width="62.5%" align="center" valign="top">
+    <td width="62.64%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/baf59bed-a801-470b-85c6-5082af48cea2" width="100%" controls></video>
     </td>
   </tr>
@@ -298,7 +298,7 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="37.5%" align="center" valign="top">
+    <td width="37.36%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/information-design/nyc-3-day-guide/final.png">
@@ -306,7 +306,7 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
         </a>
       </details>
     </td>
-    <td width="62.5%" align="center" valign="top">
+    <td width="62.64%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/0bc87feb-f939-4cea-b63d-d5d4e1143474" width="100%" controls></video>
     </td>
   </tr>
@@ -329,7 +329,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="39.7%" align="center" valign="top">
+    <td width="39.36%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/information-design/abs-training-plan/final.png">
@@ -337,7 +337,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
         </a>
       </details>
     </td>
-    <td width="60.3%" align="center" valign="top">
+    <td width="60.64%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/b382f8c6-fe11-4fb4-b6af-17a14e2cc973" width="100%" controls></video>
     </td>
   </tr>
@@ -390,7 +390,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="33.6%" align="center" valign="top">
+    <td width="33.74%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/text-led-design/tengwang-ge-xu/final.png">
@@ -398,7 +398,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
         </a>
       </details>
     </td>
-    <td width="66.4%" align="center" valign="top">
+    <td width="66.26%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/cadf7ba0-70ee-48e8-b7ae-2744718595f7" width="100%" controls></video>
     </td>
   </tr>
@@ -421,7 +421,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="36.6%" align="center" valign="top">
+    <td width="36.52%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/text-led-design/ai-team-love-letter/final.png">
@@ -429,7 +429,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
         </a>
       </details>
     </td>
-    <td width="63.4%" align="center" valign="top">
+    <td width="63.48%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/96652414-3197-4aba-aae8-21962ace69ce" width="100%" controls></video>
     </td>
   </tr>
@@ -533,7 +533,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="33.6%" align="center" valign="top">
+    <td width="33.76%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/text-led-design/nebula-ai-recruitment/final.png">
@@ -541,7 +541,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
         </a>
       </details>
     </td>
-    <td width="66.4%" align="center" valign="top">
+    <td width="66.24%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/5544a806-794e-4061-8a1d-5e1a69ad4b0c" width="100%" controls></video>
     </td>
   </tr>
@@ -658,7 +658,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="36.3%" align="center" valign="top">
+    <td width="36.24%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/text-led-design/summer-music/final.png">
@@ -666,7 +666,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
         </a>
       </details>
     </td>
-    <td width="63.7%" align="center" valign="top">
+    <td width="63.76%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/21e4f9a3-bf59-4a20-a068-cff533daeb8b" width="100%" controls></video>
     </td>
   </tr>
@@ -693,7 +693,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="35.9%" align="center" valign="top">
+    <td width="35.90%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/poster/e-design/final.png">
@@ -701,7 +701,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
         </a>
       </details>
     </td>
-    <td width="64.1%" align="center" valign="top">
+    <td width="64.10%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/246ea59e-93a8-4c3d-a5ba-bf57f8388cdb" width="100%" controls></video>
     </td>
   </tr>
@@ -771,7 +771,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="38.7%" align="center" valign="top">
+    <td width="38.44%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/poster/chongqing-rain-night/final.png">
@@ -779,7 +779,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
         </a>
       </details>
     </td>
-    <td width="61.3%" align="center" valign="top">
+    <td width="61.56%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/5f37a612-882d-4800-9fb9-1b6d394e06a1" width="100%" controls></video>
     </td>
   </tr>
@@ -802,7 +802,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="38.7%" align="center" valign="top">
+    <td width="38.44%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/poster/beijing-winter-atlas/final.png">
@@ -810,7 +810,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
         </a>
       </details>
     </td>
-    <td width="61.3%" align="center" valign="top">
+    <td width="61.56%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/76a5e235-8683-4065-a016-ba936a25bfee" width="100%" controls></video>
     </td>
   </tr>
@@ -837,7 +837,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="39.8%" align="center" valign="top">
+    <td width="39.40%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/art-design/sky-archive/final.png">
@@ -845,7 +845,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
         </a>
       </details>
     </td>
-    <td width="60.2%" align="center" valign="top">
+    <td width="60.60%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/c7592c82-cf46-4305-a0e8-ae98968a3fc5" width="100%" controls></video>
     </td>
   </tr>
@@ -868,7 +868,7 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="47.3%" align="center" valign="top">
+    <td width="48.29%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/art-design/creative-journey/final.png">
@@ -876,7 +876,7 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
         </a>
       </details>
     </td>
-    <td width="52.7%" align="center" valign="top">
+    <td width="51.71%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/8f62f0ce-97a0-4ca7-a57a-1a264b8e6872" width="100%" controls></video>
     </td>
   </tr>
@@ -899,7 +899,7 @@ Create a polished wide 16:9 contemporary editorial poster on a clean warm-white 
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="36.9%" align="center" valign="top">
+    <td width="36.75%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/art-design/tc-2024/final.png">
@@ -907,7 +907,7 @@ Create a polished wide 16:9 contemporary editorial poster on a clean warm-white 
         </a>
       </details>
     </td>
-    <td width="63.1%" align="center" valign="top">
+    <td width="63.25%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/a82f870b-7b63-4d52-b899-07cccec540e0" width="100%" controls></video>
     </td>
   </tr>
