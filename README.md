@@ -868,7 +868,7 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
 
 <table role="presentation" width="100%">
   <tr>
-    <td width="48.29%" align="center" valign="top">
+    <td width="48.78%" align="center" valign="top">
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/art-design/creative-journey/final.png">
@@ -876,7 +876,7 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
         </a>
       </details>
     </td>
-    <td width="51.71%" align="center" valign="top">
+    <td width="51.22%" align="center" valign="top">
       <video src="https://github.com/user-attachments/assets/8f62f0ce-97a0-4ca7-a57a-1a264b8e6872" width="100%" controls></video>
     </td>
   </tr>
