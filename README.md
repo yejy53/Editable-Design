@@ -6,7 +6,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 
 ## Overview
 
-<video src="https://github.com/user-attachments/assets/e67109f9-0042-409a-b3e3-41b1de888d8a" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/450b4471-784f-49be-89b2-fbf79361fc2c" width="100%" controls></video>
 
 ## Table of Contents
 
