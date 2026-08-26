@@ -13,7 +13,6 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 - [Overview](#overview)
 - [Why Editable Visual Design](#why-editable-visual-design)
 - [Three Core Ideas](#three-core-ideas)
-- [How It Works](#how-it-works)
 - [Gallery](#gallery)
   - [🎯 Campaigns](#campaigns)
   - [📚 Information Design](#information-design)
@@ -47,17 +46,6 @@ An image model provides art direction—composition, hierarchy, color, and spati
 ### 3. Editable and Quality-Gated Artifacts
 
 The result contains real text, semantic layers, and independent assets that can be selected, moved, edited, and exported. Deterministic checks cover the canvas, fonts, layer contracts, rendering, and editor round trips.
-
-## How It Works
-
-```text
-Prompt → Understand & Plan → Visual Prior → Clean Assets + Semantic HTML
-       → Render & Observe ↺ Repair → Editable Artifact + Agent Design Replay
-```
-
-The PNG is only a rendering. The deliverable is the structured project behind it: the final HTML, editable interface, independent assets, real text, rendered output, and evidence-backed Agent Design Replay.
-
----
 
 ## Gallery
 
@@ -107,10 +95,7 @@ Seventeen prompts across five visual-design categories, with final renderings, e
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/bca30fb1-16c2-4e3a-b71d-3c7ee0c1df38" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -141,10 +126,7 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/ce2a83ef-a274-4325-a3b8-097d75c1daef" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -192,10 +174,7 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/aeac388b-ee86-45b5-8cb7-0cc78c3c3842" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -268,10 +247,7 @@ Focus on product selling points, pricing hierarchy, gift-list modules, product n
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/baf59bed-a801-470b-85c6-5082af48cea2" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -331,10 +307,7 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/0bc87feb-f939-4cea-b63d-d5d4e1143474" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -365,10 +338,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/b382f8c6-fe11-4fb4-b6af-17a14e2cc973" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -429,10 +399,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/cadf7ba0-70ee-48e8-b7ae-2744718595f7" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -463,10 +430,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/96652414-3197-4aba-aae8-21962ace69ce" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -578,10 +542,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/5544a806-794e-4061-8a1d-5e1a69ad4b0c" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -706,10 +667,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/21e4f9a3-bf59-4a20-a068-cff533daeb8b" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -744,10 +702,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/246ea59e-93a8-4c3d-a5ba-bf57f8388cdb" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -825,10 +780,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/5f37a612-882d-4800-9fb9-1b6d394e06a1" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -859,10 +811,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/76a5e235-8683-4065-a016-ba936a25bfee" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -897,10 +846,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/c7592c82-cf46-4305-a0e8-ae98968a3fc5" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -931,10 +877,7 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/8f62f0ce-97a0-4ca7-a57a-1a264b8e6872" width="100%" controls></video>
     </td>
   </tr>
 </table>
@@ -965,10 +908,7 @@ Create a polished wide 16:9 contemporary editorial poster on a clean warm-white 
       </details>
     </td>
     <td width="64.5%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🎬 editable-display.mp4</strong></summary>
-        <img src="./gallery/placeholders/editable-display.svg" width="100%" alt="Editable Display video coming soon">
-      </details>
+      <video src="https://github.com/user-attachments/assets/a82f870b-7b63-4d52-b899-07cccec540e0" width="100%" controls></video>
     </td>
   </tr>
 </table>
