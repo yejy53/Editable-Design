@@ -636,7 +636,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 ## Poster
 
-### E-design
+### E-Design
 
 <table role="presentation" width="100%">
   <tr>
@@ -644,7 +644,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
       <details open>
         <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
         <a href="./gallery/poster/e-design/final.png">
-          <img src="./gallery/poster/e-design/preview.webp" width="100%" alt="E-design">
+          <img src="./gallery/poster/e-design/preview.webp" width="100%" alt="E-Design">
         </a>
       </details>
     </td>
