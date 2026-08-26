@@ -880,7 +880,7 @@ Editable Visual Design is implemented as the `poster-building` skill. The instal
 
 We are grateful to the open-source projects that have helped shape the public conversation around AI-native visual creation, including:
 
-- [awesome-gpt-image](https://github.com/ZeroLu/awesome-gpt-image), whose clear prompt-and-result gallery helped inspire the presentation of this Gallery.
-- [OpenDesign](https://github.com/EthanGuo2022/OpenDesign), for advancing open, agent-driven, editable visual artifacts and visible design trajectories.
+- [awesome-gpt-image](https://github.com/ZeroLu/awesome-gpt-image), whose clear prompt-and-result gallery helped inspire the presentation of this Gallery
+- [OpenDesign](https://github.com/EthanGuo2022/OpenDesign), for advancing open, agent-driven, editable visual artifacts and visible design trajectories
 
 And thanks to the broader open-source design and Coding Agent communities for making this work possible.
