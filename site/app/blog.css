@@ -1,0 +1,1450 @@
+/*
+ * Long-read research post layout, scoped to `.blog-runtime` so it never leaks
+ * into the dark archive. Rhythm comes from three column widths (body / media /
+ * footnotes) and quiet type weights rather than from size contrast.
+ *
+ * Two variants are available on the runtime root:
+ *   data-variant="x3"      sans-serif throughout, 17px body at weight 330
+ *   data-variant="classic" serif body at 18px, larger title
+ */
+
+.blog-runtime {
+  --blog-bg: #ffffff;
+  --blog-bg-secondary: #f5f5f5;
+  --blog-ink: #000000e6;
+  --blog-ink-secondary: #00000099;
+  --blog-ink-tertiary: #00000073;
+  --blog-fill-1: #00000008;
+  --blog-fill-2: #0000000d;
+  --blog-fill-2-hover: #00000014;
+  --blog-separator: #00000021;
+  --blog-link: #1a88ff;
+
+  --blog-sans: var(--font-misans), -apple-system, BlinkMacSystemFont, "Segoe UI",
+    system-ui, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    sans-serif;
+  --blog-serif: var(--font-lora), "Iowan Old Style", Georgia, "Songti SC",
+    serif;
+  --blog-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    monospace;
+
+  --blog-title-font: var(--blog-sans);
+  --blog-body-font: var(--blog-sans);
+
+  --blog-title-size: 32px;
+  --blog-title-line: 38px;
+  --blog-title-weight: 450;
+  --blog-h1-size: 32px;
+  --blog-h1-line: 38px;
+  --blog-h2-size: 28px;
+  --blog-h2-line: 36px;
+  --blog-h3-size: 22px;
+  --blog-h3-line: 28px;
+  --blog-heading-weight: 450;
+  --blog-body-size: 17px;
+  --blog-body-line: 28px;
+  --blog-body-weight: 330;
+  --blog-strong-weight: 450;
+  --blog-caption-size: 14px;
+  --blog-caption-line: 23px;
+  --blog-caption-weight: 330;
+
+  --blog-section-gap: 80px;
+  --blog-paragraph-gap: 16px;
+  --blog-media-gap: 40px;
+  --blog-figure-pair-gap: 20px;
+  --blog-subheading-gap: 48px;
+  --blog-hero-gap: 24px;
+  --blog-hero-padding-top: 60px;
+  --blog-body-width: 760px;
+  --blog-media-width: 1040px;
+  --blog-footnote-width: 1280px;
+  --blog-layout-width: 1280px;
+  --blog-radius: 16px;
+  --blog-topbar-height: 60px;
+
+  background: var(--blog-bg);
+  color: var(--blog-ink);
+  font-family: var(--blog-body-font);
+  font-weight: var(--blog-body-weight);
+  min-height: 100vh;
+}
+
+.blog-runtime[data-variant="classic"] {
+  --blog-body-font: var(--blog-serif);
+  --blog-title-size: 40px;
+  --blog-title-line: 48px;
+  --blog-title-weight: 600;
+  --blog-h1-size: 40px;
+  --blog-h1-line: 56px;
+  --blog-h3-size: 24px;
+  --blog-h3-line: 34px;
+  --blog-heading-weight: 600;
+  --blog-body-size: 18px;
+  --blog-body-line: 30px;
+  --blog-body-weight: 400;
+  --blog-strong-weight: 600;
+  --blog-caption-weight: 400;
+  --blog-paragraph-gap: 24px;
+  --blog-subheading-gap: 80px;
+  --blog-radius: 12px;
+}
+
+/* The archive paints html/body near-black; a post has to reclaim both so
+   overscroll and the 404 gutter do not flash dark. */
+html:has(.blog-runtime),
+body:has(.blog-runtime) {
+  background: #ffffff;
+}
+
+/* ---------------- Page chrome ---------------- */
+
+.blog-page {
+  display: block;
+  position: relative;
+}
+
+.blog-layout {
+  margin: 0 auto;
+  max-width: var(--blog-layout-width);
+  padding: 0 clamp(20px, 4vw, 48px);
+}
+
+.blog-topbar {
+  backdrop-filter: blur(20px);
+  background: #ffffffe6;
+  border-bottom: 1px solid var(--blog-separator);
+  height: var(--blog-topbar-height);
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+.blog-topbar-inner {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--blog-layout-width);
+  padding: 0 clamp(20px, 4vw, 48px);
+}
+
+.blog-wordmark {
+  align-items: center;
+  color: var(--blog-ink);
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 9px;
+  letter-spacing: -0.01em;
+}
+
+.blog-wordmark-mark {
+  align-items: center;
+  background: var(--blog-ink);
+  border-radius: 50%;
+  color: var(--blog-bg);
+  display: flex;
+  font-size: 9px;
+  font-weight: 600;
+  height: 26px;
+  justify-content: center;
+  letter-spacing: -0.03em;
+  width: 26px;
+}
+
+.blog-topbar-links {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.blog-topbar-links a,
+.blog-topbar-links button {
+  background: none;
+  border: 0;
+  color: var(--blog-ink-secondary);
+  cursor: pointer;
+  font-family: var(--blog-sans);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  transition: color 200ms ease;
+}
+
+.blog-topbar-links a:hover,
+.blog-topbar-links button:hover {
+  color: var(--blog-ink);
+}
+
+.blog-topbar-links .is-active {
+  color: var(--blog-ink);
+}
+
+/* The archive's language toggle is reused as-is; only its dark palette needs
+   remapping onto the light page. */
+.blog-topbar .language-switch {
+  border-color: var(--blog-separator);
+}
+
+.blog-topbar .language-switch button:not(.is-active),
+.blog-topbar .language-switch span {
+  color: var(--blog-ink-tertiary);
+}
+
+.blog-topbar .language-switch .is-active {
+  color: var(--blog-ink);
+}
+
+/* Hovering the outline dims the page behind it. */
+.blog-page::after {
+  backdrop-filter: blur(20px);
+  background: #ffffffe6;
+  content: "";
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity 200ms ease;
+  z-index: 1;
+}
+
+.blog-runtime:has(.blog-outline:hover) .blog-page::after,
+.blog-runtime:has(.blog-outline:focus-within) .blog-page::after {
+  opacity: 1;
+}
+
+/* ---------------- Hero ---------------- */
+
+.blog-hero {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: var(--blog-hero-padding-top) 0 0;
+  width: 100%;
+}
+
+.blog-hero-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--blog-hero-gap);
+  max-width: var(--blog-media-width);
+  text-align: center;
+  width: 100%;
+}
+
+.blog-breadcrumb ol {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.blog-breadcrumb li {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+  list-style: none;
+}
+
+.blog-breadcrumb li:last-child {
+  min-width: 0;
+  overflow: hidden;
+  flex-shrink: 1;
+}
+
+.blog-breadcrumb a,
+.blog-breadcrumb span {
+  color: var(--blog-ink-tertiary);
+  font-size: var(--blog-caption-size);
+  font-weight: var(--blog-caption-weight);
+  line-height: var(--blog-caption-line);
+  transition: color 200ms ease;
+}
+
+.blog-breadcrumb [aria-current="page"] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blog-breadcrumb a:hover {
+  color: var(--blog-ink);
+}
+
+/* Title and its second line move as one unit, so the hero's flex gap applies
+   to the pair rather than pushing them apart. */
+.blog-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.blog-title {
+  color: var(--blog-ink);
+  font-family: var(--blog-title-font);
+  font-size: var(--blog-title-size);
+  font-weight: var(--blog-title-weight);
+  letter-spacing: 0;
+  line-height: var(--blog-title-line);
+  margin: 0;
+  text-align: center;
+}
+
+/* A two-part title reads better stacked than wrapped: the question sits on its
+   own line, lighter and smaller, so the main title keeps a single strong line. */
+.blog-title-sub {
+  color: var(--blog-ink-secondary);
+  font-family: var(--blog-title-font);
+  font-size: 21px;
+  font-weight: 330;
+  line-height: 29px;
+  margin: 0;
+  text-align: center;
+}
+
+.blog-subtitle {
+  color: var(--blog-ink-secondary);
+  font-size: var(--blog-body-size);
+  font-weight: var(--blog-body-weight);
+  line-height: var(--blog-body-line);
+  margin: 0;
+  max-width: var(--blog-body-width);
+  text-align: center;
+}
+
+.blog-paper-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0;
+}
+
+.blog-paper-link {
+  color: var(--blog-ink);
+  font-size: 14px;
+  font-weight: 450;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  text-decoration: underline;
+  text-decoration-color: #00000033;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 150ms ease;
+}
+
+.blog-paper-link:hover {
+  text-decoration-color: var(--blog-ink);
+}
+
+.blog-paper-sep {
+  color: var(--blog-ink-tertiary);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Tinted chip so Gallery sits with GitHub/arXiv but reads as a real CTA. */
+.blog-paper-chip {
+  background: #1f6b4a;
+  border-radius: 999px;
+  color: #f7fbf8;
+  font-size: 13px;
+  font-weight: 450;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  padding: 5px 12px;
+  transition: background-color 150ms ease;
+}
+
+.blog-paper-chip:hover {
+  background: #18553a;
+  color: #ffffff;
+}
+
+.blog-deck {
+  color: var(--blog-ink-tertiary);
+  font-size: 15px;
+  font-weight: 330;
+  line-height: 24px;
+  margin: 0;
+  max-width: var(--blog-body-width);
+  text-align: center;
+}
+
+.blog-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--blog-hero-gap);
+  justify-content: center;
+  margin-block: calc(32px - var(--blog-hero-gap));
+}
+
+.blog-cta {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--blog-sans);
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 62px;
+  padding: 0 16px;
+  transition: background-color 200ms ease, color 200ms ease,
+    border-color 200ms ease;
+}
+
+.blog-cta-primary {
+  background: var(--blog-ink);
+  color: var(--blog-bg);
+}
+
+.blog-cta-primary:hover {
+  background: #000000;
+}
+
+.blog-cta-secondary {
+  background: var(--blog-fill-2);
+  border-color: var(--blog-separator);
+  color: var(--blog-ink);
+}
+
+.blog-cta-secondary:hover {
+  background: var(--blog-fill-2-hover);
+}
+
+/* The arrow is collapsed to zero width and unfurls on hover. */
+.blog-cta-arrow {
+  align-items: center;
+  display: inline-flex;
+  flex-shrink: 0;
+  height: 24px;
+  justify-content: center;
+  margin-left: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 200ms ease, width 200ms ease, margin-left 200ms ease;
+  width: 0;
+}
+
+.blog-cta:hover .blog-cta-arrow,
+.blog-cta:focus-visible .blog-cta-arrow {
+  margin-left: 6px;
+  opacity: 1;
+  width: 20px;
+}
+
+.blog-cta-arrow svg {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+.blog-hero-media {
+  border: 0.5px solid var(--blog-separator);
+  border-radius: var(--blog-radius);
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blog-hero-media img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.blog-fallback-note {
+  color: var(--blog-ink-tertiary);
+  font-size: var(--blog-caption-size);
+  line-height: var(--blog-caption-line);
+  margin: 0;
+}
+
+/* ---------------- Article body ---------------- */
+
+.blog-main {
+  isolation: isolate;
+  min-width: 0;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  position: relative;
+}
+
+.markdown {
+  font-family: var(--blog-body-font);
+  letter-spacing: 0;
+}
+
+/* Rhythm: every block starts at zero, siblings get the section gap, then
+   consecutive prose tightens back to the paragraph gap. */
+.blog-runtime .markdown > * {
+  margin-block: 0;
+}
+
+.blog-runtime .markdown > * + * {
+  margin-top: var(--blog-section-gap);
+}
+
+.blog-runtime
+  .markdown
+  > :is(p, ul, ol, blockquote, pre):not(:has(> img))
+  + :is(p, ul, ol, blockquote, pre):not(:has(> img)) {
+  margin-top: var(--blog-paragraph-gap);
+}
+
+.blog-runtime
+  .markdown
+  > :is(h1, h2, h3, h4, h5, h6)
+  + :is(p, ul, ol, blockquote, pre, figure, .blog-table, .blog-case) {
+  margin-top: var(--blog-paragraph-gap);
+}
+
+.blog-runtime .markdown > * + :is(h3, h4, h5, h6) {
+  margin-top: var(--blog-subheading-gap);
+}
+
+/* A chart belongs to the sentence that introduces it, so it sits closer to the
+   prose than the section rhythm would put it. Gaps before a heading stay wide. */
+.blog-runtime
+  .markdown
+  > :is(p, ul, ol, blockquote, pre)
+  + :is(figure, .blog-table, .blog-case),
+.blog-runtime
+  .markdown
+  > :is(figure, .blog-table, .blog-case)
+  + :is(p, ul, ol, blockquote, pre) {
+  margin-top: var(--blog-media-gap);
+}
+
+/* Consecutive charts are one exhibit, not two sections. */
+.blog-runtime .markdown > figure.blog-media + figure.blog-media {
+  margin-top: var(--blog-figure-pair-gap);
+}
+
+/* Column widths: prose narrow, media wide, footnotes widest. */
+.blog-runtime .markdown > :is(p, h1, h2, h3, h4, h5, h6, ul, ol, blockquote, pre) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--blog-body-width);
+}
+
+.blog-runtime .markdown > :is(figure, .blog-table, .blog-case, p:has(> img)) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--blog-media-width);
+}
+
+/* A heading introducing media aligns to the wide column with it. */
+.blog-runtime .markdown > :is(h2, h3):has(+ figure),
+.blog-runtime .markdown > :is(h2, h3):has(+ .blog-table) {
+  max-width: var(--blog-media-width);
+  text-align: left;
+}
+
+.blog-runtime .markdown > p,
+.blog-runtime .markdown li {
+  font-size: var(--blog-body-size);
+  font-weight: var(--blog-body-weight);
+  line-height: var(--blog-body-line);
+}
+
+.blog-runtime .markdown > h1 {
+  font-family: var(--blog-title-font);
+  font-size: var(--blog-h1-size);
+  font-weight: var(--blog-heading-weight);
+  line-height: var(--blog-h1-line);
+}
+
+.blog-runtime .markdown > h2 {
+  font-family: var(--blog-title-font);
+  font-size: var(--blog-h2-size);
+  font-weight: var(--blog-heading-weight);
+  line-height: var(--blog-h2-line);
+}
+
+.blog-runtime .markdown > :is(h3, h4, h5, h6) {
+  font-family: var(--blog-title-font);
+  font-size: var(--blog-h3-size);
+  font-weight: var(--blog-heading-weight);
+  line-height: var(--blog-h3-line);
+}
+
+.blog-runtime .markdown :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--blog-ink);
+  letter-spacing: 0;
+  scroll-margin-top: calc(var(--blog-topbar-height) + 32px);
+}
+
+.blog-runtime .markdown strong {
+  color: inherit;
+  font-weight: var(--blog-strong-weight);
+}
+
+.blog-runtime .markdown em {
+  font-style: italic;
+}
+
+.blog-runtime .markdown a {
+  color: var(--blog-link);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.blog-runtime .markdown a:hover {
+  text-decoration: underline;
+}
+
+.blog-runtime .markdown > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-runtime .markdown > ul > li {
+  margin: 0 0 10px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.blog-runtime .markdown > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.blog-runtime .markdown > ul > li::before {
+  background: currentColor;
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  left: 6px;
+  position: absolute;
+  top: 11px;
+  width: 6px;
+}
+
+/* Tailwind's preflight strips list markers, so ordered lists ask for them back. */
+.blog-runtime .markdown ol {
+  list-style: decimal;
+}
+
+.blog-runtime .markdown > ol {
+  padding-left: 22px;
+}
+
+.blog-runtime .markdown > ol > li {
+  margin: 0 0 10px;
+  padding-left: 6px;
+}
+
+.blog-runtime .markdown > ol > li:last-child {
+  margin-bottom: 0;
+}
+
+/* A pull quote, not an aside: these passages carry the argument's turning
+   points, so they sit two points above the body rather than below it. */
+.blog-runtime .markdown blockquote {
+  border-left: 2px solid var(--blog-separator);
+  color: var(--blog-ink-secondary);
+  padding: 2px 0 2px 22px;
+}
+
+.blog-runtime .markdown blockquote > p {
+  font-size: 19px;
+  line-height: 32px;
+}
+
+.blog-runtime .markdown blockquote > :first-child {
+  margin-top: 0;
+}
+
+.blog-runtime .markdown blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/* Attribution line inside a long quotation — quieter than body, like a cite. */
+.blog-runtime .markdown blockquote > p:last-child:has(a[href*="arxiv.org"]) {
+  color: var(--blog-ink-tertiary);
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 14px;
+}
+
+.blog-runtime .markdown figure {
+  width: 100%;
+}
+
+/* Inline figures are evidence inside the argument, not full-bleed media, so
+   they sit a step inside the prose column instead of taking the wide one. */
+.blog-runtime .markdown > figure.blog-media {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: min(100%, 660px);
+}
+
+.blog-runtime .markdown figure img,
+.blog-runtime .markdown p > img {
+  border: 0.5px solid var(--blog-separator);
+  border-radius: var(--blog-radius);
+  display: block;
+  height: auto;
+  margin-inline: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+.blog-runtime .markdown figcaption {
+  color: var(--blog-ink-secondary);
+  font-size: var(--blog-caption-size);
+  font-weight: var(--blog-caption-weight);
+  line-height: var(--blog-caption-line);
+  margin-top: 12px;
+  text-align: left;
+}
+
+.blog-runtime .markdown code {
+  background: var(--blog-fill-2);
+  border-radius: 6px;
+  font-family: var(--blog-mono);
+  font-size: 0.9em;
+  padding: 2px 6px;
+  word-break: break-word;
+}
+
+.blog-runtime .markdown pre {
+  background: var(--blog-fill-1);
+  border: 0.5px solid var(--blog-separator);
+  border-radius: 12px;
+  overflow-x: auto;
+  padding: 16px 20px;
+}
+
+.blog-runtime .markdown pre code {
+  background: none;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+  white-space: pre;
+}
+
+/* ---------------- Case slots ---------------- */
+
+.blog-case {
+  margin: 0;
+  width: 100%;
+}
+
+.blog-case-label {
+  color: var(--blog-ink-tertiary);
+  font-size: var(--blog-caption-size);
+  font-weight: var(--blog-caption-weight);
+  letter-spacing: 0.04em;
+  line-height: var(--blog-caption-line);
+  margin: 0 0 12px;
+}
+
+.blog-case-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.blog-case[data-columns="2"] .blog-case-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.blog-case[data-columns="3"] .blog-case-grid {
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.blog-case-cell {
+  min-width: 0;
+}
+
+.blog-case-title {
+  color: var(--blog-ink-secondary);
+  font-size: var(--blog-caption-size);
+  font-weight: 450;
+  line-height: var(--blog-caption-line);
+  margin: 0 0 8px;
+}
+
+/* Scoped tightly enough to outrank the generic `figure img` rule above, which
+   would otherwise shrink stage media back to its intrinsic width. */
+.blog-runtime .markdown .blog-case-media {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+/* Stage frame: dark letterbox so ultra-wide web captures keep both sides. */
+.blog-case-stage-frame {
+  background: #0a0b0d;
+  border: 0.5px solid var(--blog-separator);
+  border-radius: var(--blog-radius);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.blog-runtime .markdown .blog-case-stage-frame > video.blog-case-media {
+  background: #0a0b0d;
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.blog-runtime .markdown .blog-case-stage-frame > img.blog-case-media {
+  background: #f7f7f5;
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.blog-case-loading {
+  align-items: center;
+  color: #ffffffb8;
+  display: none;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 330;
+  gap: 12px;
+  inset: 0;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.blog-case-stage-frame[data-loading="true"] .blog-case-loading {
+  display: flex;
+}
+
+.blog-case-loading-spin {
+  animation: blog-case-spin 0.8s linear infinite;
+  border: 2px solid #ffffff2e;
+  border-radius: 50%;
+  border-top-color: #ffffffd6;
+  height: 28px;
+  width: 28px;
+}
+
+.blog-case-loading-text {
+  color: #ffffffa6;
+}
+
+@keyframes blog-case-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* An empty slot has to read as reserved space, not as a broken image. */
+.blog-case-slot {
+  align-items: center;
+  background-color: var(--blog-fill-1);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #00000008 0 1px,
+    transparent 1px 9px
+  );
+  border: 1px dashed var(--blog-separator);
+  border-radius: var(--blog-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.blog-case-slot-mark {
+  background: var(--blog-bg);
+  border: 1px solid var(--blog-separator);
+  border-radius: 999px;
+  color: var(--blog-ink-secondary);
+  font-size: 12px;
+  font-weight: 450;
+  letter-spacing: 0.08em;
+  padding: 6px 12px;
+}
+
+/* Gallery mode: a scrollable thumbnail rail above one large stage, modelled
+   on the Kimi BlogGameIframe pattern — thumb strip, overlay arrows, stage. */
+
+.blog-case[data-mode="gallery"] {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.blog-case-rail-wrap {
+  position: relative;
+}
+
+.blog-case-rail {
+  display: flex;
+  gap: 10px;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    #0000 0,
+    #000 48px calc(100% - 48px),
+    #0000 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    #0000 0,
+    #000 48px calc(100% - 48px),
+    #0000 100%
+  );
+  overflow-x: auto;
+  overscroll-behavior-inline: none;
+  padding: 3px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+
+.blog-case-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-case-thumb {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  flex: 0 0 148px;
+  padding: 0;
+  scroll-snap-align: start;
+  text-align: left;
+  transition: opacity 150ms ease, transform 150ms ease;
+  width: 148px;
+}
+
+.blog-case-thumb:hover {
+  opacity: 0.88;
+}
+
+.blog-case-thumb:active {
+  transform: scale(0.98);
+}
+
+.blog-case-thumb-frame {
+  align-items: center;
+  background: #0a0b0d;
+  border: 0;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  outline: 2px solid transparent;
+  outline-offset: 1px;
+  overflow: hidden;
+  transition: outline-color 150ms ease;
+  width: 100%;
+}
+
+.blog-case-thumb-frame[data-empty="true"] {
+  background-color: var(--blog-fill-1);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #00000008 0 1px,
+    transparent 1px 9px
+  );
+  border: 1px dashed var(--blog-separator);
+}
+
+.blog-case-thumb-frame > :is(img, video) {
+  border: 0;
+  border-radius: 0;
+  display: block;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  width: 100%;
+}
+
+.blog-case-thumb[aria-selected="true"] .blog-case-thumb-frame {
+  border-style: solid;
+  outline-color: var(--blog-link);
+}
+
+.blog-case-thumb-empty {
+  color: var(--blog-ink-tertiary);
+  font-family: var(--blog-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.blog-case-thumb-label {
+  color: var(--blog-ink-tertiary);
+  display: block;
+  font-size: 13px;
+  font-weight: 330;
+  line-height: 20px;
+  margin-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blog-case-thumb[aria-selected="true"] .blog-case-thumb-label {
+  color: var(--blog-ink);
+  font-weight: 450;
+}
+
+.blog-case-rail-nav {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background: #ffffffb3;
+  border: 0;
+  border-radius: 100px;
+  color: var(--blog-ink);
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  padding: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 150ms ease, transform 150ms ease;
+  width: 40px;
+  z-index: 2;
+}
+
+.blog-case-rail-nav:hover {
+  background: #f4f4f4b5;
+}
+
+.blog-case-rail-nav:active {
+  background: #edededb6;
+  transform: translateY(-50%) scale(0.97);
+}
+
+.blog-case-rail-nav[data-dir="prev"] {
+  left: 12px;
+}
+
+.blog-case-rail-nav[data-dir="next"] {
+  right: 12px;
+}
+
+.blog-case-rail-nav:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* When the rail has only a few thumbs, the edge fade is unnecessary. */
+.blog-case-rail:not(:has(.blog-case-thumb:nth-child(5))) {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.blog-case-stage {
+  margin: 0;
+}
+
+.blog-case-panel[hidden] {
+  display: none;
+}
+
+.blog-case-panel-media {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.blog-case-panel-media[data-columns="2"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.blog-case[data-mode="gallery"] .blog-case-label {
+  margin-bottom: 0;
+}
+
+.blog-case[data-mode="gallery"] .blog-case-note,
+.blog-case[data-mode="gallery"] figcaption {
+  margin-top: 0;
+}
+
+.blog-case-note {
+  color: var(--blog-ink-tertiary);
+  font-size: var(--blog-caption-size);
+  font-weight: var(--blog-caption-weight);
+  line-height: var(--blog-caption-line);
+  margin: 12px 0 0;
+}
+
+.blog-case-note::before {
+  content: "";
+  border-radius: 50%;
+  background: currentColor;
+  display: inline-block;
+  height: 5px;
+  margin: 0 8px 3px 0;
+  opacity: 0.6;
+  width: 5px;
+}
+
+.blog-case-slot-ratio {
+  color: var(--blog-ink-tertiary);
+  font-family: var(--blog-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
+}
+
+/* A link whose target is still missing stays visible as a gap to fill. */
+.blog-link-pending {
+  border-bottom: 1px dashed var(--blog-link);
+  color: var(--blog-link);
+  cursor: help;
+  opacity: 0.75;
+}
+
+.blog-table {
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.blog-runtime .markdown table {
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 23px;
+  min-width: 100%;
+  text-align: left;
+}
+
+.blog-runtime .markdown th,
+.blog-runtime .markdown td {
+  border-bottom: 1px solid var(--blog-separator);
+  padding: 12px 16px;
+  vertical-align: top;
+}
+
+.blog-runtime .markdown th {
+  color: var(--blog-ink);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.blog-runtime .markdown td {
+  color: var(--blog-ink-secondary);
+  font-weight: var(--blog-body-weight);
+}
+
+/* Everything after the footnotes heading widens and switches to serif. */
+.blog-runtime .markdown > #footnotes,
+.blog-runtime .markdown > #footnotes ~ * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--blog-footnote-width);
+}
+
+.blog-runtime .markdown > #footnotes ~ :is(p, ul, ol, li) {
+  font-family: var(--blog-serif);
+  font-weight: 400;
+}
+
+.blog-runtime .markdown > #footnotes ~ * strong {
+  font-family: var(--blog-sans);
+}
+
+.blog-runtime .markdown > #footnotes ~ p + :is(ul, ol) {
+  margin-top: 8px;
+}
+
+/* ---------------- Outline rail ---------------- */
+
+.blog-outline {
+  align-items: center;
+  display: flex;
+  height: 200px;
+  position: fixed;
+  right: 0;
+  top: calc(50% - 100px);
+  z-index: 50;
+}
+
+.blog-outline-track {
+  background: var(--blog-fill-2);
+  border-radius: 1px;
+  flex-shrink: 0;
+  height: 120px;
+  margin-right: 6px;
+  overflow: hidden;
+  position: relative;
+  width: 2px;
+}
+
+.blog-outline-progress {
+  background: var(--blog-ink);
+  border-radius: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: height 100ms linear;
+  width: 100%;
+}
+
+/* Sized to its contents rather than to the 200px rail, so a long article does
+   not lose its last few sections behind the clip. */
+.blog-outline-panel {
+  background: var(--blog-bg);
+  border-radius: 12px 0 0 12px;
+  box-shadow: 0 4px 24px #00000014, 0 0 1px #0000001a;
+  max-height: 72vh;
+  max-width: 0;
+  min-width: 240px;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: max-width 250ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 200ms ease;
+  width: max-content;
+}
+
+.blog-outline:hover .blog-outline-panel,
+.blog-outline:focus-within .blog-outline-panel {
+  max-width: 420px;
+  opacity: 1;
+  padding: 24px 0 24px 20px;
+}
+
+.blog-outline-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-outline-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-outline-list a {
+  align-items: center;
+  border-right: 2px solid var(--blog-fill-2);
+  color: var(--blog-ink-secondary);
+  display: flex;
+  font-family: var(--blog-sans);
+  font-size: 14px;
+  font-weight: 400;
+  gap: 10px;
+  justify-content: flex-end;
+  line-height: 22px;
+  padding: 10px 24px 10px 0;
+  transition: color 200ms ease, border-color 200ms ease;
+  white-space: nowrap;
+}
+
+.blog-outline-list a:hover {
+  color: var(--blog-ink);
+}
+
+.blog-outline-list [data-level="3"] a {
+  color: var(--blog-ink-tertiary);
+  font-size: 13px;
+  padding-left: 16px;
+}
+
+.blog-outline-list .is-active a {
+  border-right-color: var(--blog-ink);
+  color: var(--blog-ink);
+}
+
+/* ---------------- Index ---------------- */
+
+.blog-index {
+  padding-bottom: clamp(80px, 10vw, 140px);
+  padding-top: clamp(48px, 7vw, 96px);
+}
+
+.blog-index-head {
+  margin: 0 auto clamp(40px, 5vw, 72px);
+  max-width: var(--blog-body-width);
+}
+
+.blog-index-eyebrow {
+  color: var(--blog-ink-tertiary);
+  font-size: var(--blog-caption-size);
+  font-weight: var(--blog-caption-weight);
+  line-height: var(--blog-caption-line);
+  margin: 0 0 10px;
+}
+
+.blog-index-head h1 {
+  color: var(--blog-ink);
+  font-family: var(--blog-title-font);
+  font-size: var(--blog-title-size);
+  font-weight: var(--blog-title-weight);
+  line-height: var(--blog-title-line);
+  margin: 0;
+}
+
+.blog-index-head p {
+  color: var(--blog-ink-secondary);
+  font-size: var(--blog-body-size);
+  font-weight: var(--blog-body-weight);
+  line-height: var(--blog-body-line);
+  margin: 14px 0 0;
+}
+
+.blog-index-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--blog-media-width);
+}
+
+.blog-index-item {
+  border-top: 1px solid var(--blog-separator);
+  display: grid;
+  gap: 8px 32px;
+  grid-template-columns: 150px minmax(0, 1fr);
+  padding: 28px 12px;
+  transition: background-color 200ms ease;
+}
+
+.blog-index-item:last-child {
+  border-bottom: 1px solid var(--blog-separator);
+}
+
+.blog-index-item:hover {
+  background: var(--blog-fill-1);
+}
+
+.blog-index-meta {
+  color: var(--blog-ink-tertiary);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--blog-caption-size);
+  font-weight: var(--blog-caption-weight);
+  gap: 2px;
+  line-height: var(--blog-caption-line);
+}
+
+.blog-index-item h2 {
+  color: var(--blog-ink);
+  font-family: var(--blog-title-font);
+  font-size: 22px;
+  font-weight: var(--blog-heading-weight);
+  line-height: 30px;
+  margin: 0;
+}
+
+.blog-index-item p {
+  color: var(--blog-ink-secondary);
+  font-size: 16px;
+  font-weight: var(--blog-body-weight);
+  line-height: 26px;
+  margin: 8px 0 0;
+}
+
+.blog-index-empty {
+  color: var(--blog-ink-tertiary);
+  font-size: var(--blog-body-size);
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 1440px) {
+  .blog-outline {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .blog-runtime {
+    --blog-section-gap: 56px;
+    --blog-media-gap: 30px;
+    --blog-figure-pair-gap: 16px;
+    --blog-subheading-gap: 36px;
+    --blog-hero-padding-top: 36px;
+    --blog-title-size: 26px;
+    --blog-title-line: 34px;
+    --blog-h1-size: 26px;
+    --blog-h1-line: 34px;
+    --blog-h2-size: 23px;
+    --blog-h2-line: 31px;
+    --blog-h3-size: 19px;
+    --blog-h3-line: 26px;
+  }
+
+  .blog-title-sub {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .blog-main {
+    padding-top: 48px;
+  }
+
+  .blog-index-item {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .blog-case[data-columns="2"] .blog-case-grid,
+  .blog-case[data-columns="3"] .blog-case-grid,
+  .blog-case-panel-media[data-columns="2"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .blog-case-thumb {
+    flex-basis: 128px;
+    width: 128px;
+  }
+
+  .blog-case-rail-nav {
+    top: 50%;
+  }
+
+  .blog-case-rail {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .blog-runtime .markdown > :is(h2, h3):has(+ figure),
+  .blog-runtime .markdown > :is(h2, h3):has(+ .blog-table) {
+    text-align: initial;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-outline-panel,
+  .blog-outline-progress,
+  .blog-cta-arrow,
+  .blog-page::after {
+    transition: none;
+  }
+}

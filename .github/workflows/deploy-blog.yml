@@ -1,0 +1,83 @@
+name: Deploy blog to GitHub Pages
+
+# The blog lives on this branch; the gallery site lives on `main`. The build
+# below publishes both from one Pages deployment: the static export of the
+# Next.js app under /zh and /en, with `main` copied in at the root so
+# https://<user>.github.io/<repo>/ keeps serving the gallery it serves today.
+on:
+  push:
+    branches: [blog]
+  # Run this manually after `main` changes, so the gallery copied into the
+  # deployment picks the new files up. A push to `main` cannot trigger a
+  # workflow that only exists on `blog`.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deployment finish rather than cancelling it midway.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout blog branch
+        uses: actions/checkout@v4
+
+      - name: Checkout gallery site (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: .gallery-site
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      # Emits base_path: "/<repo>" for a project site, empty for a user site,
+      # so the same build works at either URL without editing next.config.ts.
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Build static export
+        working-directory: site
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: npm run build
+
+      # The app owns /zh and /en only, so main's index.html lands at the root
+      # of the deployment and nothing overwrites the export.
+      - name: Merge gallery site into the export
+        run: |
+          rsync -a --exclude '.git' --exclude '.github' .gallery-site/ site/out/
+          touch site/out/.nojekyll
+          ls -la site/out
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
