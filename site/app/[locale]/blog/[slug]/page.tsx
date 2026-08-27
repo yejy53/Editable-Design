@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { copy, isLocale, locales, type Locale } from "@/lib/site";
+import { assetUrl, copy, isLocale, locales, type Locale } from "@/lib/site";
 import { getBlogPost, getBlogSlugs } from "@/lib/blog";
 import { BlogTopBar } from "@/components/blog-topbar";
 import { BlogHero } from "@/components/blog-hero";
@@ -47,7 +47,7 @@ export default async function BlogPostPage({
         <div className="blog-layout">
           <BlogHero
             crumbs={[
-              { label: t.home, href: `/${typedLocale}` },
+              { label: t.home, href: assetUrl("/") || "/", raw: true },
               { label: t.research, href: `/${typedLocale}/blog` },
               { label: post.title },
             ]}

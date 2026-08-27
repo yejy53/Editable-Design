@@ -4,6 +4,9 @@ import { assetUrl } from "@/lib/site";
 export type Crumb = {
   label: string;
   href?: string;
+  /** Set for a target outside the Next app — the gallery at the Pages root —
+   *  where the base path is already applied and next/link must not add it. */
+  raw?: boolean;
 };
 
 export function BlogHero({
@@ -62,7 +65,9 @@ export function BlogHero({
               const last = index === crumbs.length - 1;
               return (
                 <li key={`${crumb.label}-${index}`}>
-                  {crumb.href && !last ? (
+                  {crumb.href && !last && crumb.raw ? (
+                    <a href={crumb.href}>{crumb.label}</a>
+                  ) : crumb.href && !last ? (
                     <Link href={crumb.href}>{crumb.label}</Link>
                   ) : (
                     <span aria-current={last ? "page" : undefined}>
