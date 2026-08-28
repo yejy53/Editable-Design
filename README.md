@@ -721,6 +721,8 @@ We are grateful to the open-source projects that have helped shape the public co
 
 - [awesome-gpt-image](https://github.com/ZeroLu/awesome-gpt-image), whose clear prompt-and-result gallery helped inspire the presentation of this Gallery.
 - [OpenDesign](https://github.com/EthanGuo2022/OpenDesign), for advancing open, agent-driven, editable visual artifacts and visible design trajectories.
+- [taste-skill](https://github.com/leonxlnx/taste-skill), for advancing practical design-taste guidance for agent-built interfaces and visual systems.
+- [GenClaw](https://github.com/yejy53/GenClaw), for exploring code-driven agentic image generation and reproducible visual-creation workflows.
 
 And thanks to the broader open-source design and Coding Agent communities for making this work possible.
 
