@@ -6,7 +6,9 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 
 ## Overview
 
-<video src="https://github.com/user-attachments/assets/5d0af36b-b2a7-42e1-abfb-24f43ac3e55f" width="100%" controls></video>
+<a href="https://github.com/user-attachments/assets/5d0af36b-b2a7-42e1-abfb-24f43ac3e55f">
+  <img src="./assets/overview-cover.webp" width="100%" alt="Play the Editable Visual Design overview video">
+</a>
 
 ## Table of Contents
 
