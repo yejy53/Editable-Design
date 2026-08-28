@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <title>Nordic Chair · HD Design Replays</title>
+  <title>Editable Visual Design · HD Videos</title>
   <style>
     :root {
       color-scheme: dark;
@@ -85,6 +85,7 @@
       object-fit: contain;
     }
 
+    #overview video { aspect-ratio: 16 / 9; }
     #editable video { aspect-ratio: 2132 / 1808; }
     #agent video { aspect-ratio: 16 / 9; }
 
@@ -98,9 +99,19 @@
 <body>
   <main>
     <header>
-      <h1>Nordic Chair · HD Design Replays</h1>
+      <h1>Editable Visual Design · HD Videos</h1>
       <a href="https://github.com/yejy53/Editable-Design">Back to GitHub</a>
     </header>
+
+    <section class="replay" id="overview">
+      <div class="replay-heading">
+        <h2>Project Overview</h2>
+        <p class="meta">1280 × 720 · 30fps · 127s</p>
+      </div>
+      <video controls playsinline preload="metadata" poster="./assets/overview-cover.webp">
+        <source src="./assets/overview.mp4" type="video/mp4">
+      </video>
+    </section>
 
     <section class="replay" id="editable">
       <div class="replay-heading">
