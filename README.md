@@ -6,7 +6,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 
 ## Overview
 
-<video src="https://github.com/user-attachments/assets/450b4471-784f-49be-89b2-fbf79361fc2c" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/5d0af36b-b2a7-42e1-abfb-24f43ac3e55f" width="100%" controls></video>
 
 ## Table of Contents
 
@@ -49,35 +49,10 @@ The result contains real text, semantic layers, and independent assets that can 
 
 ## Gallery
 
-Seventeen prompts across five visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
+Thirteen prompts across five visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
 
 ## Campaigns
 
-### Nordic Chair
-
-<table role="presentation" width="100%">
-  <tr>
-    <td width="33.96%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
-        <a href="./gallery/campaigns/nordic-chair/final.png">
-          <img src="./gallery/campaigns/nordic-chair/preview.webp" width="100%" alt="Nordic Chair">
-        </a>
-      </details>
-    </td>
-    <td width="66.04%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/f8a0a631-a5d1-4ee0-a058-bb8dead1f188" width="100%" controls></video>
-    </td>
-  </tr>
-</table>
-
-<video src="https://github.com/user-attachments/assets/550fdcdf-92a5-4717-8b26-63d04cb9a20d" width="100%" controls></video>
-
-**Prompt:**
-
-```text
-设计一张高端北欧家具产品长图海报，主角为一把深海军蓝色织物休闲椅，圆润包裹式椅背，胡桃木椅腿。整体采用米白、暖灰与深蓝配色，温暖自然光，现代北欧客厅场景，精致家居杂志质感。海报包含：顶部大幅生活场景与品牌标题、中部产品卖点和极简线性图标、座椅面料与木质结构的细节特写、底部完整空间展示。留白充足，黑色优雅衬线字体，网格化排版，简约、温暖、高级、真实产品摄影，电商详情页风格，竖版 9:16，高清。
-```
 
 ### 山柚观音
 
@@ -97,7 +72,7 @@ Seventeen prompts across five visual-design categories, with final renderings, e
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/0a5ff716-598f-404c-bdbc-dde572535462" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/0a5ff716-598f-404c-bdbc-dde572535462" poster="./gallery/campaigns/shanyou-guanyin-tea/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -105,48 +80,6 @@ Seventeen prompts across five visual-design categories, with final renderings, e
 Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, off-white, and gold, with rice-paper texture, restrained negative space, landscape accents, and modern layout. Hero: an appealing cold-brew tea with leaves, citrus, ice, and gold foil. Display exactly: "山川茶事" / "山柚观音" / "冷泡系列" / "新品上市"; "一口清醒，半城入夏" / "限定尝鲜价"; "中杯 16 元" / "大杯 19 元"; "门店活动" / "第二杯半价" / "加 3 元升级轻乳版" / "每日前 100 名赠限定杯套"; "推荐风味" / "观音茶底 / 西柚果香 / 轻乳云顶 / 冰感回甘"; "活动时间 4月20日 至 5月10日" / "扫码点单" / "SHANCHUAN TEA". Fine print: "图片仅供参考，请以门店实际售卖为准". Use clear promotional hierarchy, refined Chinese typography, and accurate small text, numbers, prices, and modules; avoid cheap e-commerce styling.
 ```
 
-### KFC × 77
-
-<table role="presentation" width="100%">
-  <tr>
-    <td width="33.98%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
-        <a href="./gallery/campaigns/kfc-77/final.png">
-          <img src="./gallery/campaigns/kfc-77/preview.webp" width="100%" alt="KFC × 77">
-        </a>
-      </details>
-    </td>
-    <td width="66.02%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/ce2a83ef-a274-4325-a3b8-097d75c1daef" width="100%" controls></video>
-    </td>
-  </tr>
-</table>
-
-<video src="https://github.com/user-attachments/assets/dd7b5f4d-f024-4081-a585-19f15377c2a1" width="100%" controls></video>
-
-**Prompt:**
-
-```text
-生成一张高质量的 9:16 竖版 KFC 联名宣传海报。
-画面中央是一只真实可爱的长毛猫，穿着红色 KFC 员工制服和黑红色工作帽，站在餐厅收银台前，一只爪子抬起打招呼，另一只爪子抱着装满炸鸡的 KFC 欢乐桶。前景摆放炸鸡汉堡、薯条、炸鸡、可乐等套餐，背景是轻微虚化的 KFC 点餐屏和餐厅环境。
-顶部放置“KFC × 77”，主标题为“77 营业中！”，副标题为“美味上新 · 快乐加倍”。加入少量圆角推荐卡片、猫爪图标和对话框“欢迎光临肯德基！”
-```
-
-<details>
-<summary><strong>Show full prompt</strong></summary>
-
-```text
-生成一张高质量的 9:16 竖版 KFC 联名宣传海报。
-
-画面中央是一只真实可爱的长毛猫，穿着红色 KFC 员工制服和黑红色工作帽，站在餐厅收银台前，一只爪子抬起打招呼，另一只爪子抱着装满炸鸡的 KFC 欢乐桶。前景摆放炸鸡汉堡、薯条、炸鸡、可乐等套餐，背景是轻微虚化的 KFC 点餐屏和餐厅环境。
-
-顶部放置“KFC × 77”，主标题为“77 营业中！”，副标题为“美味上新 · 快乐加倍”。加入少量圆角推荐卡片、猫爪图标和对话框“欢迎光临肯德基！”
-
-整体使用经典红白配色，商业摄影质感，活泼可爱，信息层级清晰，中文字体醒目，食物诱人，版面丰富但不杂乱。保持猫咪外形自然，不要卡通化，不要多余人物或错误文字。
-```
-
-</details>
 
 ### 澄光维稳精华
 
@@ -166,7 +99,7 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/cc2c9d7f-6187-424b-8113-a6339773446f" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/cc2c9d7f-6187-424b-8113-a6339773446f" poster="./gallery/campaigns/chengguang-serum/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -214,6 +147,35 @@ Focus on product selling points, pricing hierarchy, gift-list modules, product n
 
 ---
 
+
+### Summer Music
+
+<table role="presentation" width="100%">
+  <tr>
+    <td width="36.24%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/text-led-design/summer-music/final.png">
+          <img src="./gallery/text-led-design/summer-music/preview.webp" width="100%" alt="Summer Music">
+        </a>
+      </details>
+    </td>
+    <td width="63.76%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/21e4f9a3-bf59-4a20-a068-cff533daeb8b" width="100%" controls></video>
+    </td>
+  </tr>
+</table>
+
+<video src="https://github.com/user-attachments/assets/60c6d213-0158-46fc-8e0b-dbc9d3550835" poster="./gallery/text-led-design/summer-music/agent-replay-poster.webp" preload="none" width="100%" controls></video>
+
+**Prompt:**
+
+```text
+Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D look. Place a floating pair of gold-and-tan headphones in the center, with a pink geometric house behind them and silver lines and musical notes swirling around the scene. Fill the lower area with green grass and orange, yellow, and pink flowers, while adding a hot-air balloon, bubbles, and yellow doodles to the blue sky. Include the text “HAPPY DAY,” “SUMMER DAY,” “SEE THE COLORS,” “和你的夏天 有场约会,” and “想看五月的颜色,” using sky blue, bright yellow, pink, and green as the main colors.
+```
+
+---
+
 ## Information Design
 
 ### Red Panda Field Guide
@@ -234,7 +196,7 @@ Focus on product selling points, pricing hierarchy, gift-list modules, product n
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/b668a929-563d-456f-848b-08b275de3a42" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/b668a929-563d-456f-848b-08b275de3a42" poster="./gallery/information-design/red-panda-field-guide/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -289,7 +251,7 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/13419bcf-1eb4-4b7a-bd6b-70cdc9290d0b" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/13419bcf-1eb4-4b7a-bd6b-70cdc9290d0b" poster="./gallery/information-design/nyc-3-day-guide/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -315,7 +277,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/498323b1-6079-4cb5-952a-c8a1e574252b" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/498323b1-6079-4cb5-952a-c8a1e574252b" poster="./gallery/information-design/abs-training-plan/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -371,7 +333,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/3e111f6a-a157-4afd-a5b7-8eedc2495561" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/3e111f6a-a157-4afd-a5b7-8eedc2495561" poster="./gallery/text-led-design/tengwang-ge-xu/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -397,7 +359,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/c7bd45be-3489-4b3b-8694-e588a3ba8d42" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/c7bd45be-3489-4b3b-8694-e588a3ba8d42" poster="./gallery/text-led-design/ai-team-love-letter/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -486,153 +448,6 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 </details>
 
-### Nebula AI Recruitment
-
-<table role="presentation" width="100%">
-  <tr>
-    <td width="33.76%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
-        <a href="./gallery/text-led-design/nebula-ai-recruitment/final.png">
-          <img src="./gallery/text-led-design/nebula-ai-recruitment/preview.webp" width="100%" alt="Nebula AI Recruitment">
-        </a>
-      </details>
-    </td>
-    <td width="66.24%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/5544a806-794e-4061-8a1d-5e1a69ad4b0c" width="100%" controls></video>
-    </td>
-  </tr>
-</table>
-
-<video src="https://github.com/user-attachments/assets/cd56776f-5253-46d3-8a22-1c4337fe00fc" width="100%" controls></video>
-
-**Prompt:**
-
-```text
-设计一张专业的科技公司招聘信息长海报。
-【画布】
-尺寸为 1080×1920px，9:16 手机竖版，适合朋友圈、小红书和招聘社群发布。整体为高完成度的商业招聘海报，不是简单的信息表格。
-```
-
-<details>
-<summary><strong>Show full prompt</strong></summary>
-
-```text
-设计一张专业的科技公司招聘信息长海报。
-
-【画布】
-尺寸为 1080×1920px，9:16 手机竖版，适合朋友圈、小红书和招聘社群发布。整体为高完成度的商业招聘海报，不是简单的信息表格。
-
-【品牌与岗位】
-公司名称：星澜智能
-英文名称：NEBULA AI
-招聘岗位：AI 算法工程师
-岗位方向：大模型应用与智能体研发
-
-【视觉风格】
-采用深海军蓝到科技蓝的渐变背景，搭配青蓝色霓虹光效、数据网络、粒子连线、抽象 AI 芯片和数字大脑元素。整体风格专业、前沿、可信、有大型科技公司的视觉质感。避免过度炫光，保证文字清晰易读。
-
-顶部背景较深，中部使用半透明浅蓝白色卡片承载信息，卡片带有轻微玻璃拟态效果、圆角和柔和阴影。底部回到深蓝色科技场景，形成完整的视觉收尾。
-
-【版式结构】
-严格按照以下顺序，自上而下排版：
-
-1. 顶部品牌区
-左上角放置简洁的蓝色几何科技 Logo，旁边显示：
-“星澜智能”
-“NEBULA AI”
-
-2. 主标题区
-使用大号粗体白字突出：
-“AI 算法工程师”
-
-副标题：
-“大模型应用与智能体研发”
-
-主标题醒目，占据顶部视觉中心，文字不得被装饰元素遮挡。
-
-3. 岗位基本信息卡片
-使用标签和圆角信息框展示：
-“上海”
-“全职”
-“技术研发类”
-“25K–45K·15薪”
-“经验 3–5 年”
-“本科及以上”
-
-4. 岗位亮点
-标题：“岗位亮点”
-
-使用标签形式展示：
-“大模型应用”
-“AI Agent”
-“RAG”
-“多模态”
-“模型微调”
-“成长型团队”
-“核心项目”
-“弹性办公”
-
-5. 工作职责
-标题：“工作职责”
-
-采用四个蓝色渐变功能卡片，两列排版，每张卡片带简洁线性图标：
-
-“负责大模型应用与 AI Agent 系统研发”
-“搭建 RAG、知识库与智能检索流程”
-“推进模型微调、评测和效果优化”
-“参与核心产品从原型到落地全过程”
-
-6. 任职要求
-标题：“任职要求”
-
-使用浅色圆角标签展示：
-“熟悉 Python”
-“熟悉 PyTorch”
-“了解 Transformer”
-“具备大模型项目经验”
-“熟悉 RAG 与向量数据库”
-“具备良好的工程能力”
-“优秀的分析与沟通能力”
-
-7. 底部行动区
-使用醒目的蓝色渐变按钮展示：
-“加入我们，共创智能未来”
-
-下方放置二维码占位框，并标注：
-“扫码投递简历”
-“hr@nebula-ai.com”
-```
-
-</details>
-
-### Summer Music
-
-<table role="presentation" width="100%">
-  <tr>
-    <td width="36.24%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
-        <a href="./gallery/text-led-design/summer-music/final.png">
-          <img src="./gallery/text-led-design/summer-music/preview.webp" width="100%" alt="Summer Music">
-        </a>
-      </details>
-    </td>
-    <td width="63.76%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/21e4f9a3-bf59-4a20-a068-cff533daeb8b" width="100%" controls></video>
-    </td>
-  </tr>
-</table>
-
-<video src="https://github.com/user-attachments/assets/60c6d213-0158-46fc-8e0b-dbc9d3550835" width="100%" controls></video>
-
-**Prompt:**
-
-```text
-Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D look. Place a floating pair of gold-and-tan headphones in the center, with a pink geometric house behind them and silver lines and musical notes swirling around the scene. Fill the lower area with green grass and orange, yellow, and pink flowers, while adding a hot-air balloon, bubbles, and yellow doodles to the blue sky. Include the text “HAPPY DAY,” “SUMMER DAY,” “SEE THE COLORS,” “和你的夏天 有场约会,” and “想看五月的颜色,” using sky blue, bright yellow, pink, and green as the main colors.
-```
-
----
 
 ## Poster
 
@@ -654,7 +469,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/8d9fe755-d699-4cd1-ae33-cde6e1a5bc6e" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/8d9fe755-d699-4cd1-ae33-cde6e1a5bc6e" poster="./gallery/poster/e-design/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -709,31 +524,6 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
 
 </details>
 
-### Chongqing Rain Night
-
-<table role="presentation" width="100%">
-  <tr>
-    <td width="38.44%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
-        <a href="./gallery/poster/chongqing-rain-night/final.png">
-          <img src="./gallery/poster/chongqing-rain-night/preview.webp" width="100%" alt="Chongqing Rain Night">
-        </a>
-      </details>
-    </td>
-    <td width="61.56%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/5f37a612-882d-4800-9fb9-1b6d394e06a1" width="100%" controls></video>
-    </td>
-  </tr>
-</table>
-
-<video src="https://github.com/user-attachments/assets/22167f4d-7e6f-4605-aac9-3351359e8652" width="100%" controls></video>
-
-**Prompt:**
-
-```text
-做一张 3:4 高端城市文旅 campaign 海报，主题“山城雨夜·重庆”。中心呈现层叠山城建筑、轻轨穿楼、湿润街道、霓虹倒影、江雾和夜色坡道。现代中文排版，准确加入：“山城雨夜” / “CHONGQING” / “8D 城市 / 江雾 / 火锅 / 轻轨 / 夜景”；在主标题下方的左侧江雾留白区域，加入竖排小字“赛博之城”，辅以更小的英文“CYBER CITY”。信息适中、留白克制，以深蓝、暖橙、湿润霓虹红为主，呈现设计年鉴级城市品牌感，避免廉价旅行社风。
-```
 
 ### Beijing Winter Atlas
 
@@ -753,7 +543,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/9db04a2f-447c-4438-9c23-d6839bb8cdbc" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/9db04a2f-447c-4438-9c23-d6839bb8cdbc" poster="./gallery/poster/beijing-winter-atlas/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -783,7 +573,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/9c08b0ef-d193-4975-b967-a3354b972a09" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/9c08b0ef-d193-4975-b967-a3354b972a09" poster="./gallery/art-design/sky-archive/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -809,7 +599,7 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/947462e6-9fe5-4637-af8e-bffde328b398" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/947462e6-9fe5-4637-af8e-bffde328b398" poster="./gallery/art-design/creative-journey/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
@@ -835,7 +625,7 @@ Create a polished wide 16:9 contemporary editorial poster on a clean warm-white 
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/1be9260f-c647-4529-b2b0-03363837ed9f" width="100%" controls></video>
+<video src="https://github.com/user-attachments/assets/1be9260f-c647-4529-b2b0-03363837ed9f" poster="./gallery/art-design/tc-2024/agent-replay-poster.webp" preload="none" width="100%" controls></video>
 
 **Prompt:**
 
