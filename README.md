@@ -78,6 +78,8 @@ npm ci --prefix ~/.codex/skills/editable-design/scripts
 ~/.codex/skills/editable-design/scripts/doctor.sh
 ```
 
+> **Recommended:** Use [GPT-5.6](https://developers.openai.com/api/docs/guides/latest-model) with `high` reasoning effort or above for the strongest results.
+
 Once installed, invoke the skill by name and describe what you want to create in natural language. For example, this request corresponds to the [Red Panda Field Guide](#information-design) in the Gallery:
 
 ```text
