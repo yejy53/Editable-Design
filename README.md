@@ -72,13 +72,7 @@ Thirteen prompts across five visual-design categories, with final renderings, ed
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/0a5ff716-598f-404c-bdbc-dde572535462">
-  <img src="./gallery/campaigns/shanyou-guanyin-tea/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/0a5ff716-598f-404c-bdbc-dde572535462"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/f8aa12ff-c17d-49dd-89be-cc05e259c50e" width="100%" controls></video>
 
 **Prompt:**
 
@@ -105,13 +99,7 @@ Design a 3:4 vertical New Chinese light-luxury tea-launch poster in dark green, 
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/cc2c9d7f-6187-424b-8113-a6339773446f">
-  <img src="./gallery/campaigns/chengguang-serum/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/cc2c9d7f-6187-424b-8113-a6339773446f"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/d6f68102-f400-4a26-8da4-ce1f9ff12706" width="100%" controls></video>
 
 **Prompt:**
 
@@ -178,13 +166,7 @@ Focus on product selling points, pricing hierarchy, gift-list modules, product n
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/60c6d213-0158-46fc-8e0b-dbc9d3550835">
-  <img src="./gallery/text-led-design/summer-music/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/60c6d213-0158-46fc-8e0b-dbc9d3550835"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/34431362-2790-4c2d-b48c-7feb36dd991b" width="100%" controls></video>
 
 **Prompt:**
 
@@ -214,13 +196,7 @@ Create a 2:3 vertical summer music poster with a bright, dreamy, and playful 3D 
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/b668a929-563d-456f-848b-08b275de3a42">
-  <img src="./gallery/information-design/red-panda-field-guide/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/b668a929-563d-456f-848b-08b275de3a42"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/36684c75-5db6-422c-b7c0-51a6eca532e1" width="100%" controls></video>
 
 **Prompt:**
 
@@ -275,13 +251,7 @@ Do not make it look like a commercial zoo poster or an overly cute cartoon. Emph
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/13419bcf-1eb4-4b7a-bd6b-70cdc9290d0b">
-  <img src="./gallery/information-design/nyc-3-day-guide/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/13419bcf-1eb4-4b7a-bd6b-70cdc9290d0b"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/27282b3c-3f02-49cf-a1f0-cc0b5ad88df5" width="100%" controls></video>
 
 **Prompt:**
 
@@ -307,13 +277,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/498323b1-6079-4cb5-952a-c8a1e574252b">
-  <img src="./gallery/information-design/abs-training-plan/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/498323b1-6079-4cb5-952a-c8a1e574252b"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/c32c7bcf-590c-4bc2-83e2-81d0e52ca27a" width="100%" controls></video>
 
 **Prompt:**
 
@@ -369,13 +333,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/3e111f6a-a157-4afd-a5b7-8eedc2495561">
-  <img src="./gallery/text-led-design/tengwang-ge-xu/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/3e111f6a-a157-4afd-a5b7-8eedc2495561"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/c7e7525b-85e5-446d-b6f6-1c42e70023c3" width="100%" controls></video>
 
 **Prompt:**
 
@@ -401,13 +359,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/c7bd45be-3489-4b3b-8694-e588a3ba8d42">
-  <img src="./gallery/text-led-design/ai-team-love-letter/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/c7bd45be-3489-4b3b-8694-e588a3ba8d42"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/15e13b79-65cf-478d-a357-28aa2e9c359e" width="100%" controls></video>
 
 **Prompt:**
 
@@ -517,13 +469,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/8d9fe755-d699-4cd1-ae33-cde6e1a5bc6e">
-  <img src="./gallery/poster/e-design/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/8d9fe755-d699-4cd1-ae33-cde6e1a5bc6e"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/379a0737-e7a4-4fb8-b8c3-0051a15f9993" width="100%" controls></video>
 
 **Prompt:**
 
@@ -597,13 +543,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/9db04a2f-447c-4438-9c23-d6839bb8cdbc">
-  <img src="./gallery/poster/beijing-winter-atlas/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/9db04a2f-447c-4438-9c23-d6839bb8cdbc"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/8d439d9f-4c2f-4716-b911-b0c1c6284079" width="100%" controls></video>
 
 **Prompt:**
 
@@ -633,13 +573,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/9c08b0ef-d193-4975-b967-a3354b972a09">
-  <img src="./gallery/art-design/sky-archive/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/9c08b0ef-d193-4975-b967-a3354b972a09"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/33b1ecaa-eb22-490e-bcf8-66a85a960282" width="100%" controls></video>
 
 **Prompt:**
 
@@ -665,13 +599,7 @@ Create a vertical 4:5 minimalist photographic poster for a fictional meteorologi
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/947462e6-9fe5-4637-af8e-bffde328b398">
-  <img src="./gallery/art-design/creative-journey/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/947462e6-9fe5-4637-af8e-bffde328b398"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/d23481dc-718b-4027-a83f-503bb719a894" width="100%" controls></video>
 
 **Prompt:**
 
@@ -697,13 +625,7 @@ Create a polished wide 16:9 contemporary editorial poster on a clean warm-white 
   </tr>
 </table>
 
-<a href="https://github.com/user-attachments/assets/1be9260f-c647-4529-b2b0-03363837ed9f">
-  <img src="./gallery/art-design/tc-2024/agent-replay-poster.webp" width="100%" alt="Play Agent Design Replay">
-</a>
-
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/1be9260f-c647-4529-b2b0-03363837ed9f"><strong>▶ Play Agent Design Replay</strong></a>
-</p>
+<video src="https://github.com/user-attachments/assets/7272d82f-fead-4865-ba3f-edb6976aa590" width="100%" controls></video>
 
 **Prompt:**
 
