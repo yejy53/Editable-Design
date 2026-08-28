@@ -6,7 +6,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 
 ## Overview
 
-<a href="https://github.com/user-attachments/assets/1922f445-1c2e-4ff5-8ce2-36fdaf81103e">
+<a href="https://github.com/yejy53/Editable-Design/releases/download/overview-v1/editable-visual-design-overview.mp4">
   <img src="./assets/overview-cover.webp" width="100%" alt="Play the Editable Visual Design overview video">
 </a>
 
@@ -384,7 +384,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<video src="https://github.com/user-attachments/assets/c7e7525b-85e5-446d-b6f6-1c42e70023c3" width="100%" controls></video>
+<video src="./gallery/text-led-design/tengwang-ge-xu/agent-design-replay.mp4" poster="./gallery/text-led-design/tengwang-ge-xu/agent-replay-poster.webp" width="100%" controls preload="metadata"></video>
 
 **Prompt:**
 
