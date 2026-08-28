@@ -17,15 +17,16 @@ The skills are siblings, not nested dependencies. `editable-design` completes it
 
 ## Install
 
-Clone the repository, then install the skill or skills you need:
+Use a sparse, blob-filtered clone so the install checks out the core skill without the Gallery media:
 
 ```bash
-git clone https://github.com/yejy53/Editable-Design.git
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/yejy53/Editable-Design.git
 cd Editable-Design
+git sparse-checkout set skills/editable-design
 
 mkdir -p ~/.codex/skills
 cp -R skills/editable-design ~/.codex/skills/
-cp -R skills/html-to-pptx ~/.codex/skills/   # optional
 ```
 
 Install the Editable Design runtime dependency and verify the browser setup:
@@ -38,6 +39,8 @@ npm ci --prefix ~/.codex/skills/editable-design/scripts
 For optional PowerPoint export, install its Python dependencies and Playwright browser:
 
 ```bash
+git sparse-checkout add skills/html-to-pptx
+cp -R skills/html-to-pptx ~/.codex/skills/
 python3 -m pip install -r ~/.codex/skills/html-to-pptx/requirements.txt
 python3 -m playwright install chromium
 ~/.codex/skills/html-to-pptx/scripts/doctor.sh

@@ -16,13 +16,13 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 - [Why Editable Visual Design](#why-editable-visual-design)
 - [Three Core Ideas](#three-core-ideas)
 - [Toolkit](#toolkit)
+- [Quick Start](#quick-start)
 - [Gallery](#gallery)
   - [🎯 Campaigns](#campaigns)
   - [📚 Information Design](#information-design)
   - [✍️ Text-led Design](#text-led-design)
   - [📰 Poster](#poster)
   - [🎨 Art Design](#art-design)
-- [Quick Start](#quick-start)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
@@ -61,6 +61,40 @@ This repository now ships the code behind the workflow as two independent Codex 
 | [`html-to-pptx`](./skills/html-to-pptx/) | Convert clean designs, editor pages, or exploded-layer HTML into editable PowerPoint | Editable `.pptx` with independently selectable elements where the source structure permits |
 
 `editable-design` is the complete core workflow and does not require PowerPoint support. `html-to-pptx` is a sibling tool that runs only when a PPTX is requested. Installation is covered in [Quick Start](#quick-start); the standalone [Toolkit guide](./TOOLKIT.md) and each skill's README contain the detailed requirements and direct commands.
+
+## Quick Start
+
+Use a sparse, blob-filtered clone so Git checks out the installable skill without downloading the Gallery media:
+
+```bash
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/yejy53/Editable-Design.git
+cd Editable-Design
+git sparse-checkout set skills/editable-design
+
+mkdir -p ~/.codex/skills
+cp -R skills/editable-design ~/.codex/skills/
+npm ci --prefix ~/.codex/skills/editable-design/scripts
+~/.codex/skills/editable-design/scripts/doctor.sh
+```
+
+Then ask Codex to use it:
+
+```text
+Use $editable-design to create a polished 3:4 campaign poster for ...
+```
+
+For optional editable PowerPoint export, add only the companion skill to the same sparse checkout:
+
+```bash
+git sparse-checkout add skills/html-to-pptx
+cp -R skills/html-to-pptx ~/.codex/skills/
+python3 -m pip install -r ~/.codex/skills/html-to-pptx/requirements.txt
+python3 -m playwright install chromium
+~/.codex/skills/html-to-pptx/scripts/doctor.sh
+```
+
+The sparse checkout keeps the selected skills and repository metadata locally; Gallery assets are not checked out. See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`](./skills/html-to-pptx/README.md) for requirements, capability notes, and direct CLI usage. To build a clean source archive containing both skills, run `./pack.sh`.
 
 ## Gallery
 
@@ -676,37 +710,6 @@ There is Chinese text near the middle reading “文化科技大會,” and addi
 </details>
 
 ---
-
-## Quick Start
-
-Clone the repository and install the main skill into Codex:
-
-```bash
-git clone https://github.com/yejy53/Editable-Design.git
-cd Editable-Design
-
-mkdir -p ~/.codex/skills
-cp -R skills/editable-design ~/.codex/skills/
-npm ci --prefix ~/.codex/skills/editable-design/scripts
-~/.codex/skills/editable-design/scripts/doctor.sh
-```
-
-Then ask Codex to use it:
-
-```text
-Use $editable-design to create a polished 3:4 campaign poster for ...
-```
-
-Optional editable PowerPoint export is provided by the companion skill:
-
-```bash
-cp -R skills/html-to-pptx ~/.codex/skills/
-python3 -m pip install -r ~/.codex/skills/html-to-pptx/requirements.txt
-python3 -m playwright install chromium
-~/.codex/skills/html-to-pptx/scripts/doctor.sh
-```
-
-See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`](./skills/html-to-pptx/README.md) for requirements, capability notes, and direct CLI usage. To build a clean source archive containing both skills, run `./pack.sh`.
 
 ## Acknowledgements
 
