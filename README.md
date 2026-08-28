@@ -384,7 +384,7 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
   </tr>
 </table>
 
-<video src="./gallery/text-led-design/tengwang-ge-xu/agent-design-replay.mp4" poster="./gallery/text-led-design/tengwang-ge-xu/agent-replay-poster.webp" width="100%" controls preload="metadata"></video>
+<video src="https://github.com/user-attachments/assets/4d56f7ec-47c2-47cb-a635-bea68aa32b75" width="100%" controls></video>
 
 **Prompt:**
 
