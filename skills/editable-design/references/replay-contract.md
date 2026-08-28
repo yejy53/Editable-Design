@@ -152,8 +152,11 @@ path remains the visible repair loop. This keeps evidence readable without
 placing an artifact between flow nodes or over their connectors.
 
 When the layer output is `layers.html`, Replay embeds its live HTML animation,
-not a GIF and not its `?motion=0` screenshot state. It auto-plays when loaded and
-offers a clearly named control to play the layer animation again.
+not a GIF and not its `?motion=0` screenshot state. Do not load its iframe at
+page startup: start it when the intro reaches the Layers output, and restart it
+whenever formal playback reaches Layers or the user opens that stage. This keeps
+the layer motion synchronized with the surrounding Replay instead of letting it
+finish behind the 4.7-second intro. The lightbox reloads it on every open.
 
 The stage detail panel is a wide, independently scrolling surface; wheel input
 inside it never changes canvas zoom. Clicking the reference or final-render

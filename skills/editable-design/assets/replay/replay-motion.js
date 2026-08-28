@@ -9,7 +9,7 @@
     if (document.body.dataset.motionMounted === 'true') return;
     document.body.dataset.motionMounted = 'true';
 
-    const { data, world, flowLines, detailPanel, selectStage, initialStage, getViewState } = viewer;
+    const { data, world, flowLines, detailPanel, selectStage, initialStage, restartLayerAnimation, getViewState } = viewer;
     const playButton = document.getElementById('play-replay');
     const playLabel = playButton?.querySelector('b');
     const playIcon = playButton?.querySelector('span');
@@ -114,10 +114,12 @@
       });
 
       animations.push(wait(4350).then(() => status?.classList.add('is-lit')));
+      animations.push(wait(3650).then(() => restartLayerAnimation?.()));
       await Promise.allSettled(animations);
       const remaining = INTRO_DURATION - (performance.now() - introStarted);
       if (remaining > 0) await wait(remaining);
       document.body.classList.remove('is-intro');
+      document.body.dataset.motionState = 'ambient';
       setPlayState(false, false);
       if (initialStage) selectStage(initialStage.id, false);
       startAmbient();
@@ -384,14 +386,25 @@
 
     if (reducedMotion) {
       mode = 'reduced';
+      document.body.dataset.motionState = 'reduced';
       status?.classList.add('is-lit');
+      if (status) status.textContent = '系统已减少动态';
       setPlayState(false, true);
       if (playButton) playButton.title = '已按系统设置关闭动画';
       if (initialStage) selectStage(initialStage.id, false);
     } else {
-      runIntro();
+      document.body.dataset.motionState = 'intro';
+      runIntro().catch(() => {
+        document.body.classList.remove('is-intro');
+        document.body.dataset.motionState = 'recovered';
+        setPlayState(false, false);
+        status?.classList.add('is-lit');
+        mode = 'ambient';
+        startAmbient();
+      });
     }
   }
 
   window.__POSTER_REPLAY_MOTION__ = { mount };
+  if (window.__POSTER_REPLAY_VIEWER__) mount(window.__POSTER_REPLAY_VIEWER__);
 })();

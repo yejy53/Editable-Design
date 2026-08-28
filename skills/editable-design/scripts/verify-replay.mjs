@@ -49,6 +49,8 @@ if (!failed) {
   const feedbackLabelOK = replayJS.includes('class="flow-label prove-label"') && replayCSS.includes('.flow-label text { fill: #47765c');
   const layersStage = data.stages.find((stage) => stage.id === 'layers');
   const liveLayerAnimationOK = !layersStage?.preview?.includes('motion=0') && replayJS.includes('可编辑分层动画（HTML）');
+  const synchronizedLayerAnimationOK = replayJS.includes('data-animation-src') && replayJS.includes('restartLayerAnimation') && replayJS.includes("id === 'layers'") && motionJS.includes('wait(3650)');
+  const motionHandshakeOK = replayJS.includes('__POSTER_REPLAY_VIEWER__') && motionJS.includes('__POSTER_REPLAY_VIEWER__') && motionJS.includes("document.body.dataset.motionState = 'recovered'");
   const referencePlacementOK = replayJS.includes("reference: { x: 820,  y: 110,  w: 450, h: 330 }") && replayJS.includes("x: 1538, y: 110, w: 270, h: 360") && replayJS.includes('class="flow-artifact flow-path think"') && replayJS.includes('d="M1270 290 L2075 290"') && !replayJS.includes('L1900 70 C2030 70 2010 275 2075 275');
   const rightColumnPlanOK = replayJS.includes("plan:      { x: 2075, y: 110,  w: 420, h: 360 }") && replayJS.includes("x: 2075, y: 670, w: 420, h: 560") && replayJS.includes("x: 2075, y: 1320, w: 420, h: 360");
   const featuredMediaOK = replayJS.includes("x: 2075, y: 670, w: 420, h: 560") && replayJS.includes("x: 2075, y: 1320, w: 420, h: 360");
@@ -77,13 +79,15 @@ if (!failed) {
   console.log(` ${assetShowcaseOK ? '✅' : '❌'} 700ms Assets gallery showcase with 4-6s rest`);
   console.log(` ${feedbackLabelOK ? '✅' : '❌'} feedback label on green observation path`);
   console.log(` ${liveLayerAnimationOK ? '✅' : '❌'} live HTML layer animation`);
+  console.log(` ${synchronizedLayerAnimationOK ? '✅' : '❌'} layer animation synchronized with intro and playback`);
+  console.log(` ${motionHandshakeOK ? '✅' : '❌'} resilient motion initialization handshake`);
   console.log(` ${referencePlacementOK ? '✅' : '❌'} centered reference on a straight dashed connector`);
   console.log(` ${rightColumnPlanOK ? '✅' : '❌'} Design Plan aligned with the right output column`);
   console.log(` ${featuredMediaOK ? '✅' : '❌'} enlarged right-side output column`);
   console.log(` ${detailPanelOK ? '✅' : '❌'} wide independently scrolling detail panel`);
   console.log(` ${mediaLightboxOK ? '✅' : '❌'} image and animation lightbox behaviors`);
   console.log(` ${fullPngContainOK ? '✅' : '❌'} full uncropped PNG in image lightbox`);
-  failed ||= !schemaOK || !stagesOK || !offlineOK || !sourceOK || !phaseNavOK || !phaseIconsOK || !noDefaultDetailOK || !arrowSizingOK || !motionOK || !reducedMotionOK || !playbackPathOK || !ambientCadenceOK || !introTimingOK || !assetOverviewOK || !planMatrixOK || !scaledPhaseNavOK || !largePhaseNavOK || !assetStageOK || !adaptiveAssetsOK || !assetShowcaseOK || !feedbackLabelOK || !liveLayerAnimationOK || !referencePlacementOK || !rightColumnPlanOK || !featuredMediaOK || !detailPanelOK || !mediaLightboxOK || !fullPngContainOK;
+  failed ||= !schemaOK || !stagesOK || !offlineOK || !sourceOK || !phaseNavOK || !phaseIconsOK || !noDefaultDetailOK || !arrowSizingOK || !motionOK || !reducedMotionOK || !playbackPathOK || !ambientCadenceOK || !introTimingOK || !assetOverviewOK || !planMatrixOK || !scaledPhaseNavOK || !largePhaseNavOK || !assetStageOK || !adaptiveAssetsOK || !assetShowcaseOK || !feedbackLabelOK || !liveLayerAnimationOK || !synchronizedLayerAnimationOK || !motionHandshakeOK || !referencePlacementOK || !rightColumnPlanOK || !featuredMediaOK || !detailPanelOK || !mediaLightboxOK || !fullPngContainOK;
 
   const missing = data.stages.filter((stage) => /缺失|不完整|未生成/.test(stage.statusLabel));
   if (missing.length) console.log(` ⚠️  missing evidence is shown, not reconstructed: ${missing.map((stage) => stage.id).join(', ')}`);

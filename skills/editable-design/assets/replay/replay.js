@@ -167,6 +167,23 @@
     document.getElementById('media-lightbox-close')?.focus({ preventScroll: true });
   }
 
+  function animationUrl(src) {
+    const url = new URL(src, location.href);
+    url.searchParams.delete('motion');
+    url.searchParams.set('replay', String(Date.now()));
+    return url.href;
+  }
+
+  function restartLayerAnimation() {
+    const host = document.querySelector('.external-artifact.layers [data-animation-src]');
+    if (!host) return;
+    const iframe = document.createElement('iframe');
+    iframe.src = animationUrl(host.dataset.animationSrc);
+    iframe.title = host.dataset.animationTitle || 'Layer animation';
+    host.replaceChildren(iframe);
+    host.dataset.animationState = 'playing';
+  }
+
   function artifactCard({ className, x, y, w, h, src, label, code, contain = false, iframe = false, stage, openMode = 'detail' }) {
     if (!src) return;
     const figure = document.createElement('figure');
@@ -174,7 +191,7 @@
     figure.dataset.stage = stage;
     figure.dataset.contain = contain ? 'true' : 'false';
     figure.style.cssText = `left:${x}px;top:${y}px;width:${w}px;height:${h}px`;
-    figure.innerHTML = `${iframe ? `<iframe src="${esc(src)}" title="${esc(label)}"></iframe>` : `<img src="${esc(src)}" alt="${esc(label)}">`}<figcaption><span>${esc(label)}</span><span>${esc(code)}</span></figcaption>`;
+    figure.innerHTML = `${iframe ? `<div class="animation-preview" data-animation-src="${esc(src)}" data-animation-title="${esc(label)}" data-animation-state="waiting"><span>▶</span><strong>Layer animation</strong></div>` : `<img src="${esc(src)}" alt="${esc(label)}">`}<figcaption><span>${esc(label)}</span><span>${esc(code)}</span></figcaption>`;
     figure.addEventListener('click', (event) => {
       event.stopPropagation();
       if (openMode === 'image') openMedia(src, label, 'image');
@@ -287,6 +304,7 @@
     phaseNav?.querySelectorAll('button').forEach((button) => button.classList.toggle('is-active', button.dataset.phase === stage.phase));
     detailContent.innerHTML = detailFor(stage);
     detailPanel.classList.add('is-open');
+    if (id === 'layers') restartLayerAnimation();
     if (updateUrl) {
       const url = new URL(location.href);
       url.searchParams.set('stage', stage.order.replace(/^0/, ''));
@@ -345,8 +363,10 @@
     const requestedStage = requested ? data.stages.find((item) => item.order.replace(/^0/, '') === requested || item.id === requested) : null;
     const defaultStage = document.body.dataset.defaultStage ? stageById.get(document.body.dataset.defaultStage) : null;
     const initialStage = requestedStage || defaultStage;
+    const viewer = { data, viewport, world, flowLines, phaseNav, detailPanel, selectStage, initialStage, restartLayerAnimation, getViewState: () => ({ scale, tx, ty }) };
+    window.__POSTER_REPLAY_VIEWER__ = viewer;
     if (window.__POSTER_REPLAY_MOTION__?.mount) {
-      window.__POSTER_REPLAY_MOTION__.mount({ data, viewport, world, flowLines, phaseNav, detailPanel, selectStage, initialStage, getViewState: () => ({ scale, tx, ty }) });
+      window.__POSTER_REPLAY_MOTION__.mount(viewer);
     } else if (initialStage) {
       selectStage(initialStage.id, false);
     }

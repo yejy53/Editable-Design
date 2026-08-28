@@ -562,8 +562,17 @@ the HTML, editor, PNG, layer breakdown, or Replay delivery.
 
 ## Deliver
 
-Give the location of the PNG, `index.html`, `editor.html`, `layers.html`, and
-`replay/index.html`, the canvas size and the font families used, and the text
+Use these stable English labels in the user-facing handoff, regardless of the
+language used inside the design:
+
+- **Final Design** — `out/poster.png`
+- **Editable Source** — `index.html`
+- **Visual Editor** — `editor.html`
+- **Layer Breakdown** — `layers.html`
+- **Agent Design Replay** — `replay/index.html`
+
+Give the location of each available output, the canvas size and the font
+families used, and the text
 you read line by line off the render. Tell the
 user that `editor.html` supports mouse dragging, eight-handle width/height
 resizing, double-click text editing, and scan/explode/collapse views.

@@ -252,6 +252,12 @@ button { font: inherit; }
 }
 .external-artifact:hover { transform: translateY(-3px); box-shadow: 0 21px 46px rgba(66,57,44,.17); }
 .external-artifact img, .external-artifact iframe { display: block; width: 100%; height: 100%; border: 0; object-fit: cover; background: #f0eee8; pointer-events: none; }
+.animation-preview { display: grid; width: 100%; height: 100%; place-content: center; justify-items: center; gap: 10px; background: linear-gradient(145deg,#edf5f0,#dceae1); color: #52725f; }
+.animation-preview > span { display: grid; width: 54px; height: 54px; place-items: center; border: 2px solid #78a087; border-radius: 50%; background: rgba(255,255,255,.82); font-size: 18px; }
+.animation-preview > strong { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+.animation-preview[data-animation-state="playing"] > span,
+.animation-preview[data-animation-state="playing"] > strong { display: none; }
+.animation-preview iframe { width: 100%; height: 100%; }
 .external-artifact[data-contain="true"] img { object-fit: contain; }
 .external-artifact figcaption { position: absolute; left: 7px; right: 7px; bottom: 7px; display: flex; justify-content: space-between; gap: 6px; padding: 6px 8px; border-radius: 7px; background: rgba(255,255,255,.94); color: #555149; font-size: 8px; font-weight: 800; }
 .external-artifact figcaption span:last-child { color: #99938a; font-family: ui-monospace, monospace; }
