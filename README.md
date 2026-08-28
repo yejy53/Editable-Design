@@ -78,14 +78,10 @@ npm ci --prefix ~/.codex/skills/editable-design/scripts
 ~/.codex/skills/editable-design/scripts/doctor.sh
 ```
 
-Once installed, invoke the skill by name and describe the visual, format, content, and any exact text in natural language:
+Once installed, invoke the skill by name and describe what you want to create in natural language. For example, this request corresponds to the [Red Panda Field Guide](#information-design) in the Gallery:
 
 ```text
-Use $editable-design to design a premium 3:4 campaign poster for a tea launch. Keep all typography editable.
-
-Use $editable-design to turn the following content into an editable information design: ...
-
-Use $editable-design to recreate this reference as an editable poster with real text and independent assets.
+Use $editable-design to create an editable encyclopedia-style field guide about the red panda.
 ```
 
 For optional editable PowerPoint export, add only the companion skill to the same sparse checkout:
