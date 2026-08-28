@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML to Editable PPTX"
+  short_description: "Convert compatible HTML into editable PowerPoint"
+  default_prompt: "Use $html-to-pptx to convert this HTML design into an editable PowerPoint file."

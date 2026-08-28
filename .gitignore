@@ -1,0 +1,9 @@
+.DS_Store
+._*
+__pycache__/
+*.pyc
+node_modules/
+out/
+.trace/
+*.tar.gz
+*.zip

@@ -15,6 +15,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 - [Overview](#overview)
 - [Why Editable Visual Design](#why-editable-visual-design)
 - [Three Core Ideas](#three-core-ideas)
+- [Toolkit](#toolkit)
 - [Gallery](#gallery)
   - [🎯 Campaigns](#campaigns)
   - [📚 Information Design](#information-design)
@@ -23,6 +24,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
   - [🎨 Art Design](#art-design)
 - [Quick Start](#quick-start)
 - [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 ## Why Editable Visual Design
 
@@ -48,6 +50,17 @@ An image model provides art direction—composition, hierarchy, color, and spati
 ### 3. Editable and Quality-Gated Artifacts
 
 The result contains real text, semantic layers, and independent assets that can be selected, moved, edited, and exported. Deterministic checks cover the canvas, fonts, layer contracts, rendering, and editor round trips.
+
+## Toolkit
+
+This repository now ships the code behind the workflow as two independent Codex skills:
+
+| Skill | Purpose | Main outputs |
+| --- | --- | --- |
+| [`editable-design`](./skills/editable-design/) | Create polished fixed-canvas visual designs from a brief | HTML, PNG, mouse editor, animated layer breakdown, and Agent Design Replay |
+| [`html-to-pptx`](./skills/html-to-pptx/) | Optionally convert compatible HTML into editable PowerPoint | Editable `.pptx` with independently selectable elements where the source structure permits |
+
+`editable-design` is the complete core workflow and does not require PowerPoint support. `html-to-pptx` is a sibling tool that runs only when a PPTX is requested. Installation is covered in [Quick Start](#quick-start); the standalone [Toolkit guide](./TOOLKIT.md) and each skill's README contain the detailed requirements and direct commands.
 
 ## Gallery
 
@@ -666,7 +679,34 @@ There is Chinese text near the middle reading “文化科技大會,” and addi
 
 ## Quick Start
 
-Editable Visual Design is implemented as the `poster-building` skill. The installable skill package and a reproducible starter project are being prepared for the public release. Until then, the Gallery publishes the original prompts and rendered outcomes, with editable demonstrations and Agent Design Replays being added case by case.
+Clone the repository and install the main skill into Codex:
+
+```bash
+git clone https://github.com/yejy53/Editable-Design.git
+cd Editable-Design
+
+mkdir -p ~/.codex/skills
+cp -R skills/editable-design ~/.codex/skills/
+npm ci --prefix ~/.codex/skills/editable-design/scripts
+~/.codex/skills/editable-design/scripts/doctor.sh
+```
+
+Then ask Codex to use it:
+
+```text
+Use $editable-design to create a polished 3:4 campaign poster for ...
+```
+
+Optional editable PowerPoint export is provided by the companion skill:
+
+```bash
+cp -R skills/html-to-pptx ~/.codex/skills/
+python3 -m pip install -r ~/.codex/skills/html-to-pptx/requirements.txt
+python3 -m playwright install chromium
+~/.codex/skills/html-to-pptx/scripts/doctor.sh
+```
+
+See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`](./skills/html-to-pptx/README.md) for requirements, capability notes, and direct CLI usage. To build a clean source archive containing both skills, run `./pack.sh`.
 
 ## Acknowledgements
 
@@ -676,3 +716,7 @@ We are grateful to the open-source projects that have helped shape the public co
 - [OpenDesign](https://github.com/EthanGuo2022/OpenDesign), for advancing open, agent-driven, editable visual artifacts and visible design trajectories.
 
 And thanks to the broader open-source design and Coding Agent communities for making this work possible.
+
+## License
+
+This community project is provided under the [Apache License 2.0](./LICENSE) and is not an official OpenAI project. See [Third-party notices](./THIRD_PARTY_NOTICES.md) for dependency attribution.

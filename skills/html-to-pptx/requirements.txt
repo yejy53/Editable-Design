@@ -1,0 +1,4 @@
+playwright
+python-pptx
+Pillow
+numpy

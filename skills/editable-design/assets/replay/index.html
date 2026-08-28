@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent 创意轨迹</title>
+  <link rel="stylesheet" href="replay.css">
+</head>
+<body>
+  <header class="replay-header">
+    <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="replay-title">
+      <strong id="project-title">Agent 创意轨迹</strong>
+      <span id="project-status">已完成</span>
+    </div>
+    <div class="view-controls" aria-label="画布控制">
+      <button type="button" class="play-replay" id="play-replay" aria-label="播放完整创意轨迹"><span aria-hidden="true">▶</span><b>播放轨迹</b></button>
+      <button type="button" id="fit-view">全览</button>
+      <button type="button" id="zoom-out" aria-label="缩小">−</button>
+      <output id="zoom-label">100%</output>
+      <button type="button" id="zoom-in" aria-label="放大">+</button>
+    </div>
+  </header>
+
+  <main class="replay-shell">
+    <section class="canvas-viewport" id="canvas-viewport" aria-label="Agent 创意流程画布">
+      <div class="canvas-world" id="canvas-world">
+        <nav class="phase-nav" id="phase-nav" aria-label="创意阶段">
+          <button type="button" data-stage="input" data-phase="think">
+            <img src="icons/plan.png" alt=""><span>01</span><strong>理解与规划</strong><small>01—03</small>
+          </button>
+          <button type="button" data-stage="assets" data-phase="make">
+            <img src="icons/html.png" alt=""><span>02</span><strong>生成与构建</strong><small>04—05</small>
+          </button>
+          <button type="button" data-stage="review" data-phase="prove">
+            <img src="icons/review.png" alt=""><span>03</span><strong>观察与修正</strong><small>06—07</small>
+          </button>
+        </nav>
+        <svg class="flow-lines" id="flow-lines" viewBox="0 0 2540 1780" aria-hidden="true"></svg>
+        <div id="stage-layer"></div>
+        <div id="artifact-layer"></div>
+      </div>
+    </section>
+    <aside class="detail-panel" id="detail-panel" aria-live="polite" aria-label="节点详情">
+      <button type="button" class="detail-close" id="detail-close" aria-label="关闭详情">×</button>
+      <div id="detail-content"></div>
+    </aside>
+    <div class="media-lightbox" id="media-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="media-lightbox-title">
+      <button type="button" class="media-lightbox-close" id="media-lightbox-close" aria-label="关闭放大预览">×</button>
+      <div class="media-lightbox-frame" id="media-lightbox-frame"></div>
+      <div class="media-lightbox-caption"><strong id="media-lightbox-title"></strong><span id="media-lightbox-note"></span></div>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="replay.js"></script>
+  <script src="replay-motion.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your poster is taking shape</title>
+<meta name="poster-preview" content="placeholder">
+<style>
+  /* Palette and font stacks live here and are referenced throughout.
+     Replace them with the poster's own values. */
+  :root {
+    --ink: #f2ede3;
+    --ink-dim: #a9a196;
+    --ground: #14171a;
+    --accent: #b4472a;
+
+    --font-display: "PingFang SC", "Hiragino Sans GB", Georgia, serif;
+    --font-body: "PingFang SC", "Hiragino Sans GB", Helvetica, sans-serif;
+  }
+
+  /* border-box everywhere. A layer with padding measures wider than its `width`
+     under content-box, and anything that writes the measured width back - an
+     editor converting the layout to absolute positioning, for instance - adds
+     the padding a second time. */
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; background: #0c0e10; }
+
+  .poster {
+    position: relative;
+    width: 1200px;
+    height: 1600px;
+    overflow: hidden;
+    background: var(--ground);
+    font-family: var(--font-body);
+  }
+
+  /* Preview scaffolding only. Delete it before delivery and do not infer the
+     final composition or asset topology from it. */
+  .preview-frame {
+    position: absolute;
+    left: 72px;
+    top: 72px;
+    width: 1056px;
+    height: 1456px;
+    border: 2px dashed rgba(242, 237, 227, 0.22);
+  }
+
+  .preview-status {
+    position: absolute;
+    left: 300px;
+    top: 650px;
+    width: 600px;
+    text-align: center;
+  }
+
+  .preview-status p {
+    margin: 0 0 24px;
+    color: var(--accent);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .preview-status h1 {
+    margin: 0 0 22px;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 1.12;
+  }
+
+  .preview-status span {
+    color: var(--ink-dim);
+    font-size: 25px;
+    line-height: 1.45;
+  }
+</style>
+</head>
+<body>
+  <div class="poster" data-canvas-width="1200" data-canvas-height="1600">
+    <div class="preview-frame"></div>
+    <div class="preview-status">
+      <p>Fixed canvas · 1200 × 1600</p>
+      <h1>Your poster is taking shape</h1>
+      <span>Composition will follow the brief and visual reference</span>
+    </div>
+  </div>
+</body>
+</html>

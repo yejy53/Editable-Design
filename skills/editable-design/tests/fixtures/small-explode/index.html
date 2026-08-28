@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>少组件拆解回归测试</title>
+<style>
+:root {
+  --paper: #12382f;
+  --ink: #f4eddf;
+  --gold: #c6a45d;
+  --font-display: "Songti SC", "STSong", serif;
+  --font-body: "PingFang SC", "Hiragino Sans GB", sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #12382f; }
+.poster {
+  position: relative;
+  width: 800px;
+  height: 1000px;
+  overflow: hidden;
+  background: linear-gradient(155deg, #173f35 0%, #0b2a23 100%);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+.wash {
+  position: absolute;
+  left: 0;
+  top: 620px;
+  width: 800px;
+  height: 380px;
+  background: linear-gradient(180deg, rgba(244,237,223,0) 0%, rgba(244,237,223,0.18) 100%);
+}
+[data-layer-id] { position: absolute; margin: 0; }
+.headline {
+  left: 80px;
+  top: 130px;
+  width: 500px;
+  height: 100px;
+  font-family: var(--font-display);
+  font-size: 76px;
+  line-height: 100px;
+}
+.subhead {
+  left: 84px;
+  top: 260px;
+  width: 420px;
+  height: 50px;
+  color: var(--gold);
+  font-size: 30px;
+  line-height: 50px;
+}
+.caption {
+  left: 84px;
+  top: 340px;
+  width: 560px;
+  height: 42px;
+  font-size: 24px;
+  line-height: 42px;
+}
+.badge {
+  left: 84px;
+  top: 810px;
+  width: 210px;
+  height: 58px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+</style>
+</head>
+<body>
+<div class="poster" data-canvas-width="800" data-canvas-height="1000">
+  <div class="wash"></div>
+  <div data-explode-group="hero" data-explode-label="标题模块">
+    <div class="headline" data-layer-id="headline">山川入画</div>
+    <div class="subhead" data-layer-id="subhead">少组件拆解</div>
+    <div class="caption" data-layer-id="caption">文字叶子应作为同级补充组件出现</div>
+  </div>
+  <div class="badge" data-layer-id="badge">回归测试</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Editable Design"
+  short_description: "Create editable fixed-canvas visual designs"
+  default_prompt: "Use $editable-design to create and render a polished fixed-canvas design with editable HTML and a layer breakdown."
