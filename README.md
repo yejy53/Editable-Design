@@ -6,7 +6,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 
 ## Overview
 
-<a href="https://github.com/user-attachments/assets/5d0af36b-b2a7-42e1-abfb-24f43ac3e55f">
+<a href="https://github.com/user-attachments/assets/1922f445-1c2e-4ff5-8ce2-36fdaf81103e">
   <img src="./assets/overview-cover.webp" width="100%" alt="Play the Editable Visual Design overview video">
 </a>
 
@@ -78,10 +78,14 @@ npm ci --prefix ~/.codex/skills/editable-design/scripts
 ~/.codex/skills/editable-design/scripts/doctor.sh
 ```
 
-Then ask Codex to use it:
+Once installed, invoke the skill by name and describe the visual, format, content, and any exact text in natural language:
 
 ```text
-Use $editable-design to create a polished 3:4 campaign poster for ...
+Use $editable-design to design a premium 3:4 campaign poster for a tea launch. Keep all typography editable.
+
+Use $editable-design to turn the following content into an editable information design: ...
+
+Use $editable-design to recreate this reference as an editable poster with real text and independent assets.
 ```
 
 For optional editable PowerPoint export, add only the companion skill to the same sparse checkout:
