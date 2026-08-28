@@ -11,9 +11,9 @@ See the public [Editable Visual Design Gallery](https://github.com/yejy53/Editab
 | Skill | Purpose | Main outputs |
 | --- | --- | --- |
 | [`editable-design`](skills/editable-design/) | Create polished posters, covers, campaign graphics, information designs, menus, banners, and social cards | `index.html`, rendered PNG, `editor.html`, `layers.html`, and `replay/index.html` |
-| [`html-to-pptx`](skills/html-to-pptx/) | Convert compatible fixed-canvas HTML into an editable PowerPoint file | Editable `.pptx` with independently selectable elements where the source structure permits |
+| [`html-to-pptx`](skills/html-to-pptx/) | Convert clean fixed-canvas HTML, Editable Design editor pages, or exploded-layer boards | Editable `.pptx` with independently selectable elements where the source structure permits |
 
-The skills are siblings, not nested dependencies. `editable-design` completes its normal HTML and PNG delivery without PowerPoint support. `html-to-pptx` runs only when the user asks for a PPTX and can also convert compatible HTML produced elsewhere.
+The skills are siblings, not nested dependencies. `editable-design` completes its normal HTML and PNG delivery without PowerPoint support. `html-to-pptx` runs only when the user asks for a PPTX and automatically recognizes clean design HTML, `editor.html`, and `layers.html`; it can also convert compatible HTML produced elsewhere.
 
 ## Install
 

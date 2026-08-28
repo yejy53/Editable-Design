@@ -7,6 +7,8 @@
 用法：
     python3 exploded_to_pptx.py <layers.html> [-o out.pptx] [--keep-overview]
 
+通常不必直接调它 —— ``to_pptx.py`` 会自动认出展开图并转到这里。
+
 页面自身的三个特性会干扰通用转换器，这里在量画布之前一次性抹平：
   1. board 会按窗口大小自适应缩放，而转换器又要把视口调成画布大小 —— 两者互相触发，
      越缩越小。用 !important 规则钉死 transform，压过页面脚本写的 inline style。
@@ -91,8 +93,8 @@ PROBE_JS = r"""
 """
 
 
-def _locate_converter():
-    """从本 Skill 自带的确定性转换核心加载模块。"""
+def locate_converter():
+    """Load the deterministic conversion core vendored with this Skill."""
     vendored = Path(__file__).resolve().with_name("_html_to_pptx.py")
     if vendored.is_file():
         spec = importlib.util.spec_from_file_location("_wca_html_to_pptx", vendored)
@@ -105,11 +107,16 @@ def _locate_converter():
     raise ModuleNotFoundError("缺少本 Skill 的 scripts/_html_to_pptx.py")
 
 
+# 老名字，外部可能还在用
+_locate_converter = locate_converter
+
+
 def _browser_args() -> list[str]:
+    """Keep Chromium sandboxing on unless the host explicitly opts out."""
     return ["--no-sandbox"] if os.environ.get("HTML_TO_PPTX_NO_SANDBOX") == "1" else []
 
 
-def _probe(src: Path) -> dict:
+def probe(src: Path) -> dict:
     """先量一遍 board：拿自然尺寸定视口，顺便报告分块构成。"""
     from playwright.sync_api import sync_playwright
 
@@ -127,6 +134,43 @@ def _probe(src: Path) -> dict:
             browser.close()
 
 
+_probe = probe
+
+
+def convert(src: Path, out: Path, *, keep_overview: bool = False, quiet: bool = False) -> dict:
+    """layers.html → 一页 pptx。返回 build_editable_pptx 的 manifest。"""
+    converter = locate_converter()
+    info = probe(src)
+    if not info:
+        raise RuntimeError(f"页面里没有 {BOARD}，这不是一张图层展开图")
+
+    kept = [i for i in info["items"] if keep_overview or not i["overview"]]
+    if not quiet:
+        units: dict[str, int] = {}
+        for item in kept:
+            units[item["unit"]] = units.get(item["unit"], 0) + 1
+        print(
+            f"board {info['width']:.0f}x{info['height']:.0f} · 分块 {len(kept)} "
+            f"（跳过 overview {len(info['items']) - len(kept)}）· {units}"
+        )
+
+    prepare = f"() => ({PREPARE_JS})({json.dumps({'keepOverview': keep_overview})})"
+    work = Path(tempfile.mkdtemp(prefix="exploded_pptx_"))
+    manifest = converter.build_editable_pptx(
+        src,
+        work,
+        out_name=out.name,
+        canvas_selector=BOARD,
+        use_llm=False,
+        ready_selector=READY,
+        prepare_js=prepare,
+        viewport=(int(info["width"]), int(info["height"])),
+    )
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_bytes(Path(manifest["pptx_path"]).read_bytes())
+    return manifest
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="layers.html 图层展开图 -> 一页可编辑 PPTX")
     ap.add_argument("html", help="case 的 layers.html")
@@ -141,41 +185,11 @@ def main() -> None:
     out = Path(args.out).resolve() if args.out else src.with_suffix(".pptx")
 
     try:
-        converter = _locate_converter()
+        manifest = convert(src, out, keep_overview=args.keep_overview)
     except Exception as exc:  # noqa: BLE001
-        sys.stderr.write(f"无法加载转换器: {exc}\n")
-        sys.exit(1)
-
-    info = _probe(src)
-    if not info:
-        sys.stderr.write(f"页面里没有 {BOARD}，这不是一张图层展开图。\n")
+        sys.stderr.write(f"{exc}\n")
         sys.exit(2)
-    kept = [i for i in info["items"] if args.keep_overview or not i["overview"]]
-    dropped = len(info["items"]) - len(kept)
-    units: dict[str, int] = {}
-    for item in kept:
-        units[item["unit"]] = units.get(item["unit"], 0) + 1
-    print(
-        f"board {info['width']:.0f}x{info['height']:.0f} · 分块 {len(kept)} "
-        f"（跳过 overview {dropped}）· {units}"
-    )
 
-    prepare = f"() => ({PREPARE_JS})({json.dumps({'keepOverview': args.keep_overview})})"
-    work = Path(tempfile.mkdtemp(prefix="exploded_pptx_"))
-    manifest = converter.build_editable_pptx(
-        src,
-        work,
-        out_name=out.name,
-        canvas_selector=BOARD,
-        use_llm=False,
-        ready_selector=READY,
-        prepare_js=prepare,
-        viewport=(int(info["width"]), int(info["height"])),
-    )
-
-    produced = Path(manifest["pptx_path"])
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_bytes(produced.read_bytes())
     print(
         f"✅ {out}\n   形状 {manifest['shape_count']} · 文本框 {manifest['text_count']} · "
         f"独立图片 {manifest['picture_count']} · 元素 {manifest['element_count']}"

@@ -58,7 +58,7 @@ This repository now ships the code behind the workflow as two independent Codex 
 | Skill | Purpose | Main outputs |
 | --- | --- | --- |
 | [`editable-design`](./skills/editable-design/) | Create polished fixed-canvas visual designs from a brief | HTML, PNG, mouse editor, animated layer breakdown, and Agent Design Replay |
-| [`html-to-pptx`](./skills/html-to-pptx/) | Optionally convert compatible HTML into editable PowerPoint | Editable `.pptx` with independently selectable elements where the source structure permits |
+| [`html-to-pptx`](./skills/html-to-pptx/) | Convert clean designs, editor pages, or exploded-layer HTML into editable PowerPoint | Editable `.pptx` with independently selectable elements where the source structure permits |
 
 `editable-design` is the complete core workflow and does not require PowerPoint support. `html-to-pptx` is a sibling tool that runs only when a PPTX is requested. Installation is covered in [Quick Start](#quick-start); the standalone [Toolkit guide](./TOOLKIT.md) and each skill's README contain the detailed requirements and direct commands.
 

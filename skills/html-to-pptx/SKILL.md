@@ -1,6 +1,6 @@
 ---
 name: html-to-pptx
-description: 把 slide／poster 的 HTML 确定性地转成可编辑 PPTX——每个视觉元素（插画、图标、箭头、装饰线、文字）都是能单独选中拖动的对象，而不是压成一张背景图；也能把 case 的图层展开图 layers.html 转成一页可编辑 PPTX；并可把产物渲回图片做保真度比对。当用户要导出 pptx／ppt、问「HTML 怎么转 PowerPoint」、想让生成的海报或幻灯片能在 PowerPoint 里继续改、要把图层展开图／拆解图变成 ppt、或需要检查转换后元素是否独立可编辑时使用。
+description: 把 slide／poster 的 HTML 确定性地转成可编辑 PPTX——每个视觉元素（插画、图标、箭头、装饰线、文字）都是能单独选中拖动的对象，而不是压成一张背景图；也能自动识别并转换 Editable Design 的 editor.html 和 case 的图层展开图 layers.html；并可把产物渲回图片做保真度比对。当用户要导出 pptx／ppt、问「HTML 怎么转 PowerPoint」、想让生成的海报或幻灯片能在 PowerPoint 里继续改、要把图层展开图／拆解图变成 ppt、或需要检查转换后元素是否独立可编辑时使用。
 ---
 
 # HTML → 可编辑 PPTX
@@ -27,15 +27,33 @@ python3 -m playwright install chromium
 
 ## 转换
 
+一个入口支持三类页面并自动识别：
+
 ```bash
-python3 scripts/to_pptx.py <index.html>                     # → 同目录同名 .pptx
-python3 scripts/to_pptx.py <index.html> -o deck.pptx
-python3 scripts/to_pptx.py <index.html> --selector '#hero'  # 画布识别失败时手动指定
+python3 scripts/to_pptx.py <任意 HTML>                       # → 同目录同名 .pptx
+python3 scripts/to_pptx.py <HTML> -o deck.pptx
+python3 scripts/to_pptx.py <HTML> --selector '#hero'         # 画布识别失败时手动指定
+python3 scripts/to_pptx.py <HTML> --mode exploded            # 自动识别出错时手动指定
 ```
 
-输出示例，**先看这行确认画布和元素分布是否合理**：
+| 输入页面 | 自动模式 | 转换前处理 |
+| --- | --- | --- |
+| `index.html`、`*.edited.html` | `plain` | 直接测量固定画布 |
+| `editor.html` | `editor` | 调用编辑器的 `fullHTML()`，剥掉工具栏、面板和缩放舞台 |
+| `layers.html` | `exploded` | 等动画落位、去除 overview、关闭响应式缩放 |
+
+判别信号来自页面本身：编辑器暴露 `__layerEditor`／`__freeEditor.fullHTML()`，展开图包含
+`.hf-exploded-board`。如果页面像编辑器但 API 没有成功加载，转换会停止并报错，不会把
+编辑器 UI 悄悄写进 PPTX。
+
+`editor.html` 使用的 `fullHTML()` 与编辑器的 “Download HTML” 按钮是同一条官方导出路径。
+临时 HTML 写在原文件旁边以保留相对图片和字体路径，转换完成后立即删除。
+
+输出示例，**先确认页面类型、画布和元素分布是否合理**：
 
 ```
+页面类型：editor（自动识别）
+   编辑器 fullHTML() 导出 15 KB，已剥掉编辑器外壳
 ✅ /path/dragon_poster.pptx
    画布 1067x1600 ([data-canvas-width]) · 形状 4 · 文本框 10 · 独立图片 13 · 元素 28
 ```
@@ -47,7 +65,9 @@ python3 scripts/to_pptx.py <index.html> --selector '#hero'  # 画布识别失败
 PPTX，默认丢掉 overview 那一项：
 
 ```bash
-python3 scripts/exploded_to_pptx.py <case>/layers.html            # → 同目录 layers.pptx
+python3 scripts/to_pptx.py <case>/layers.html                     # → 同目录 layers.pptx
+python3 scripts/to_pptx.py <case>/layers.html --keep-overview
+python3 scripts/exploded_to_pptx.py <case>/layers.html            # 等价的专用入口
 python3 scripts/exploded_to_pptx.py <case>/layers.html --keep-overview
 ```
 
@@ -59,8 +79,8 @@ board 3060x2400 · 分块 26 （跳过 overview 1）· {'layer': 12, 'group': 13
 
 粒度是**元素级**而非分块级：每块内部的每行字、每张照片、每张卡片都是独立对象。
 
-这类页面有三个特性会干扰通用转换，`exploded_to_pptx.py` 在量画布之前一次性抹平，
-所以**不要直接用 `to_pptx.py` 指向 board**：
+这类页面有三个特性会干扰通用转换，`to_pptx.py` 识别后会转入
+`exploded_to_pptx.py`，在量画布之前一次性抹平：
 
 1. board 会按窗口自适应缩放，而转换器又要把视口调成画布大小，两者互相触发、越缩越小。
    用 `!important` 规则钉死 `transform`，压过页面脚本写的 inline style。
@@ -190,9 +210,10 @@ z-index:1` 的卡片会排到自己子元素后面，用底色盖住自己的图
 源 HTML 整页画在**一个大 `<svg>`** 里。SVG 内部节点不拆——这类页面没有可分的顶层结构，
 是转换器的已知限制，不是 bug。要拆得改 HTML 生成侧，让结构落在 DOM 元素上。
 
-**传错文件**
-别传编辑器外壳 `editor.html`（编辑器 UI 会被一起拍进去）。传原始 `index.html`，
-或 Editable Design 编辑器「下载 HTML」导出的 `*.edited.html`。
+**编辑器 UI 被拍进了 PPTX**
+说明页面被当作 `plain` 转换了。正常的 Editable Design `editor.html` 会被自动识别并调用
+`fullHTML()`；如果编辑器 API 没有成功加载，改传原始 `index.html` 或编辑器下载的
+`*.edited.html`。
 
 **相对资源（css／字体／图片）丢失**
 按 HTML 所在目录解析，所以在原目录里跑最稳。
@@ -217,4 +238,5 @@ HTML、PNG、浏览器编辑器和设计回放；本 Skill 只负责把用户指
 
 当 Editable Design 已完成核心设计，如果本 Skill 可用，可以向用户简短说明“还可以导出为
 可编辑 PPTX”。**只有用户明确说需要时才运行转换**，不能让 PPTX 导出阻塞或延迟核心设计交付。
-转换时使用原始 `index.html` 或编辑器下载的 `*.edited.html`，绝不使用 `editor.html`。
+转换时可使用原始 `index.html`、编辑器下载的 `*.edited.html`、正常加载的 `editor.html`
+或 `layers.html`；入口会自动选择对应的预处理路径。

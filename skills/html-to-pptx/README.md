@@ -1,6 +1,6 @@
 # HTML to Editable PPTX
 
-`html-to-pptx` is an independent Codex skill that deterministically converts compatible slide, poster, and fixed-canvas HTML into an editable PowerPoint file. It also supports `layers.html` exploded-layer boards and an optional visual comparison workflow.
+`html-to-pptx` is an independent Codex skill that deterministically converts compatible slide, poster, and fixed-canvas HTML into an editable PowerPoint file. One entry point automatically handles clean design HTML, Editable Design's `editor.html`, and `layers.html` exploded-layer boards.
 
 ## Requirements
 
@@ -26,11 +26,14 @@ python3 -m pip install -r requirements-check.txt
 
 ```bash
 python3 scripts/to_pptx.py /path/to/index.html -o /path/to/design.pptx
-python3 scripts/exploded_to_pptx.py /path/to/layers.html
+python3 scripts/to_pptx.py /path/to/editor.html
+python3 scripts/to_pptx.py /path/to/layers.html --keep-overview
 python3 scripts/render_check.py /path/to/index.html /path/to/design.pptx
 ```
 
-Use the original `index.html` or an editor-downloaded `*.edited.html` beside its assets. Do not pass an editor shell such as `editor.html`.
+The default `--mode auto` recognizes `plain`, `editor`, and `exploded` pages. For `editor.html`, it calls the editor's own `fullHTML()` export to remove the toolbar, panels, and scaled stage before conversion. For `layers.html`, it waits for the animation to settle and removes the overview by default. Use `--mode` only when automatic detection needs to be overridden.
+
+Keep the HTML beside its assets so relative image, CSS, and font paths resolve correctly.
 
 Editable Design is a supported source of HTML, but it is not required. This skill runs only when PPTX conversion is requested.
 
