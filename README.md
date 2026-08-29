@@ -64,7 +64,30 @@ This repository now ships the code behind the workflow as two independent Codex 
 
 ## Quick Start
 
-Use a sparse, blob-filtered clone so Git checks out the installable skill without downloading the Gallery media:
+### Option 1: Install with Codex
+
+1. Open a Codex task and ask Codex to install and initialize the Skill:
+
+   ```text
+   Install and initialize the editable-design Codex Skill from:
+   https://github.com/yejy53/Editable-Design/tree/main/skills/editable-design
+
+   Run its dependency setup and doctor check after installation.
+   ```
+
+2. Start a new Codex task, then describe the visual you want to create. For example:
+
+   ```text
+   Use $editable-design to create an editable encyclopedia-style field guide about the red panda.
+   ```
+
+3. The Skill will create the finished design together with its editable source: real text, independent imagery, semantic HTML layers, a visual editor, a layer breakdown, and an Agent Design Replay.
+
+> **Recommended:** Use [GPT-5.6](https://developers.openai.com/api/docs/guides/latest-model) with `high` reasoning effort or above for the strongest results.
+
+### Option 2: Install manually
+
+Use a sparse, blob-filtered clone to install only the Skill without downloading the Gallery media:
 
 ```bash
 git clone --depth 1 --filter=blob:none --sparse \
@@ -78,15 +101,9 @@ npm ci --prefix ~/.codex/skills/editable-design/scripts
 ~/.codex/skills/editable-design/scripts/doctor.sh
 ```
 
-> **Recommended:** Use [GPT-5.6](https://developers.openai.com/api/docs/guides/latest-model) with `high` reasoning effort or above for the strongest results.
+### Optional: Editable PowerPoint export
 
-Once installed, invoke the skill by name and describe what you want to create in natural language. For example, this request corresponds to the [Red Panda Field Guide](#information-design) in the Gallery:
-
-```text
-Use $editable-design to create an editable encyclopedia-style field guide about the red panda.
-```
-
-For optional editable PowerPoint export, add only the companion skill to the same sparse checkout:
+Install the companion `html-to-pptx` Skill only when editable PowerPoint export is needed:
 
 ```bash
 git sparse-checkout add skills/html-to-pptx
@@ -96,7 +113,7 @@ python3 -m playwright install chromium
 ~/.codex/skills/html-to-pptx/scripts/doctor.sh
 ```
 
-The sparse checkout keeps the selected skills and repository metadata locally; Gallery assets are not checked out. See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`](./skills/html-to-pptx/README.md) for requirements, capability notes, and direct CLI usage. To build a clean source archive containing both skills, run `./pack.sh`.
+See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`](./skills/html-to-pptx/README.md) for detailed requirements and commands. To build a clean source archive containing both Skills, run `./pack.sh`.
 
 ## Gallery
 
