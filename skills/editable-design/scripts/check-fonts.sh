@@ -41,6 +41,39 @@ if [[ -z "$requested" ]]; then
   test -f "$html" || { echo "no such file: $html" >&2; exit 2; }
 fi
 
+bundled_families=""
+if [[ -n "$html" ]]; then
+  bundled_families=$(
+    perl -0ne '
+      while (/\@font-face\s*\{(.*?)\}/sg) {
+        $block = $1;
+        if ($block =~ /font-family\s*:\s*(["'"'"']?)([^;"'"'"']+)\1\s*;/s) {
+          $family = $2;
+          $family =~ s/^\s+|\s+$//g;
+          print "$family\n";
+        }
+      }
+    ' "$html" | sort -u
+  )
+
+  html_dir="$(cd "$(dirname "$html")" && pwd)"
+  missing_assets=0
+  while IFS= read -r raw_url; do
+    [[ -n "$raw_url" ]] || continue
+    font_url="$(printf '%s' "$raw_url" | sed -e 's/^['"'"'"]//' -e 's/['"'"'"]$//' -e 's/[?#].*$//')"
+    case "$font_url" in
+      data:*|http://*|https://*) continue ;;
+    esac
+    if [[ ! -f "$html_dir/$font_url" ]]; then
+      printf 'FAIL  %-28s missing local font asset\n' "$font_url"
+      missing_assets=$(( missing_assets + 1 ))
+    fi
+  done < <(
+    perl -0ne 'while (/\@font-face\s*\{(.*?)\}/sg) { $b=$1; while ($b =~ /url\(([^)]+)\)/g) { print "$1\n" } }' "$html"
+  )
+  [[ "$missing_assets" -eq 0 ]] || exit 1
+fi
+
 # Collect every named family out of font-family declarations and --font-* custom
 # properties, dropping generic keywords and var() references.
 if [[ -n "$requested" ]]; then
@@ -58,7 +91,22 @@ else
   )
 fi
 
-[[ -n "$families" ]] || { echo "no named font families found in $html"; exit 0; }
+if [[ -n "$bundled_families" ]]; then
+  while IFS= read -r family; do
+    [[ -n "$family" ]] || continue
+    printf 'ok    %-28s bundled @font-face\n' "$family"
+  done <<< "$bundled_families"
+  families=$(
+    comm -23 \
+      <(printf '%s\n' "$families" | sed '/^[[:space:]]*$/d' | sort -u) \
+      <(printf '%s\n' "$bundled_families" | sed '/^[[:space:]]*$/d' | sort -u)
+  )
+fi
+
+[[ -n "$families" ]] || {
+  [[ -n "$bundled_families" ]] && echo "all named families are bundled and their local files exist" || echo "no named font families found in $html"
+  exit 0
+}
 
 browser="$("$here/render-poster.sh" --probe | awk '{ $1 = ""; sub(/^ +/, ""); print }')"
 [[ -n "$browser" && -x "$browser" ]] || {

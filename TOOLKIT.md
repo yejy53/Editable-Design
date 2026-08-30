@@ -33,8 +33,12 @@ Install the Editable Design runtime dependency and verify the browser setup:
 
 ```bash
 npm ci --prefix ~/.codex/skills/editable-design/scripts
+~/.codex/skills/editable-design/scripts/install-font-kit.sh
 ~/.codex/skills/editable-design/scripts/doctor.sh
 ```
+
+The font kit is self-hosted and versioned. Each generated project copies only
+the WOFF2 files it selects, rather than carrying the full library.
 
 For optional PowerPoint export, install its Python dependencies and Playwright browser:
 

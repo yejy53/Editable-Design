@@ -317,6 +317,10 @@ focused pass. Trace only the stable artifacts named below.
    decision once in `design-plan.md`. When two or more shipping assets are
    required, also write the minimal machine-readable `asset-plan.json` from
    that same decision. Record both together under `P11_asset_plan`.
+   When typography is a primary visual material or the editor needs stronger
+   alternatives, read [Font system](references/font-system.md), choose fonts by
+   role, and use the self-hosted kit rather than defaulting to the same system
+   sans/serif pair.
 5. **Generate the artwork** per the batching, retry, import, and inspection
    policy above, into `assets/`. Record the completed batch once. In multi-asset
    runs, every
@@ -327,6 +331,9 @@ focused pass. Trace only the stable artifacts named below.
    requests, absolute positioning inside the canvas, fixed px for every layout
    dimension. Declare the palette and font stacks on `:root` and reference them
    throughout. Do not write comments.
+   When the plan selects a bundled font, run `scripts/font-kit.mjs add <id>
+   index.html` after the HTML exists, then assign its generated
+   `--font-kit-<id>` variable to the intended type roles before checking fonts.
    For selected Lucide icons, resolve them from the bundled runtime at build
    time and inline only their SVG markup in the poster HTML; keep their size,
    stroke width, and color treatment consistent, and add no runtime import.
@@ -421,6 +428,11 @@ contains them.
   Use as many families as the composition genuinely needs while preserving a
   coherent hierarchy. Every step of the size ramp must be clearly different
   from the last.
+- Distinguish the active type system from the editor palette. A poster normally
+  uses two or three families, while three to five verified `:root` font roles
+  may be exposed as meaningful alternatives. For a poster, cover, flyer, or
+  campaign, do not ship only one generic sans stack unless the brief or brand
+  deliberately requires it.
 - For vertical CJK type, set `white-space: nowrap` and centre it with flex.
   `text-align` controls the vertical axis under `writing-mode`, so a fixed-width
   box leaves the text against its right edge.
@@ -429,6 +441,8 @@ contains them.
   image being dark enough exactly where you need it.
 - Do not default to a coloured or black text box: first use an existing calm region or a local scrim, and add a panel only when its material, edges, palette, and overlap make it an intentional part of the composition rather than a generic card.
 - When unsure about the layout, read [Layout and typography](references/layout-typography.md).
+- When typography is prominent or the available choices feel generic, read
+  [Font system](references/font-system.md) and use its self-hosted font kit.
 
 ### Build the default editing contract
 

@@ -63,6 +63,12 @@ throughout. Give every family a distinct job and valid script coverage. Add a
 family when the brand, reference, script, or typographic contrast requires it,
 not as decoration.
 
+Do not confuse visual consistency with typographic sameness. A finished poster
+usually activates two or three families, but its editor should expose three to
+five verified and meaningfully different font roles when the format benefits
+from later type changes. Read [Font system](font-system.md) for the curated local
+font kit, pairing patterns, and shipping rules.
+
 **Build a real size ramp.** display, headline, subhead, body, caption, each
 clearly different from the last. A ramp with 10 percent steps reads as an error.
 

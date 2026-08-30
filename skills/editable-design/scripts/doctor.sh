@@ -28,6 +28,14 @@ else
   bad "puppeteer-core" "run npm ci --prefix scripts"
 fi
 
+font_kit="$here/../font-kit/node_modules"
+if [[ -f "$font_kit/@fontsource-variable/fraunces/package.json" && -f "$font_kit/@fontsource-variable/noto-sans-sc/package.json" ]]; then
+  font_count="$(find "$font_kit" -mindepth 3 -maxdepth 3 -name package.json | wc -l | tr -d ' ')"
+  ok "Font kit" "$font_count curated packages"
+else
+  bad "Font kit" "run scripts/install-font-kit.sh"
+fi
+
 browser=""
 for candidate in "${EDITABLE_DESIGN_BROWSER:-}" "${PUPPETEER_EXECUTABLE_PATH:-}" "${POSTER_BROWSER:-}" "${CHROME_PATH:-}"; do
   if [[ -n "$candidate" && -x "$candidate" ]]; then browser="$candidate"; break; fi

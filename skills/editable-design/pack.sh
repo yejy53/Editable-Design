@@ -8,6 +8,7 @@ out="${1:-${TMPDIR:-/tmp}/editable-design-skill.tar.gz}"
 mkdir -p "$(dirname "$out")"
 tar \
   --exclude='editable-design/scripts/node_modules' \
+  --exclude='editable-design/font-kit/node_modules' \
   --exclude='editable-design/._*' \
   --exclude='editable-design/*/._*' \
   --exclude='editable-design/*/*/._*' \

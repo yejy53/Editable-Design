@@ -72,7 +72,7 @@ This repository now ships the code behind the workflow as two independent Codex 
    Install and initialize the editable-design Codex Skill from:
    https://github.com/yejy53/Editable-Design/tree/main/skills/editable-design
 
-   Run its dependency setup and doctor check after installation.
+   Install its runtime dependencies and font kit, then run its doctor check.
    ```
 
 2. Start a new Codex task, then describe the visual you want to create. For example:
@@ -98,6 +98,7 @@ git sparse-checkout set skills/editable-design
 mkdir -p ~/.codex/skills
 cp -R skills/editable-design ~/.codex/skills/
 npm ci --prefix ~/.codex/skills/editable-design/scripts
+~/.codex/skills/editable-design/scripts/install-font-kit.sh
 ~/.codex/skills/editable-design/scripts/doctor.sh
 ```
 

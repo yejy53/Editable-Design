@@ -13,8 +13,13 @@ Install the browser validation dependency once:
 
 ```bash
 npm ci --prefix scripts
+scripts/install-font-kit.sh
 scripts/doctor.sh
 ```
+
+The font-kit step installs a curated set of open-source Fontsource packages.
+Generated projects copy only the WOFF2 files they actually use, together with
+the corresponding license; the entire kit is never copied into one design.
 
 Set `EDITABLE_DESIGN_BROWSER=/path/to/chromium` only when automatic browser discovery fails.
 

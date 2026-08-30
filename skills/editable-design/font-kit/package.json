@@ -1,0 +1,19 @@
+{
+  "name": "editable-design-font-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Curated, self-hosted open-source fonts for Editable Design",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@fontsource-variable/bodoni-moda": "5.3.0",
+    "@fontsource-variable/fraunces": "5.3.0",
+    "@fontsource-variable/instrument-sans": "5.3.0",
+    "@fontsource-variable/noto-sans-sc": "5.3.0",
+    "@fontsource-variable/noto-serif-sc": "5.3.0",
+    "@fontsource-variable/roboto-condensed": "5.3.0",
+    "@fontsource-variable/space-grotesk": "5.3.0",
+    "@fontsource-variable/unbounded": "5.3.0",
+    "@fontsource/ma-shan-zheng": "5.3.1",
+    "@fontsource/zcool-xiaowei": "5.3.0"
+  }
+}
