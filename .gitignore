@@ -7,3 +7,4 @@ out/
 .trace/
 *.tar.gz
 *.zip
+.venv/

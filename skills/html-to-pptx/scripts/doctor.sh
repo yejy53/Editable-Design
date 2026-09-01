@@ -2,6 +2,17 @@
 set -u
 
 failures=0
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SKILL_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+VENV_PYTHON="$SKILL_DIR/.venv/bin/python"
+
+if [[ -n "${HTML_TO_PPTX_PYTHON:-}" ]]; then
+  PYTHON_BIN="$HTML_TO_PPTX_PYTHON"
+elif [[ -x "$VENV_PYTHON" ]]; then
+  PYTHON_BIN="$VENV_PYTHON"
+else
+  PYTHON_BIN="$(command -v python3 2>/dev/null || true)"
+fi
 
 ok() { printf '%-22s %s\n' "$1" "OK  $2"; }
 warn() { printf '%-22s %s\n' "$1" "OPTIONAL  $2"; }
@@ -9,8 +20,8 @@ bad() { printf '%-22s %s\n' "$1" "MISSING  $2"; failures=$((failures + 1)); }
 
 printf '%s\n\n' "HTML to PPTX doctor"
 
-if command -v python3 >/dev/null 2>&1; then
-  version="$(python3 -c 'import sys; print(".".join(map(str, sys.version_info[:3])))')"
+if [[ -n "$PYTHON_BIN" && -x "$PYTHON_BIN" ]]; then
+  version="$("$PYTHON_BIN" -c 'import sys; print(".".join(map(str, sys.version_info[:3])))')"
   major="${version%%.*}"
   minor="$(printf '%s' "$version" | cut -d. -f2)"
   if [[ "$major" -gt 3 || ( "$major" -eq 3 && "$minor" -ge 10 ) ]]; then ok "Python" "$version"; else bad "Python" "$version; requires >=3.10"; fi
@@ -19,10 +30,22 @@ else
 fi
 
 for module in playwright pptx PIL numpy; do
-  if python3 -c "import $module" >/dev/null 2>&1; then ok "$module" "installed"; else bad "$module" "install requirements.txt"; fi
+  if [[ -n "$PYTHON_BIN" ]] && "$PYTHON_BIN" -c "import $module" >/dev/null 2>&1; then ok "$module" "installed"; else bad "$module" "run: bash scripts/setup.sh"; fi
 done
 
-if python3 -c 'import fitz' >/dev/null 2>&1; then warn "PyMuPDF" "installed for comparison"; else warn "PyMuPDF" "install requirements-check.txt for comparison"; fi
+if [[ -n "$PYTHON_BIN" ]] && "$PYTHON_BIN" -c 'import fitz' >/dev/null 2>&1; then warn "PyMuPDF" "installed for comparison"; else warn "PyMuPDF" "install requirements-check.txt for comparison"; fi
+
+if [[ -n "$PYTHON_BIN" ]] && "$PYTHON_BIN" - <<'PY' >/dev/null 2>&1
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+with sync_playwright() as playwright:
+    raise SystemExit(0 if Path(playwright.chromium.executable_path).is_file() else 1)
+PY
+then
+  ok "Chromium" "installed"
+else
+  bad "Chromium" "run: bash scripts/setup.sh"
+fi
 
 soffice="${SOFFICE_PATH:-}"
 if [[ -n "$soffice" && -x "$soffice" ]]; then

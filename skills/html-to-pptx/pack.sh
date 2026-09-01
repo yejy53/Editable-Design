@@ -20,7 +20,7 @@ fi
 cp -R "$HERE" "$STAGE/$NAME"
 find "$STAGE/$NAME" -name '.DS_Store' -delete
 find "$STAGE/$NAME" -name '._*' -delete
-find "$STAGE/$NAME" -type d -name '__pycache__' -prune -exec rm -rf {} +
+find "$STAGE/$NAME" -type d \( -name '__pycache__' -o -name '.venv' \) -prune -exec rm -rf {} +
 
 mkdir -p "$(dirname "$OUT")"
 rm -f "$OUT"
@@ -41,7 +41,8 @@ echo "   体积 $(du -h "$OUT" | cut -f1)　文件 $COUNT 个"
 echo ""
 echo "对方使用方式："
 echo "  $UNPACK"
-echo "  cd ~/.codex/skills/$NAME && python3 -m pip install -r requirements.txt"
-echo "  python3 -m playwright install chromium && ./scripts/doctor.sh"
+echo "  首次转换直接运行：bash ~/.codex/skills/$NAME/scripts/run.sh <input.html>"
+echo "  Skill 会自动创建隔离环境并安装所需依赖。"
 echo ""
-echo "前置要求：Python 3.10+。跑 render_check.py 还需 LibreOffice 与 PyMuPDF。"
+echo "系统需要可用的 Python 3.10+；Codex Desktop 自带的兼容运行时会被自动发现。"
+echo "跑 render_check.py 还需 LibreOffice 与 PyMuPDF。"

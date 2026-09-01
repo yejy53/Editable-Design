@@ -9,20 +9,25 @@ description: 把 slide／poster 的 HTML 确定性地转成可编辑 PPTX——�
 
 目标不是「截个图塞进 ppt」，而是让 PowerPoint 里每个元素都能单独选中、拖动、改字、改色。
 
-## 前置依赖
+## 零配置入口
+
+始终通过 `scripts/run.sh` 转换。首次调用时，它会自动找到 Codex 或系统提供的 Python
+3.10+，在 Skill 内创建隔离的 `.venv`，安装 Python 依赖和 Playwright Chromium，然后继续
+当前转换；以后直接复用，不让用户手动配置环境：
 
 ```bash
-python3 -m pip install -r requirements.txt
-python3 -m playwright install chromium
-./scripts/doctor.sh
+bash scripts/run.sh <任意 HTML> -o deck.pptx
 ```
+
+不要要求用户先运行 `pip`、安装 Playwright 或处理脚本权限。若自动初始化失败，再运行
+`bash scripts/setup.sh` 查看明确诊断；`HTML_TO_PPTX_PYTHON` 可用于指定兼容的 Python。
 
 确定性转换核心已经随 Skill 固定在 `scripts/_html_to_pptx.py`，不依赖其他私有仓库。
 浏览器默认保留 Chromium 沙箱；只有运行环境明确不支持沙箱时，才设置
 `HTML_TO_PPTX_NO_SANDBOX=1`。
 
 `render_check.py` 额外需要 LibreOffice（渲染 pptx）和 PyMuPDF：
-`brew install --cask libreoffice && python3 -m pip install -r requirements-check.txt`。
+`brew install --cask libreoffice && .venv/bin/python -m pip install -r requirements-check.txt`。
 这两项只用于视觉比对，不影响核心转换。
 
 ## 转换
@@ -30,10 +35,10 @@ python3 -m playwright install chromium
 一个入口支持三类页面并自动识别：
 
 ```bash
-python3 scripts/to_pptx.py <任意 HTML>                       # → 同目录同名 .pptx
-python3 scripts/to_pptx.py <HTML> -o deck.pptx
-python3 scripts/to_pptx.py <HTML> --selector '#hero'         # 画布识别失败时手动指定
-python3 scripts/to_pptx.py <HTML> --mode exploded            # 自动识别出错时手动指定
+bash scripts/run.sh <任意 HTML>                       # → 同目录同名 .pptx
+bash scripts/run.sh <HTML> -o deck.pptx
+bash scripts/run.sh <HTML> --selector '#hero'         # 画布识别失败时手动指定
+bash scripts/run.sh <HTML> --mode exploded            # 自动识别出错时手动指定
 ```
 
 | 输入页面 | 自动模式 | 转换前处理 |
@@ -65,10 +70,8 @@ python3 scripts/to_pptx.py <HTML> --mode exploded            # 自动识别出�
 PPTX，默认丢掉 overview 那一项：
 
 ```bash
-python3 scripts/to_pptx.py <case>/layers.html                     # → 同目录 layers.pptx
-python3 scripts/to_pptx.py <case>/layers.html --keep-overview
-python3 scripts/exploded_to_pptx.py <case>/layers.html            # 等价的专用入口
-python3 scripts/exploded_to_pptx.py <case>/layers.html --keep-overview
+bash scripts/run.sh <case>/layers.html                     # → 同目录 layers.pptx
+bash scripts/run.sh <case>/layers.html --keep-overview
 ```
 
 ```
@@ -227,7 +230,8 @@ z-index:1` 的卡片会排到自己子元素后面，用底色盖住自己的图
 `pack.sh` 会把完整 Skill（含固定的 `scripts/_html_to_pptx.py`、依赖清单、许可和诊断脚本）
 一起打包，解压后不依赖本仓库其他文件。
 
-对方：`tar -xzf html-to-pptx-skill.tar.gz -C ~/.codex/skills/`，装好 Python 依赖即可用。
+对方：`tar -xzf html-to-pptx-skill.tar.gz -C ~/.codex/skills/`。首次转换会自动准备隔离运行时，
+无需另外安装 Python 包或 Playwright。
 包里带着 `pack.sh` 自己，可继续二次分发。
 
 ## 与 Editable Design 的关系

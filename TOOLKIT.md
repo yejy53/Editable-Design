@@ -40,14 +40,11 @@ npm ci --prefix ~/.codex/skills/editable-design/scripts
 The font kit is self-hosted and versioned. Each generated project copies only
 the WOFF2 files it selects, rather than carrying the full library.
 
-For optional PowerPoint export, install its Python dependencies and Playwright browser:
+For optional PowerPoint export, copy the sibling Skill. Its first conversion prepares and reuses an isolated runtime automatically:
 
 ```bash
 git sparse-checkout add skills/html-to-pptx
 cp -R skills/html-to-pptx ~/.codex/skills/
-python3 -m pip install -r ~/.codex/skills/html-to-pptx/requirements.txt
-python3 -m playwright install chromium
-~/.codex/skills/html-to-pptx/scripts/doctor.sh
 ```
 
 Detailed requirements and direct CLI usage are documented in each skill's README:

@@ -17,7 +17,7 @@ cp -R "$toolkit_dir/skills/html-to-pptx" "$stage/$name/skills/"
 
 find "$stage/$name" -name '.DS_Store' -delete
 find "$stage/$name" -name '._*' -delete
-find "$stage/$name" -type d \( -name node_modules -o -name __pycache__ \) -prune -exec rm -rf {} +
+find "$stage/$name" -type d \( -name node_modules -o -name __pycache__ -o -name .venv \) -prune -exec rm -rf {} +
 find "$stage/$name" -type f \( -name '*.tar.gz' -o -name '*.zip' \) -delete
 
 tar -czf "$out" -C "$stage" "$name"

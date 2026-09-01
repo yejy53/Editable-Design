@@ -104,14 +104,22 @@ npm ci --prefix ~/.codex/skills/editable-design/scripts
 
 ### Optional: Editable PowerPoint export
 
-Install the companion `html-to-pptx` Skill only when editable PowerPoint export is needed:
+For a one-step Codex installation, ask:
+
+```text
+Install the html-to-pptx Codex Skill from:
+https://github.com/yejy53/Editable-Design/tree/main/skills/html-to-pptx
+
+Use it to convert my compatible HTML into an editable PowerPoint file.
+```
+
+Codex installs the Skill from that subdirectory. Its first conversion automatically prepares an isolated Python environment and Playwright Chromium; the user does not need to run dependency commands.
+
+For a manual source install:
 
 ```bash
 git sparse-checkout add skills/html-to-pptx
 cp -R skills/html-to-pptx ~/.codex/skills/
-python3 -m pip install -r ~/.codex/skills/html-to-pptx/requirements.txt
-python3 -m playwright install chromium
-~/.codex/skills/html-to-pptx/scripts/doctor.sh
 ```
 
 See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`](./skills/html-to-pptx/README.md) for detailed requirements and commands. To build a clean source archive containing both Skills, run `./pack.sh`.
