@@ -780,6 +780,7 @@ We are grateful to the open-source projects that have helped shape the public co
 
 - [awesome-gpt-image](https://github.com/ZeroLu/awesome-gpt-image), whose clear prompt-and-result gallery helped inspire the presentation of this Gallery.
 - [OpenDesign](https://github.com/EthanGuo2022/OpenDesign), for advancing open, agent-driven, editable visual artifacts and visible design trajectories.
+- [AutoDesign](https://github.com/Yaxin9Luo/AutoDesign), for advancing reusable DesignHarness optimization and evidence-grounded academic artifact creation through PosterBench.
 - [taste-skill](https://github.com/leonxlnx/taste-skill), for advancing practical design-taste guidance for agent-built interfaces and visual systems.
 - [GenClaw](https://github.com/yejy53/GenClaw), for exploring code-driven agentic image generation and reproducible visual-creation workflows.
 
