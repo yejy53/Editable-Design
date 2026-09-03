@@ -22,6 +22,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
   - [📚 Information Design](#information-design)
   - [✍️ Text-led Design](#text-led-design)
   - [📰 Poster](#poster)
+  - [🎓 Academic Posters](#academic-posters)
   - [🎨 Art Design](#art-design)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -126,7 +127,7 @@ See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`]
 
 ## Gallery
 
-Thirteen prompts across five visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
+Fourteen prompts across six visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
 
 ## Campaigns
 
@@ -630,6 +631,40 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 ---
 
+## Academic Posters
+
+### Attention Is All You Need
+
+<table role="presentation" width="100%">
+  <tr>
+    <td width="38.39%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/academic-posters/attention-is-all-you-need/final.png">
+          <img src="./gallery/academic-posters/attention-is-all-you-need/preview.webp" width="100%" alt="Attention Is All You Need academic poster">
+        </a>
+      </details>
+    </td>
+    <td width="61.61%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/6271f81d-a2fd-4115-a16d-54cad4d23b35" width="100%" controls></video>
+    </td>
+  </tr>
+</table>
+
+<video src="https://github.com/user-attachments/assets/19e5e8c5-40e2-41ae-a609-991df50fb218" width="100%" controls></video>
+
+**Prompt:**
+
+```text
+Create a vertical academic research poster from the supplied paper PDF. Read the whole paper before designing. Present the research question, the Transformer method, and the paper's strongest quantitative evidence, preserving all numbers, units, baselines, and comparisons exactly. Use at least one evidence-bearing visual from the paper, retain a clear source caption, and include the limitation needed to avoid overstating the findings. Deliver a fixed 1200 × 1600 editable HTML poster and a 2× PNG render.
+
+Source: Ashish Vaswani et al., “Attention Is All You Need,” arXiv:1706.03762v7.
+```
+
+[Third-party content notice](./gallery/academic-posters/attention-is-all-you-need/NOTICE.md)
+
+---
+
 ## Art Design
 
 ### Sky Archive
@@ -745,6 +780,7 @@ We are grateful to the open-source projects that have helped shape the public co
 
 - [awesome-gpt-image](https://github.com/ZeroLu/awesome-gpt-image), whose clear prompt-and-result gallery helped inspire the presentation of this Gallery.
 - [OpenDesign](https://github.com/EthanGuo2022/OpenDesign), for advancing open, agent-driven, editable visual artifacts and visible design trajectories.
+- [AutoDesign](https://github.com/Yaxin9Luo/AutoDesign), for advancing reusable DesignHarness optimization and evidence-grounded academic artifact creation through PosterBench.
 - [taste-skill](https://github.com/leonxlnx/taste-skill), for advancing practical design-taste guidance for agent-built interfaces and visual systems.
 - [GenClaw](https://github.com/yejy53/GenClaw), for exploring code-driven agentic image generation and reproducible visual-creation workflows.
 
