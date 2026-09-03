@@ -51,29 +51,6 @@ Use the **one-shot fast path** only when all of these are true:
 
 Use the **capability path** otherwise.
 
-## Prepare academic PDF inputs
-
-When the source is a research-paper PDF, complete a compact evidence pass before
-the reference or design plan. Read the whole paper's text structure and inspect
-the pages containing its principal figures, tables, and diagrams; an abstract-only
-summary is not enough. Write `source-brief.md` with:
-
-- the research question and why it matters;
-- the method as a short causal or procedural chain;
-- three to five result claims, preserving every reported number, unit, baseline,
-  and comparison exactly;
-- the conclusion and any limitation needed to avoid overstating the paper; and
-- a visual-evidence inventory naming the strongest source figures or tables and
-  what claim each one supports.
-
-Record the PDF path and `source-brief.md` with the input evidence. Use the brief
-as the factual boundary for all poster wording. Prefer a real, legible source
-figure, table crop, or faithful code-native reconstruction when it carries a key
-result. Generated artwork may establish atmosphere or explain a concept, but it
-must not replace empirical evidence or introduce unreported quantities. When the
-paper contains usable visual evidence, the final poster must include at least one
-evidence-bearing visual tied to a live caption or result claim.
-
 ## Generate the imagery
 
 Generated artwork is a first-class visual material, not a required full-canvas
