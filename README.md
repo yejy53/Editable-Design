@@ -22,6 +22,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
   - [📚 Information Design](#information-design)
   - [✍️ Text-led Design](#text-led-design)
   - [📰 Poster](#poster)
+  - [🎓 Academic Posters](#academic-posters)
   - [🎨 Art Design](#art-design)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -126,7 +127,7 @@ See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`]
 
 ## Gallery
 
-Thirteen prompts across five visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
+Fourteen prompts across six visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
 
 ## Campaigns
 
@@ -627,6 +628,40 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 ```text
 生成一张3:4竖版《北京冬季城市图鉴》旅行海报：左侧约三分之一为米白色留白信息栏，顶部以古典宋体写大标题“北京”，下方写“BEIJING · WINTER CITY ATLAS”，搭配少量雪花、地标线稿、坐标和罗盘；右侧约三分之二是一座从右上延伸至底部中央的超精细北京雪景微缩沙盘，采用高位45度斜俯视角和层叠纸雕等高线边缘，中央偏右以红墙金顶、覆盖积雪的故宫为最大主体，右下为天坛，下半部包含彩绘牌楼、胡同院落、冰蓝色河道与拱桥，右上逐渐过渡到央视大楼、中国尊等现代CBD天际线；底部中央放置一名背对镜头、穿深色冬装并背着背包的独自行人，一串脚印沿雪路通向城市。整体为高级博物馆建筑模型、手工纸雕与电影级3D渲染结合的质感，以象牙白、银灰、冰蓝为主，朱红、青绿和暖金灯光点缀，安静、怀旧、梦幻且写实；避免卡通、塑料玩具感、满版城市、过度橙红、重复地标、乱码大字、水印、边框、翻页箭头和轮播圆点。
 ```
+
+---
+
+## Academic Posters
+
+### Attention Is All You Need
+
+<table role="presentation" width="100%">
+  <tr>
+    <td width="38.39%" align="center" valign="top">
+      <details open>
+        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
+        <a href="./gallery/academic-posters/attention-is-all-you-need/final.png">
+          <img src="./gallery/academic-posters/attention-is-all-you-need/preview.webp" width="100%" alt="Attention Is All You Need academic poster">
+        </a>
+      </details>
+    </td>
+    <td width="61.61%" align="center" valign="top">
+      <video src="https://github.com/user-attachments/assets/6271f81d-a2fd-4115-a16d-54cad4d23b35" width="100%" controls></video>
+    </td>
+  </tr>
+</table>
+
+<video src="https://github.com/user-attachments/assets/19e5e8c5-40e2-41ae-a609-991df50fb218" width="100%" controls></video>
+
+**Prompt:**
+
+```text
+Create a vertical academic research poster from the supplied paper PDF. Read the whole paper before designing. Present the research question, the Transformer method, and the paper's strongest quantitative evidence, preserving all numbers, units, baselines, and comparisons exactly. Use at least one evidence-bearing visual from the paper, retain a clear source caption, and include the limitation needed to avoid overstating the findings. Deliver a fixed 1200 × 1600 editable HTML poster and a 2× PNG render.
+
+Source: Ashish Vaswani et al., “Attention Is All You Need,” arXiv:1706.03762v7.
+```
+
+[Third-party content notice](./gallery/academic-posters/attention-is-all-you-need/NOTICE.md)
 
 ---
 
