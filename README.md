@@ -18,6 +18,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
 - [Toolkit](#toolkit)
 - [Quick Start](#quick-start)
 - [Gallery](#gallery)
+  - [🎓 Academic Posters](#academic-posters)
   - [🎯 Campaigns](#campaigns)
   - [📚 Information Design](#information-design)
   - [✍️ Text-led Design](#text-led-design)
@@ -126,7 +127,38 @@ See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`]
 
 ## Gallery
 
-Thirteen prompts across five visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
+Fifteen prompts across six visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
+
+## Academic Posters
+
+<video src="./gallery/academic-posters/academic-poster-showcase.webm" width="100%" controls></video>
+
+The showcase moves from both finished posters into their mouse-editable layer
+views and evidence-backed Agent Design Replays.
+
+### Attention Is All You Need
+
+<a href="./gallery/academic-posters/attention-is-all-you-need/final.png">
+  <img src="./gallery/academic-posters/attention-is-all-you-need/preview.webp" width="46%" alt="Attention Is All You Need academic poster">
+</a>
+
+An evidence-led paper poster that turns the Transformer architecture, training
+pipeline, and headline translation results into a technical editorial layout.
+The complete request and source attribution are recorded in the
+[prompt](./gallery/academic-posters/attention-is-all-you-need/prompt.md) and
+[third-party content notice](./gallery/academic-posters/attention-is-all-you-need/NOTICE.md).
+
+### The Shadow of M87*
+
+<a href="./gallery/academic-posters/m87-black-hole-shadow/final.png">
+  <img src="./gallery/academic-posters/m87-black-hole-shadow/preview.webp" width="46%" alt="M87 black hole shadow academic poster">
+</a>
+
+An astronomical field-report poster organized around the first event-horizon
+scale image of M87*, its measurement chain, and the paper's reported physical
+constraints. The complete request and source attribution are recorded in the
+[prompt](./gallery/academic-posters/m87-black-hole-shadow/prompt.md) and
+[third-party content notice](./gallery/academic-posters/m87-black-hole-shadow/NOTICE.md).
 
 ## Campaigns
 
