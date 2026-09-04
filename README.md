@@ -24,6 +24,7 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
   - [📰 Poster](#poster)
   - [🎓 Academic Posters](#academic-posters)
   - [🎨 Art Design](#art-design)
+- [Citation](#citation)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
@@ -773,6 +774,22 @@ There is Chinese text near the middle reading “文化科技大會,” and addi
 </details>
 
 ---
+
+## Citation
+
+If you find Editable Visual Design useful, please consider citing our technical report:
+
+```bibtex
+@misc{ye2026editablevisualdesign,
+      title={Editable Visual Design}, 
+      author={Junyan Ye and Wei Liu and Dongzhi Jiang and Zichen Wen and HaoDong Li and Zhutao Lv and Jiaxin Lin and Jinhua Yu and Jun He and Zilong Huang and Rui Chen and Weijia Li},
+      year={2026},
+      eprint={2609.04034},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.04034}, 
+}
+```
 
 ## Acknowledgements
 
