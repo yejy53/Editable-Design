@@ -12,17 +12,9 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
   <img src="./assets/overview-cover.webp" width="100%" alt="Play the Editable Visual Design overview video">
 </a>
 
-## Paper
-
-**Editable Visual Design** — arXiv:2609.04034
-
-[Abstract & versions](https://arxiv.org/abs/2609.04034) · [Read the PDF](https://arxiv.org/pdf/2609.04034) · [Discuss on Hugging Face](https://huggingface.co/papers/2609.04034)
-
 ## News
 
-- **2026-09-08** — Added the official paper links and launched the date-based project news page.
-- **2026-09-04** — Added a ready-to-copy BibTeX citation for the technical report.
-- **2026-09-03** — Added academic-poster support and the first research-paper Gallery example.
+- **2026-09-04** — 📢 **Editable Design — Initial Release!** Create editable posters, infographics, art posters, and marketing campaigns with real text, independent layers, and Agent Design Replay. 📄 [Read our paper on arXiv](https://arxiv.org/abs/2609.04034).
 
 [See all project updates →](./NEWS.md)
 
