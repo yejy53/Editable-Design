@@ -4,15 +4,33 @@
 
 Editable Visual Design turns a prompt into a structured design artifact with real text, independent assets, semantic HTML layers, and a replayable creation process—instead of shipping a flattened image.
 
+📄 **Paper:** [Editable Visual Design](https://arxiv.org/abs/2609.04034) · [PDF](https://arxiv.org/pdf/2609.04034) · [Hugging Face](https://huggingface.co/papers/2609.04034) · [Project News](./NEWS.md)
+
 ## Overview
 
 <a href="https://yejy53.github.io/Editable-Design/player.html#overview">
   <img src="./assets/overview-cover.webp" width="100%" alt="Play the Editable Visual Design overview video">
 </a>
 
+## Paper
+
+**Editable Visual Design** — arXiv:2609.04034
+
+[Abstract & versions](https://arxiv.org/abs/2609.04034) · [Read the PDF](https://arxiv.org/pdf/2609.04034) · [Discuss on Hugging Face](https://huggingface.co/papers/2609.04034)
+
+## News
+
+- **2026-09-08** — Added the official paper links and launched the date-based project news page.
+- **2026-09-04** — Added a ready-to-copy BibTeX citation for the technical report.
+- **2026-09-03** — Added academic-poster support and the first research-paper Gallery example.
+
+[See all project updates →](./NEWS.md)
+
 ## Table of Contents
 
 - [Overview](#overview)
+- [Paper](#paper)
+- [News](#news)
 - [Why Editable Visual Design](#why-editable-visual-design)
 - [Three Core Ideas](#three-core-ideas)
 - [Toolkit](#toolkit)
