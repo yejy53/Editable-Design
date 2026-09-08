@@ -4,26 +4,23 @@
 
 Turn a brief or method description into an editable visual design. Keep text and visual elements independently editable in HTML or PowerPoint.
 
-📄 **Paper:** [Editable Visual Design](https://arxiv.org/abs/2609.04034) · [PDF](https://arxiv.org/pdf/2609.04034) · [Hugging Face](https://huggingface.co/papers/2609.04034) · [Project News](./NEWS.md)
+[![arXiv Paper](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.04034)
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-555555)](https://arxiv.org/pdf/2609.04034)
+[![Hugging Face Paper](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper-FFD21E)](https://huggingface.co/papers/2609.04034)
+[![Website Gallery](https://img.shields.io/badge/%F0%9F%96%BC%EF%B8%8F%20Website-Gallery-2088C5)](#gallery)
 
 ## News
 
 - **2026-09-08** — 🔬 **[Paper Fig](#paper-fig), developed with GPT-6:** turn method descriptions into editable paper workflow diagrams in your chosen style. [Install](#paper-fig) · [Gallery](#paper-figures).
 - **2026-09-04** — 📢 **Editable Design — Initial Release!** Create editable posters, infographics, art posters, and marketing campaigns with real text, independent layers, and Agent Design Replay. 📄 [Read our paper on arXiv](https://arxiv.org/abs/2609.04034).
 
-[See all project updates →](./NEWS.md)
-
-[Paper Fig](#paper-fig) · [Overview](#overview) · [Quick Start](#quick-start) · [Gallery](#gallery) · [Citation](#citation) · [Acknowledgements](#acknowledgements)
-
 ## Paper Fig
+
+Generate paper workflow diagrams from method descriptions in your chosen visual style, with editable text, shapes, and images in PowerPoint.
 
 <a href="./assets/paper-fig-powerpoint.png">
   <img src="./assets/paper-fig-powerpoint.webp" width="100%" alt="Paper Fig diagram open in PowerPoint, with individual text boxes, shapes, and image elements selected">
 </a>
-
-*Editable text, shapes, and image elements in PowerPoint.*
-
-[View results](#paper-figures) · [Skill guide](./skills/paper-fig/INSTALL.md)
 
 <details>
 <summary><strong>Install and use Paper Fig</strong></summary>
