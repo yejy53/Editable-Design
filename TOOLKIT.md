@@ -2,7 +2,7 @@
 
 Agent-driven creation of editable, tastefully crafted visual artifacts.
 
-This repository packages two independent Codex skills. The main skill turns a visual brief into a fixed-canvas design with real text, semantic HTML layers, independent imagery, rendered output, an editor, an animated layer breakdown, and an evidence-backed Design Replay. The companion skill converts compatible HTML into an editable PowerPoint file when that format is explicitly requested.
+This repository packages three Codex skills. Paper Fig creates editable research method and architecture diagrams as PowerPoint. Editable Design turns a visual brief into a fixed-canvas HTML design with real text, independent imagery, an editor, a layer breakdown, and a Design Replay. HTML to PPTX converts compatible HTML into an editable PowerPoint file when that format is requested.
 
 See the public [Editable Visual Design Gallery](https://github.com/yejy53/Editable-Design#gallery) for prompts, final renderings, editable demonstrations, and Agent Design Replays.
 
@@ -10,12 +10,24 @@ See the public [Editable Visual Design Gallery](https://github.com/yejy53/Editab
 
 | Skill | Purpose | Main outputs |
 | --- | --- | --- |
+| [`paper-fig`](skills/paper-fig/) | Generate paper workflow and architecture diagrams from method descriptions | Editable `.pptx` |
 | [`editable-design`](skills/editable-design/) | Create polished posters, covers, campaign graphics, information designs, menus, banners, and social cards | `index.html`, rendered PNG, `editor.html`, `layers.html`, and `replay/index.html` |
 | [`html-to-pptx`](skills/html-to-pptx/) | Convert clean fixed-canvas HTML, Editable Design editor pages, or exploded-layer boards | Editable `.pptx` with independently selectable elements where the source structure permits |
 
-The skills are siblings, not nested dependencies. `editable-design` completes its normal HTML and PNG delivery without PowerPoint support. `html-to-pptx` runs only when the user asks for a PPTX and automatically recognizes clean design HTML, `editor.html`, and `layers.html`; it can also convert compatible HTML produced elsewhere.
+Install only the skill you need. `paper-fig` does not require either of the other skills. `editable-design` completes its HTML and PNG delivery without PowerPoint support. `html-to-pptx` runs when a PPTX is requested and recognizes clean design HTML, `editor.html`, and `layers.html`.
 
 ## Install
+
+### Paper Fig: one request in Codex
+
+```text
+Install the paper-fig Skill from:
+https://github.com/yejy53/Editable-Design/tree/main/skills/paper-fig
+```
+
+Provide a method description and the visual style you want. See the [Paper Fig guide](skills/paper-fig/INSTALL.md) for manual installation and technical details.
+
+### Editable Design: manual source install
 
 Use a sparse, blob-filtered clone so the install checks out the core skill without the Gallery media:
 
@@ -51,10 +63,17 @@ Detailed requirements and direct CLI usage are documented in each skill's README
 
 - [`editable-design` setup and capability notes](skills/editable-design/README.md)
 - [`html-to-pptx` setup and conversion commands](skills/html-to-pptx/README.md)
+- [`paper-fig` installation and host requirements](skills/paper-fig/INSTALL.md)
 
 ## Use in Codex
 
 Ask Codex to use the installed skill by name:
+
+```text
+Use $paper-fig to turn the following method description into a paper workflow diagram in my requested visual style. Deliver an editable PowerPoint.
+```
+
+For a visual design brief:
 
 ```text
 Use $editable-design to create a polished 3:4 campaign poster for ...
@@ -78,8 +97,8 @@ Create a source archive without installed dependencies or temporary files:
 ./pack.sh
 ```
 
-The output path is printed when packaging completes. You can also package either skill independently with its own `pack.sh`.
+The output path is printed when packaging completes. See each skill's installation guide for individual packaging options.
 
 ## License
 
-This community project is provided under the [Apache License 2.0](LICENSE) and is not an official OpenAI project. See [Third-party notices](THIRD_PARTY_NOTICES.md) for dependency attribution.
+Original project code is provided under the [Apache License 2.0](LICENSE). External host resources and third-party content retain their respective terms. This is not an official OpenAI project. See [Third-party notices](THIRD_PARTY_NOTICES.md) for attribution and scope.

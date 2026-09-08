@@ -14,6 +14,7 @@ done
 cp -p "$toolkit_dir/TOOLKIT.md" "$stage/$name/README.md"
 cp -R "$toolkit_dir/skills/editable-design" "$stage/$name/skills/"
 cp -R "$toolkit_dir/skills/html-to-pptx" "$stage/$name/skills/"
+cp -R "$toolkit_dir/skills/paper-fig" "$stage/$name/skills/"
 
 find "$stage/$name" -name '.DS_Store' -delete
 find "$stage/$name" -name '._*' -delete

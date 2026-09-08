@@ -6,11 +6,17 @@ A concise, date-based record of user-visible project updates. New entries are ad
 
 ## 2026-09-08
 
+- 🔬 **Paper Fig v2, developed with GPT-6:** turn method descriptions into paper workflow and architecture diagrams in the requested visual style, with editable PowerPoint output. [Install with Codex](./README.md#paper-fig).
+- Added drawing-prompt guidance for the full-page composition, region proportions, labels, connections, and meaningful image assets. The Skill saves the prompt before generating the visual draft.
+- Featured three Paper Fig results at the [top of the Gallery](./README.md#paper-figures): OmniManip, Compact3D, and ICEdit. These static images use full-resolution lossless WebP previews and link to the original PNGs, without loading additional videos.
+- Credited [PaperGallery](https://github.com/LongHZ140516/PaperGallery) and the original papers for the reference cases. The examples illustrate generated results, not a comparative benchmark.
+- Moved News and the new Skill entry ahead of Overview, and removed the previous “Attention Is All You Need” academic-poster example.
 - Added direct links to the [arXiv abstract](https://arxiv.org/abs/2609.04034), [paper PDF](https://arxiv.org/pdf/2609.04034), and [Hugging Face paper page](https://huggingface.co/papers/2609.04034).
 - Added this News page so ongoing changes can be followed without expanding the main README into a full changelog.
 
 ## 2026-09-04
 
+- 📢 **Editable Design — Initial Release!** Editable posters, infographics, art posters, and marketing campaigns with real text, independent layers, and Agent Design Replay. [Read the paper](https://arxiv.org/abs/2609.04034).
 - Added a ready-to-copy BibTeX citation for the Editable Visual Design technical report.
 
 ## 2026-09-03

@@ -2,9 +2,46 @@
 
 **Coding-agent-driven creation of editable, tastefully crafted visual artifacts.**
 
-Editable Visual Design turns a prompt into a structured design artifact with real text, independent assets, semantic HTML layers, and a replayable creation process—instead of shipping a flattened image.
+Turn a brief or method description into an editable visual design. Keep text and visual elements independently editable in HTML or PowerPoint.
 
 📄 **Paper:** [Editable Visual Design](https://arxiv.org/abs/2609.04034) · [PDF](https://arxiv.org/pdf/2609.04034) · [Hugging Face](https://huggingface.co/papers/2609.04034) · [Project News](./NEWS.md)
+
+## News
+
+- **2026-09-08** — 🔬 **[Paper Fig](#paper-fig), developed with GPT-6:** turn method descriptions into editable paper workflow diagrams in your chosen style. [Install](#paper-fig) · [Gallery](#paper-figures).
+- **2026-09-04** — 📢 **Editable Design — Initial Release!** Create editable posters, infographics, art posters, and marketing campaigns with real text, independent layers, and Agent Design Replay. 📄 [Read our paper on arXiv](https://arxiv.org/abs/2609.04034).
+
+[See all project updates →](./NEWS.md)
+
+[Paper Fig](#paper-fig) · [Overview](#overview) · [Quick Start](#quick-start) · [Gallery](#gallery) · [Citation](#citation) · [Acknowledgements](#acknowledgements)
+
+## Paper Fig
+
+<a href="./assets/paper-fig-powerpoint.png">
+  <img src="./assets/paper-fig-powerpoint.webp" width="100%" alt="Paper Fig diagram open in PowerPoint, with individual text boxes, shapes, and image elements selected">
+</a>
+
+*Editable text, shapes, and image elements in PowerPoint.*
+
+[View results](#paper-figures) · [Skill guide](./skills/paper-fig/INSTALL.md)
+
+<details>
+<summary><strong>Install and use Paper Fig</strong></summary>
+
+Copy this request into Codex:
+
+```text
+Install the paper-fig Skill from:
+https://github.com/yejy53/Editable-Design/tree/main/skills/paper-fig
+```
+
+Then provide a method description and your preferred visual style:
+
+```text
+Use $paper-fig to turn the following method description into a paper workflow diagram in my requested visual style. Deliver an editable PowerPoint.
+```
+
+</details>
 
 ## Overview
 
@@ -12,71 +49,9 @@ Editable Visual Design turns a prompt into a structured design artifact with rea
   <img src="./assets/overview-cover.webp" width="100%" alt="Play the Editable Visual Design overview video">
 </a>
 
-## News
-
-- **2026-09-04** — 📢 **Editable Design — Initial Release!** Create editable posters, infographics, art posters, and marketing campaigns with real text, independent layers, and Agent Design Replay. 📄 [Read our paper on arXiv](https://arxiv.org/abs/2609.04034).
-
-[See all project updates →](./NEWS.md)
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Paper](#paper)
-- [News](#news)
-- [Why Editable Visual Design](#why-editable-visual-design)
-- [Three Core Ideas](#three-core-ideas)
-- [Toolkit](#toolkit)
-- [Quick Start](#quick-start)
-- [Gallery](#gallery)
-  - [🎯 Campaigns](#campaigns)
-  - [📚 Information Design](#information-design)
-  - [✍️ Text-led Design](#text-led-design)
-  - [📰 Poster](#poster)
-  - [🎓 Academic Posters](#academic-posters)
-  - [🎨 Art Design](#art-design)
-- [Citation](#citation)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-
-## Why Editable Visual Design
-
-Image generation can quickly produce beautiful designs, but a local change often means regenerating the whole image. Direct coding provides structure, but its visual finish is inconsistent. Editable Visual Design combines visual direction and editable structure in one artifact.
-
-| | Image generation | Direct coding | Editable Visual Design |
-|---|---|---|---|
-| Art-directed visual quality | Strong | Inconsistent | Strong |
-| Real text and semantic layers | No | Yes | Yes |
-| Local edits without regeneration | No | Yes | Yes |
-| Replayable creation path | No | Partial | Yes |
-
-## Three Core Ideas
-
-### 1. Coding-Agent-Driven Design
-
-One persistent Coding Agent owns the artifact from intent to repair: understanding the brief, planning the composition, generating assets, implementing HTML, rendering, observing, and fixing the result. Agent Design Replay makes that path visible and traceable.
-
-### 2. Visual Prior, Without Pixel Shipping
-
-An image model provides art direction—composition, hierarchy, color, and spatial relationships—but its reference pixels never enter the delivered design. The agent generates clean assets and rebuilds typography and layout in HTML.
-
-### 3. Editable and Quality-Gated Artifacts
-
-The result contains real text, semantic layers, and independent assets that can be selected, moved, edited, and exported. Deterministic checks cover the canvas, fonts, layer contracts, rendering, and editor round trips.
-
-## Toolkit
-
-This repository now ships the code behind the workflow as two independent Codex skills:
-
-| Skill | Purpose | Main outputs |
-| --- | --- | --- |
-| [`editable-design`](./skills/editable-design/) | Create polished fixed-canvas visual designs from a brief | HTML, PNG, mouse editor, animated layer breakdown, and Agent Design Replay |
-| [`html-to-pptx`](./skills/html-to-pptx/) | Convert clean designs, editor pages, or exploded-layer HTML into editable PowerPoint | Editable `.pptx` with independently selectable elements where the source structure permits |
-
-`editable-design` is the complete core workflow and does not require PowerPoint support. `html-to-pptx` is a sibling tool that runs only when a PPTX is requested. Installation is covered in [Quick Start](#quick-start); the standalone [Toolkit guide](./TOOLKIT.md) and each skill's README contain the detailed requirements and direct commands.
-
 ## Quick Start
 
-### Option 1: Install with Codex
+### Posters, infographics, and campaigns
 
 1. Open a Codex task and ask Codex to install and initialize the Skill:
 
@@ -95,9 +70,10 @@ This repository now ships the code behind the workflow as two independent Codex 
 
 3. The Skill will create the finished design together with its editable source: real text, independent imagery, semantic HTML layers, a visual editor, a layer breakdown, and an Agent Design Replay.
 
-> **Recommended:** Use [GPT-5.6](https://developers.openai.com/api/docs/guides/latest-model) with `high` reasoning effort or above for the strongest results.
+> **Recommended:** Use `high` reasoning effort or above for complex diagrams and layouts.
 
-### Option 2: Install manually
+<details>
+<summary><strong>Manual installation without Gallery media</strong></summary>
 
 Use a sparse, blob-filtered clone to install only the Skill without downloading the Gallery media:
 
@@ -114,6 +90,10 @@ npm ci --prefix ~/.codex/skills/editable-design/scripts
 ~/.codex/skills/editable-design/scripts/doctor.sh
 ```
 
+For Paper Fig instead, select `skills/paper-fig` in the sparse checkout and follow its [installation guide](./skills/paper-fig/INSTALL.md).
+
+</details>
+
 ### Optional: Editable PowerPoint export
 
 For a one-step Codex installation, ask:
@@ -127,18 +107,65 @@ Use it to convert my compatible HTML into an editable PowerPoint file.
 
 Codex installs the Skill from that subdirectory. Its first conversion automatically prepares an isolated Python environment and Playwright Chromium; the user does not need to run dependency commands.
 
-For a manual source install:
+### Choose a Skill
 
-```bash
-git sparse-checkout add skills/html-to-pptx
-cp -R skills/html-to-pptx ~/.codex/skills/
-```
+| Skill | Use it for | Outputs |
+| --- | --- | --- |
+| **[`paper-fig`](./skills/paper-fig/)** | Generate paper workflow and architecture diagrams from method descriptions | Editable PPTX |
+| [`editable-design`](./skills/editable-design/) | Posters, infographics, and marketing campaigns | HTML, PNG, visual editor, layer breakdown, Agent Design Replay |
+| [`html-to-pptx`](./skills/html-to-pptx/) | Converting an existing compatible HTML design | Editable PPTX |
 
-See [`editable-design`](./skills/editable-design/README.md) and [`html-to-pptx`](./skills/html-to-pptx/README.md) for detailed requirements and commands. To build a clean source archive containing both Skills, run `./pack.sh`.
+Install only the Skill you need. Paper Fig does not depend on either of the other Skills. See the [Toolkit guide](./TOOLKIT.md) for detailed setup and packaging.
+
+<details>
+<summary><strong>Design principles behind Editable Visual Design</strong></summary>
+
+- **Coding-agent-driven design.** One persistent agent plans, builds, renders, and repairs the artifact. Agent Design Replay exposes the HTML workflow's creation path.
+- **Visual direction with editable structure.** The agent plans a visual composition, then builds it with editable text, layout, and independent image assets.
+- **Local editing and verification.** Text and structural elements remain independently editable. Checks cover rendering and format-specific contracts; the output still needs human review for scientific accuracy.
+
+</details>
 
 ## Gallery
 
-Fourteen prompts across six visual-design categories, with final renderings, editable demonstrations, and Agent Design Replays.
+Three Paper Fig results, followed by thirteen visual-design examples. Click a figure to view the full-resolution PNG.
+
+- [🔬 Paper Figures](#paper-figures)
+- [🎯 Campaigns](#campaigns)
+- [📚 Information Design](#information-design)
+- [✍️ Text-led Design](#text-led-design)
+- [📰 Poster](#poster)
+- [🎨 Art Design](#art-design)
+
+## Paper Figures
+
+Research method pipelines and architecture diagrams generated with [`paper-fig`](./skills/paper-fig/). The reference cases come from [PaperGallery](https://github.com/LongHZ140516/PaperGallery) and the original papers credited below. These are qualitative examples, not a model-performance benchmark.
+
+### OmniManip — Object-Centric Manipulation
+
+<a href="./gallery/paper-figures/omnimanip/final.png">
+  <img src="./gallery/paper-figures/omnimanip/preview.webp" width="100%" alt="Paper Fig result: object grounding, interaction constraints, and trajectory planning for robot manipulation">
+</a>
+
+Generated with **Paper Fig** · Reference: [PaperGallery](https://longhz140516.github.io/PaperGallery/images/pipeline-Pan_OmniManip_2025/) · [Original paper](https://arxiv.org/abs/2501.03841)
+
+### Compact3D — Gaussian Compression
+
+<a href="./gallery/paper-figures/compact3d/final.png">
+  <img src="./gallery/paper-figures/compact3d/preview.webp" width="100%" alt="Paper Fig result: vector quantization, opacity regularization, and Gaussian pruning pipeline">
+</a>
+
+Generated with **Paper Fig** · Reference: [PaperGallery](https://longhz140516.github.io/PaperGallery/images/pipeline-Navaneet_Compact3D_2024/) · [Original paper](https://arxiv.org/abs/2311.18159)
+
+### ICEdit — In-Context Image Editing
+
+<a href="./gallery/paper-figures/icedit/final.png">
+  <img src="./gallery/paper-figures/icedit/preview.webp" width="100%" alt="Paper Fig result: in-context editing frameworks and the LoRA-MoE module architecture">
+</a>
+
+Generated with **Paper Fig** · Reference: [PaperGallery](https://longhz140516.github.io/PaperGallery/images/pipeline-Zhang_ICEdit_2025/) · [Original paper](https://arxiv.org/abs/2504.20690)
+
+[Source attribution and reuse notes](./gallery/paper-figures/NOTICE.md)
 
 ## Campaigns
 
@@ -642,40 +669,6 @@ Create a vertical editorial travel infographic poster titled “纽约3天旅游
 
 ---
 
-## Academic Posters
-
-### Attention Is All You Need
-
-<table role="presentation" width="100%">
-  <tr>
-    <td width="38.39%" align="center" valign="top">
-      <details open>
-        <summary align="center"><strong>🖼️ final-coding-design.png</strong></summary>
-        <a href="./gallery/academic-posters/attention-is-all-you-need/final.png">
-          <img src="./gallery/academic-posters/attention-is-all-you-need/preview.webp" width="100%" alt="Attention Is All You Need academic poster">
-        </a>
-      </details>
-    </td>
-    <td width="61.61%" align="center" valign="top">
-      <video src="https://github.com/user-attachments/assets/6271f81d-a2fd-4115-a16d-54cad4d23b35" width="100%" controls></video>
-    </td>
-  </tr>
-</table>
-
-<video src="https://github.com/user-attachments/assets/19e5e8c5-40e2-41ae-a609-991df50fb218" width="100%" controls></video>
-
-**Prompt:**
-
-```text
-Create a vertical academic research poster from the supplied paper PDF. Read the whole paper before designing. Present the research question, the Transformer method, and the paper's strongest quantitative evidence, preserving all numbers, units, baselines, and comparisons exactly. Use at least one evidence-bearing visual from the paper, retain a clear source caption, and include the limitation needed to avoid overstating the findings. Deliver a fixed 1200 × 1600 editable HTML poster and a 2× PNG render.
-
-Source: Ashish Vaswani et al., “Attention Is All You Need,” arXiv:1706.03762v7.
-```
-
-[Third-party content notice](./gallery/academic-posters/attention-is-all-you-need/NOTICE.md)
-
----
-
 ## Art Design
 
 ### Sky Archive
@@ -806,6 +799,7 @@ If you find Editable Visual Design useful, please consider citing our technical 
 We are grateful to the open-source projects that have helped shape the public conversation around AI-native visual creation, including:
 
 - [awesome-gpt-image](https://github.com/ZeroLu/awesome-gpt-image), whose clear prompt-and-result gallery helped inspire the presentation of this Gallery.
+- [PaperGallery](https://github.com/LongHZ140516/PaperGallery), for providing the research paper workflow diagram reference cases used in our Paper Fig Gallery.
 - [OpenDesign](https://github.com/EthanGuo2022/OpenDesign), for advancing open, agent-driven, editable visual artifacts and visible design trajectories.
 - [AutoDesign](https://github.com/Yaxin9Luo/AutoDesign), for advancing reusable DesignHarness optimization and evidence-grounded academic artifact creation through PosterBench.
 - [taste-skill](https://github.com/leonxlnx/taste-skill), for advancing practical design-taste guidance for agent-built interfaces and visual systems.
@@ -815,4 +809,4 @@ And thanks to the broader open-source design and Coding Agent communities for ma
 
 ## License
 
-This community project is provided under the [Apache License 2.0](./LICENSE) and is not an official OpenAI project. See [Third-party notices](./THIRD_PARTY_NOTICES.md) for dependency attribution.
+Original project code is provided under the [Apache License 2.0](./LICENSE). Third-party paper content and external runtime resources retain their respective terms; see [Third-party notices](./THIRD_PARTY_NOTICES.md). This community project is not an official OpenAI project.

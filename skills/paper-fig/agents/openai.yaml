@@ -1,0 +1,7 @@
+interface:
+  display_name: "Paper Fig"
+  short_description: "Create editable paper figures from visual references"
+  icon_small: "./assets/file-presentation.png"
+  icon_large: "./assets/file-presentation.png"
+  brand_color: "#C43E1C"
+  default_prompt: "Use $paper-fig to create an editable paper figure from my content or faithfully reconstruct my reference image as PPTX."
