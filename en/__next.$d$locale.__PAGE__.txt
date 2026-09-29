@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[484,[],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[[["$","meta",null,{"httpEquiv":"refresh","content":"0; url=/Editable-Design/en/blog/"}],["$","div",null,{"className":"root-redirect","children":["$","a",null,{"href":"/Editable-Design/en/blog/","children":"Editable Visual Design →"}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"kmERL9u4bfGvoNXKN-BjH"}
+0:{"rsc":["$","$1","c",{"children":[[["$","meta",null,{"httpEquiv":"refresh","content":"0; url=/Editable-Design/en/blog/"}],["$","div",null,{"className":"root-redirect","children":["$","a",null,{"href":"/Editable-Design/en/blog/","children":"Editable Visual Design →"}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"x_7BjY4SwTRQmmYCm7VIM"}
 4:null
