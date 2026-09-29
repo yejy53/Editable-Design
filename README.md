@@ -1,5 +1,11 @@
 # Editable Visual Design
 
+[![Paper on Hugging Face](https://img.shields.io/badge/Paper-Hugging%20Face-d4b106)](https://huggingface.co/papers/2609.04034)
+[![arXiv 2609.04034](https://img.shields.io/badge/arXiv-2609.04034-b31b1b)](https://arxiv.org/abs/2609.04034)
+[![Paper PDF](https://img.shields.io/badge/Paper-PDF-555555)](https://arxiv.org/pdf/2609.04034)
+[![Website Gallery](https://img.shields.io/badge/Website-Gallery-2088C5)](#gallery)
+[![GitHub stars](https://img.shields.io/github/stars/yejy53/Editable-Design?style=social)](https://github.com/yejy53/Editable-Design/stargazers)
+
 **Coding-agent-driven creation of editable, tastefully crafted visual artifacts.**
 
 ## News
@@ -7,10 +13,6 @@
 - 📌 **2026-08-16 · Blog:** **How to hacking Design Arena: What Makes Generated Websites Fascinating?** — Design guidance, context distillation, and visual references, explored through simplified internal simulations. **[English](https://yejy53.github.io/Editable-Design/en/blog/genclaw-next/) · [中文](https://yejy53.github.io/Editable-Design/zh/blog/genclaw-next/)**.
 - **2026-09-08** — 🔬 **[Paper Fig](./docs/paper-fig.md), developed with GPT-6:** turn method descriptions into editable paper workflow diagrams in your chosen style. [Install](./docs/paper-fig.md#install-and-use-paper-fig) · [Examples](./docs/paper-fig.md#examples).
 - **2026-09-04** — 📢 **Editable Design — Initial Release!** Create editable posters, infographics, art posters, and marketing campaigns with real text, independent layers, and Agent Design Replay. 📄 [Read our paper on arXiv](https://arxiv.org/abs/2609.04034).
-
-## Paper
-
-[arXiv abstract](https://arxiv.org/abs/2609.04034) · [PDF](https://arxiv.org/pdf/2609.04034) · [Hugging Face](https://huggingface.co/papers/2609.04034)
 
 ## Blog
 

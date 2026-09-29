@@ -83,15 +83,15 @@ item: | /blog/genclaw-next/robot-3d.mp4
 
 ## Distilling design behavior from design.md
 
-The earlier observations led to a further question: can **the design intent in `design.md` become a more natural part of how a model generates a page**? We start from a concrete design plan that considers visual organization, asset needs, and the dynamic experience together before implementation begins.
+The earlier observations led to a further question: can **the design decisions in `design.md` become part of a model's default page-generation behavior**? We explore **context distillation** with a concrete design plan as the starting point, organized into four steps:
 
-A `design.md` can develop three connected aspects of the design:
+1. **Write the design plan: turn the brief into `design.md`.** Start from the page's content and use case. Specify the focal image, information hierarchy, reading order, typography, whitespace, and section proportions, giving the subsequent implementation a concrete design direction.
 
-- **Visual hierarchy and layout.** Specify the focal image, reading order, type hierarchy, whitespace, and section proportions so each module serves the page's content.
-- **Assets and expression.** Decide where photography, illustration, texture, or other assets are needed, and how they work with the text, palette, and layout.
-- **Motion and interaction.** Plan entrance sequences, scroll reveals, hover feedback, and state transitions where appropriate. Motion should guide attention, explain changes, and keep reading and interaction coherent.
+2. **Plan assets and motion together: give the page a distinct expression.** Describe where photography, illustration, or texture belongs and how it works with the palette, text, and layout. Where useful, plan entrance sequences, scroll reveals, hover feedback, and state transitions so visual assets and the dynamic experience work together to guide attention.
 
-Following this direction, we explored **context distillation based on `design.md`**. During sample generation, design planning and asset suggestions guide Qwen-3.6 27B in building a page. We filter and rewrite the generated results, then pair the original user requests with the selected implementations for training. The behavior we want to retain is the expression of design intent in code: where assets belong, how information unfolds, and how interactions respond. Motion and interaction can also be part of the plan; the subsequent preference comparisons still assess the page as a whole.
+3. **Generate from the plan, then curate the pages.** Guide Qwen-3.6 27B with `design.md` and asset suggestions to generate complete pages. Check whether the results address the original request and whether image URLs are valid; filter or rewrite unsuitable samples. Retain implementations that express the design intent through HTML, CSS, and JavaScript as training targets.
+
+4. **Distill design decisions into default generation behavior.** Train on the original user request paired with the selected page code, omitting the `design.md` used during sample generation from the training input. The aim is for the model to learn to organize layouts, choose assets, and arrange interactions from ordinary requests—making where assets belong, how information unfolds, and how interactions respond more natural generation choices.
 
 In the **non-agentic setup**, the model emits HTML, CSS, and JavaScript in a single pass. The resulting page can contain motion and interaction, although the model does not call search or image-generation tools during generation. It can write external image URLs for the browser to fetch when the page loads. In some samples we observed Unsplash IDs such as `photo-xxxxxxx-xxxxxxx`; this [image-ID usage pattern](https://www.designarena.ai/blog/kimi-k3s-design-secret-may-be-in-its-thinking-traces) has also attracted discussion. With design planning and asset suggestions, some models, including Qwen-3.6 27B, became more inclined to use these image resources.
 
