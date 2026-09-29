@@ -1,0 +1,47 @@
+name: Check gallery and bilingual blog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'index.html'
+      - 'player.html'
+      - 'assets/**'
+      - 'gallery/**'
+      - '.github/workflows/build-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+      - name: Check and build blog
+        working-directory: site
+        env:
+          NEXT_PUBLIC_BASE_PATH: /Editable-Design
+          NEXT_TELEMETRY_DISABLED: '1'
+        run: |
+          npm run lint
+          npm run build
+          npm run typecheck
+      - name: Assemble blog and gallery
+        run: node site/scripts/assemble-pages.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: editable-design-pages
+          path: site-dist
+          include-hidden-files: true
+          retention-days: 7

@@ -2,43 +2,27 @@
 
 **Coding-agent-driven creation of editable, tastefully crafted visual artifacts.**
 
-Turn a brief or method description into an editable visual design. Keep text and visual elements independently editable in HTML or PowerPoint.
-
-[![arXiv Paper](https://img.shields.io/badge/arXiv-Paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.04034)
-[![Paper PDF](https://img.shields.io/badge/Paper-PDF-555555)](https://arxiv.org/pdf/2609.04034)
-[![Hugging Face Paper](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper-FFD21E)](https://huggingface.co/papers/2609.04034)
-[![Website Gallery](https://img.shields.io/badge/%F0%9F%96%BC%EF%B8%8F%20Website-Gallery-2088C5)](#gallery)
-
 ## News
 
-- **2026-09-08** — 🔬 **[Paper Fig](#paper-fig), developed with GPT-6:** turn method descriptions into editable paper workflow diagrams in your chosen style. [Install](#paper-fig) · [Gallery](#paper-figures).
+- 📌 **2026-08-16 · Blog:** **How to hacking Design Arena: What Makes Generated Websites Fascinating?** — Design guidance, context distillation, and visual references, explored through simplified internal simulations. **[English](https://yejy53.github.io/Editable-Design/en/blog/genclaw-next/) · [中文](https://yejy53.github.io/Editable-Design/zh/blog/genclaw-next/)**.
+- **2026-09-08** — 🔬 **[Paper Fig](./docs/paper-fig.md), developed with GPT-6:** turn method descriptions into editable paper workflow diagrams in your chosen style. [Install](./docs/paper-fig.md#install-and-use-paper-fig) · [Examples](./docs/paper-fig.md#examples).
 - **2026-09-04** — 📢 **Editable Design — Initial Release!** Create editable posters, infographics, art posters, and marketing campaigns with real text, independent layers, and Agent Design Replay. 📄 [Read our paper on arXiv](https://arxiv.org/abs/2609.04034).
 
-## Paper Fig
+## Paper
 
-Generate paper workflow diagrams from method descriptions in your chosen visual style, with editable text, shapes, and images in PowerPoint.
+[arXiv abstract](https://arxiv.org/abs/2609.04034) · [PDF](https://arxiv.org/pdf/2609.04034) · [Hugging Face](https://huggingface.co/papers/2609.04034)
 
-<a href="./assets/paper-fig-powerpoint.png">
-  <img src="./assets/paper-fig-powerpoint.webp" width="100%" alt="Paper Fig diagram open in PowerPoint, with individual text boxes, shapes, and image elements selected">
+## Blog
+
+### How to hacking Design Arena: What Makes Generated Websites Fascinating?
+
+**[Read in English →](https://yejy53.github.io/Editable-Design/en/blog/genclaw-next/) · [阅读中文版 →](https://yejy53.github.io/Editable-Design/zh/blog/genclaw-next/)**
+
+<a href="https://yejy53.github.io/Editable-Design/zh/blog/genclaw-next/">
+  <img src="./assets/blog/oneshot-board-zh.gif" width="100%" alt="Blog preview: simplified internal simulation of single-pass webpage generation, with a +209 relative-score change after context distillation">
 </a>
 
-<details>
-<summary><strong>Install and use Paper Fig</strong></summary>
-
-Copy this request into Codex:
-
-```text
-Install the paper-fig Skill from:
-https://github.com/yejy53/Editable-Design/tree/main/skills/paper-fig
-```
-
-Then provide a method description and your preferred visual style:
-
-```text
-Use $paper-fig to turn the following method description into a paper workflow diagram in my requested visual style. Deliver an editable PowerPoint.
-```
-
-</details>
+<sub>Exploratory internal simulation, not official Design Arena results. “生图” in this animation denotes images used per page, not image-generation tool calls.</sub>
 
 ## Overview
 
@@ -123,46 +107,23 @@ Install only the Skill you need. Paper Fig does not depend on either of the othe
 
 </details>
 
+## Paper Fig
+
+Generate editable paper workflow and architecture diagrams in PowerPoint. **[Introduction, installation, and examples →](./docs/paper-fig.md)** · [Skill source](./skills/paper-fig/)
+
+<a id="paper-figures"></a>
+
+[View the OmniManip, Compact3D, and ICEdit examples →](./docs/paper-fig.md#examples)
+
 ## Gallery
 
-Three Paper Fig results, followed by thirteen visual-design examples. Click a figure to view the full-resolution PNG.
+Thirteen visual-design examples. Click a figure to view the full-resolution PNG. For research diagrams, see the [Paper Fig examples](./docs/paper-fig.md#examples).
 
-- [🔬 Paper Figures](#paper-figures)
 - [🎯 Campaigns](#campaigns)
 - [📚 Information Design](#information-design)
 - [✍️ Text-led Design](#text-led-design)
 - [📰 Poster](#poster)
 - [🎨 Art Design](#art-design)
-
-## Paper Figures
-
-Research method pipelines and architecture diagrams generated with [`paper-fig`](./skills/paper-fig/). The reference cases come from [PaperGallery](https://github.com/LongHZ140516/PaperGallery) and the original papers credited below. These are qualitative examples, not a model-performance benchmark.
-
-### OmniManip — Object-Centric Manipulation
-
-<a href="./gallery/paper-figures/omnimanip/final.png">
-  <img src="./gallery/paper-figures/omnimanip/preview.webp" width="100%" alt="Paper Fig result: object grounding, interaction constraints, and trajectory planning for robot manipulation">
-</a>
-
-Generated with **Paper Fig** · Reference: [PaperGallery](https://longhz140516.github.io/PaperGallery/images/pipeline-Pan_OmniManip_2025/) · [Original paper](https://arxiv.org/abs/2501.03841)
-
-### Compact3D — Gaussian Compression
-
-<a href="./gallery/paper-figures/compact3d/final.png">
-  <img src="./gallery/paper-figures/compact3d/preview.webp" width="100%" alt="Paper Fig result: vector quantization, opacity regularization, and Gaussian pruning pipeline">
-</a>
-
-Generated with **Paper Fig** · Reference: [PaperGallery](https://longhz140516.github.io/PaperGallery/images/pipeline-Navaneet_Compact3D_2024/) · [Original paper](https://arxiv.org/abs/2311.18159)
-
-### ICEdit — In-Context Image Editing
-
-<a href="./gallery/paper-figures/icedit/final.png">
-  <img src="./gallery/paper-figures/icedit/preview.webp" width="100%" alt="Paper Fig result: in-context editing frameworks and the LoRA-MoE module architecture">
-</a>
-
-Generated with **Paper Fig** · Reference: [PaperGallery](https://longhz140516.github.io/PaperGallery/images/pipeline-Zhang_ICEdit_2025/) · [Original paper](https://arxiv.org/abs/2504.20690)
-
-[Source attribution and reuse notes](./gallery/paper-figures/NOTICE.md)
 
 ## Campaigns
 

@@ -48,6 +48,8 @@
       white-space: nowrap;
     }
 
+    header nav { display: flex; flex-wrap: wrap; gap: 16px; }
+
     .replay {
       scroll-margin-top: 24px;
       margin-top: 30px;
@@ -100,7 +102,11 @@
   <main>
     <header>
       <h1>Editable Visual Design · HD Videos</h1>
-      <a href="https://github.com/yejy53/Editable-Design">Back to GitHub</a>
+      <nav aria-label="Project links">
+        <a href="./zh/blog/genclaw-next/">博客 · 中文</a>
+        <a href="./en/blog/genclaw-next/">Blog · English</a>
+        <a href="https://github.com/yejy53/Editable-Design">Back to GitHub</a>
+      </nav>
     </header>
 
     <section class="replay" id="overview">

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>wide_design_ab</title><style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 22px 38px 16px; width: 1000px; background: #FFFFFF;
+    color: #1A1915; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif; text-rendering: geometricPrecision;
+  }
+  .masthead { display: flex; align-items: flex-start; gap: 24px; margin-bottom: 20px; }
+  h1 {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif; font-weight: 600; font-size: 26px; line-height: 34px;
+    letter-spacing: -0.2px; display: flex; align-items: center; gap: 14px; white-space: nowrap;
+  }
+  .autoeval {
+    display: inline-flex; align-items: center; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif; font-size: 13.5px;
+    font-weight: 400; letter-spacing: 0; color: #9A6B12; background: #FBF2DC;
+    border: 1px solid #EBD9A8; border-radius: 999px; padding: 5px 15px 5px 12px;
+  }
+  .scope {
+    font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 12.5px; letter-spacing: 2px; color: #3C3A35; margin-top: 8px;
+  }
+  .scope em { font-style: normal; color: #8B8880; }
+  .disclaimer {
+    margin-left: auto; margin-top: 3px; flex-shrink: 0; white-space: nowrap;
+    font-size: 12.5px; line-height: 18px; color: #5F5D57;
+    border: 1px solid #D8D4CB; border-radius: 5px; padding: 5px 11px;
+  }
+  .legend {
+    display: flex; gap: 22px; align-items: center; margin: 0 0 14px 308px;
+    font-size: 12px; color: #3C3A35;
+  }
+  .legend .item { display: flex; align-items: center; gap: 8px; }
+  .legend .sw { width: 15px; height: 15px; border-radius: 2px; }
+  .colhead {
+    display: grid; column-gap: 12px; margin-bottom: 8px;
+    grid-template-columns: 24px 218px 30px 1fr 54px 96px;
+    font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 10.5px; letter-spacing: 1.2px; color: #8B8880;
+    text-transform: uppercase; white-space: nowrap;
+  }
+  .colhead div:nth-child(5), .colhead div:nth-child(6) { text-align: right; direction: rtl; }
+  .rows { position: relative; }
+  .gridlayer {
+    position: absolute; top: 0; bottom: 0; left: 308px; right: 174px; pointer-events: none;
+  }
+  .gline { position: absolute; top: 0; bottom: 0; width: 1px; background: #ECE9E3; }
+  .row {
+    position: relative; z-index: 1; display: grid; align-items: center; height: 48px;
+    column-gap: 12px;
+    grid-template-columns: 24px 218px 30px 1fr 54px 96px;
+  }
+  .row.hot .ring {
+    position: absolute; z-index: -1; left: -10px; right: -10px; top: 2px; bottom: 2px;
+    background: #FDF6DC; border-radius: 7px; box-shadow: 0 0 0 1.5px #E3C332;
+  }
+  .rank {
+    width: 22px; height: 22px; border-radius: 50%; border: 1px solid #D8D4CB;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 11.5px; color: #5F5D57;
+  }
+  .name { font-size: 15px; line-height: 19px; color: #1A1915; white-space: nowrap; }
+  .name .sub {
+    display: block; font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 12.5px; line-height: 16px;
+    color: #5F5D57; font-weight: 600;
+  }
+  .mark-cell { display: flex; align-items: center; }
+  .barcell { position: relative; height: 24px; }
+  .bar { position: absolute; top: 0; height: 24px; }
+  .value { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 15px; text-align: right; color: #3C3A35; }
+  .aside { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 13.5px; text-align: right; color: #5F5D57; }
+  .axis {
+    position: relative; height: 24px; margin-top: 4px;
+    margin-left: 308px; margin-right: 174px; border-top: 1px solid #D8D4CB;
+  }
+  .tick {
+    position: absolute; top: 6px; transform: translateX(-50%);
+    font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 12.5px; color: #5F5D57;
+  }
+  .leap { position: absolute; right: 0; z-index: 2; }
+  .seg { display: flex; align-items: center; justify-content: center; }
+  .seg span { font-family: "SF Mono", "Menlo", "Consolas", monospace; font-size: 12px; font-weight: 600; }
+  .half { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: #D8D4CB; }
+</style></head>
+<body>
+  <div class="masthead">
+    <div><h1>WebDev · Strategy Head-to-Head</h1><div class="scope">AGENTIC <em>· PAIRED</em></div></div>
+    <div class="disclaimer">Exploratory simulation · Not official Design Arena results</div>
+  </div>
+  <div class="legend"><div class="item"><span class="sw" style="background:#121F87"></span>Win</div><div class="item"><span class="sw" style="background:#DCD8CE"></span>Tie</div><div class="item"><span class="sw" style="background:#C8A27A"></span>Loss</div><div class="item" style="color:#8B8880">Midline = 50%</div></div>
+  <div class="colhead"><div></div><div></div><div></div><div></div><div>Decisive</div><div>W-T-L</div></div>
+  <div class="rows">
+    <div class="row">
+      <div class="rank">1</div>
+      <div class="name">GPT-5.5<span class="sub">1.1 → 5.3 images / task</span></div>
+      <div class="mark-cell"><svg fill="#1A1915" fill-rule="evenodd" height="22" style="flex:none;line-height:1" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z"></path></svg></div>
+      <div class="barcell" style="display:flex;border-radius:2px;overflow:hidden"><div class="seg" style="width:65.217%;background:#121F87"><span style="color:#FBFAF6">65%</span></div><div class="seg" style="width:17.391%;background:#DCD8CE"><span style="color:#3C3A35">17%</span></div><div class="seg" style="width:17.391%;background:#C8A27A"><span style="color:#3A2A18">17%</span></div><div class="half"></div></div>
+      <div class="value">79%</div>
+      <div class="aside">15-4-4</div>
+    </div>
+    <div class="row">
+      <div class="rank">2</div>
+      <div class="name">Claude Opus 4.8<span class="sub">5.1 → 13.4 images / task</span></div>
+      <div class="mark-cell"><svg height="22" style="flex:none;line-height:1" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M4.709 15.955l4.72-2.647.08-.23-.08-.128H9.2l-.79-.048-2.698-.073-2.339-.097-2.266-.122-.571-.121L0 11.784l.055-.352.48-.321.686.06 1.52.103 2.278.158 1.652.097 2.449.255h.389l.055-.157-.134-.098-.103-.097-2.358-1.596-2.552-1.688-1.336-.972-.724-.491-.364-.462-.158-1.008.656-.722.881.06.225.061.893.686 1.908 1.476 2.491 1.833.365.304.145-.103.019-.073-.164-.274-1.355-2.446-1.446-2.49-.644-1.032-.17-.619a2.97 2.97 0 01-.104-.729L6.283.134 6.696 0l.996.134.42.364.62 1.414 1.002 2.229 1.555 3.03.456.898.243.832.091.255h.158V9.01l.128-1.706.237-2.095.23-2.695.08-.76.376-.91.747-.492.584.28.48.685-.067.444-.286 1.851-.559 2.903-.364 1.942h.212l.243-.242.985-1.306 1.652-2.064.73-.82.85-.904.547-.431h1.033l.76 1.129-.34 1.166-1.064 1.347-.881 1.142-1.264 1.7-.79 1.36.073.11.188-.02 2.856-.606 1.543-.28 1.841-.315.833.388.091.395-.328.807-1.969.486-2.309.462-3.439.813-.042.03.049.061 1.549.146.662.036h1.622l3.02.225.79.522.474.638-.079.485-1.215.62-1.64-.389-3.829-.91-1.312-.329h-.182v.11l1.093 1.068 2.006 1.81 2.509 2.33.127.578-.322.455-.34-.049-2.205-1.657-.851-.747-1.926-1.62h-.128v.17l.444.649 2.345 3.521.122 1.08-.17.353-.608.213-.668-.122-1.374-1.925-1.415-2.167-1.143-1.943-.14.08-.674 7.254-.316.37-.729.28-.607-.461-.322-.747.322-1.476.389-1.924.315-1.53.286-1.9.17-.632-.012-.042-.14.018-1.434 1.967-2.18 2.945-1.726 1.845-.414.164-.717-.37.067-.662.401-.589 2.388-3.036 1.44-1.882.93-1.086-.006-.158h-.055L4.132 18.56l-1.13.146-.487-.456.061-.746.231-.243 1.908-1.312-.006.006z" fill="#D97757" fill-rule="nonzero"></path></svg></div>
+      <div class="barcell" style="display:flex;border-radius:2px;overflow:hidden"><div class="seg" style="width:66.667%;background:#121F87"><span style="color:#FBFAF6">67%</span></div><div class="seg" style="width:19.048%;background:#DCD8CE"><span style="color:#3C3A35">19%</span></div><div class="seg" style="width:14.286%;background:#C8A27A"><span style="color:#3A2A18">14%</span></div><div class="half"></div></div>
+      <div class="value">82%</div>
+      <div class="aside">14-4-3</div>
+    </div>
+    <div class="row">
+      <div class="rank">3</div>
+      <div class="name">DeepSeek V4 Pro preview<span class="sub">1.0 → 10.2 images / task</span></div>
+      <div class="mark-cell"><svg height="22" style="flex:none;line-height:1" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M23.748 4.482c-.254-.124-.364.113-.512.234-.051.039-.094.09-.137.136-.372.397-.806.657-1.373.626-.829-.046-1.537.214-2.163.848-.133-.782-.575-1.248-1.247-1.548-.352-.156-.708-.311-.955-.65-.172-.241-.219-.51-.305-.774-.055-.16-.11-.323-.293-.35-.2-.031-.278.136-.356.276-.313.572-.434 1.202-.422 1.84.027 1.436.633 2.58 1.838 3.393.137.093.172.187.129.323-.082.28-.18.552-.266.833-.055.179-.137.217-.329.14a5.526 5.526 0 01-1.736-1.18c-.857-.828-1.631-1.742-2.597-2.458a11.365 11.365 0 00-.689-.471c-.985-.957.13-1.743.388-1.836.27-.098.093-.432-.779-.428-.872.004-1.67.295-2.687.684a3.055 3.055 0 01-.465.137 9.597 9.597 0 00-2.883-.102c-1.885.21-3.39 1.102-4.497 2.623C.082 8.606-.231 10.684.152 12.85c.403 2.284 1.569 4.175 3.36 5.653 1.858 1.533 3.997 2.284 6.438 2.14 1.482-.085 3.133-.284 4.994-1.86.47.234.962.327 1.78.397.63.059 1.236-.03 1.705-.128.735-.156.684-.837.419-.961-2.155-1.004-1.682-.595-2.113-.926 1.096-1.296 2.746-2.642 3.392-7.003.05-.347.007-.565 0-.845-.004-.17.035-.237.23-.256a4.173 4.173 0 001.545-.475c1.396-.763 1.96-2.015 2.093-3.517.02-.23-.004-.467-.247-.588zM11.581 18c-2.089-1.642-3.102-2.183-3.52-2.16-.392.024-.321.471-.235.763.09.288.207.486.371.739.114.167.192.416-.113.603-.673.416-1.842-.14-1.897-.167-1.361-.802-2.5-1.86-3.301-3.307-.774-1.393-1.224-2.887-1.298-4.482-.02-.386.093-.522.477-.592a4.696 4.696 0 011.529-.039c2.132.312 3.946 1.265 5.468 2.774.868.86 1.525 1.887 2.202 2.891.72 1.066 1.494 2.082 2.48 2.914.348.292.625.514.891.677-.802.09-2.14.11-3.054-.614zm1-6.44a.306.306 0 01.415-.287.302.302 0 01.2.288.306.306 0 01-.31.307.303.303 0 01-.304-.308zm3.11 1.596c-.2.081-.399.151-.59.16a1.245 1.245 0 01-.798-.254c-.274-.23-.47-.358-.552-.758a1.73 1.73 0 01.016-.588c.07-.327-.008-.537-.239-.727-.187-.156-.426-.199-.688-.199a.559.559 0 01-.254-.078c-.11-.054-.2-.19-.114-.358.028-.054.16-.186.192-.21.356-.202.767-.136 1.146.016.352.144.618.408 1.001.782.391.451.462.576.685.914.176.265.336.537.445.848.067.195-.019.354-.25.452z" fill="#4D6BFE"></path></svg></div>
+      <div class="barcell" style="display:flex;border-radius:2px;overflow:hidden"><div class="seg" style="width:57.895%;background:#121F87"><span style="color:#FBFAF6">58%</span></div><div class="seg" style="width:15.789%;background:#DCD8CE"><span style="color:#3C3A35">16%</span></div><div class="seg" style="width:26.316%;background:#C8A27A"><span style="color:#3A2A18">26%</span></div><div class="half"></div></div>
+      <div class="value">69%</div>
+      <div class="aside">11-3-5</div>
+    </div>
+    <div class="row">
+      <div class="rank">4</div>
+      <div class="name">Gemini 3.5 Flash<span class="sub">3.1 → 6.5 images / task</span></div>
+      <div class="mark-cell"><svg height="22" style="flex:none;line-height:1" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M20.616 10.835a14.147 14.147 0 01-4.45-3.001 14.111 14.111 0 01-3.678-6.452.503.503 0 00-.975 0 14.134 14.134 0 01-3.679 6.452 14.155 14.155 0 01-4.45 3.001c-.65.28-1.318.505-2.002.678a.502.502 0 000 .975c.684.172 1.35.397 2.002.677a14.147 14.147 0 014.45 3.001 14.112 14.112 0 013.679 6.453.502.502 0 00.975 0c.172-.685.397-1.351.677-2.003a14.145 14.145 0 013.001-4.45 14.113 14.113 0 016.453-3.678.503.503 0 000-.975 13.245 13.245 0 01-2.003-.678z" fill="#3186FF"></path><path d="M20.616 10.835a14.147 14.147 0 01-4.45-3.001 14.111 14.111 0 01-3.678-6.452.503.503 0 00-.975 0 14.134 14.134 0 01-3.679 6.452 14.155 14.155 0 01-4.45 3.001c-.65.28-1.318.505-2.002.678a.502.502 0 000 .975c.684.172 1.35.397 2.002.677a14.147 14.147 0 014.45 3.001 14.112 14.112 0 013.679 6.453.502.502 0 00.975 0c.172-.685.397-1.351.677-2.003a14.145 14.145 0 013.001-4.45 14.113 14.113 0 016.453-3.678.503.503 0 000-.975 13.245 13.245 0 01-2.003-.678z" fill="url(#lobe-icons-gemini-0-_R_0_)"></path><path d="M20.616 10.835a14.147 14.147 0 01-4.45-3.001 14.111 14.111 0 01-3.678-6.452.503.503 0 00-.975 0 14.134 14.134 0 01-3.679 6.452 14.155 14.155 0 01-4.45 3.001c-.65.28-1.318.505-2.002.678a.502.502 0 000 .975c.684.172 1.35.397 2.002.677a14.147 14.147 0 014.45 3.001 14.112 14.112 0 013.679 6.453.502.502 0 00.975 0c.172-.685.397-1.351.677-2.003a14.145 14.145 0 013.001-4.45 14.113 14.113 0 016.453-3.678.503.503 0 000-.975 13.245 13.245 0 01-2.003-.678z" fill="url(#lobe-icons-gemini-1-_R_0_)"></path><path d="M20.616 10.835a14.147 14.147 0 01-4.45-3.001 14.111 14.111 0 01-3.678-6.452.503.503 0 00-.975 0 14.134 14.134 0 01-3.679 6.452 14.155 14.155 0 01-4.45 3.001c-.65.28-1.318.505-2.002.678a.502.502 0 000 .975c.684.172 1.35.397 2.002.677a14.147 14.147 0 014.45 3.001 14.112 14.112 0 013.679 6.453.502.502 0 00.975 0c.172-.685.397-1.351.677-2.003a14.145 14.145 0 013.001-4.45 14.113 14.113 0 016.453-3.678.503.503 0 000-.975 13.245 13.245 0 01-2.003-.678z" fill="url(#lobe-icons-gemini-2-_R_0_)"></path><defs><linearGradient gradientUnits="userSpaceOnUse" id="lobe-icons-gemini-0-_R_0_" x1="7" x2="11" y1="15.5" y2="12"><stop stop-color="#08B962"></stop><stop offset="1" stop-color="#08B962" stop-opacity="0"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="lobe-icons-gemini-1-_R_0_" x1="8" x2="11.5" y1="5.5" y2="11"><stop stop-color="#F94543"></stop><stop offset="1" stop-color="#F94543" stop-opacity="0"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="lobe-icons-gemini-2-_R_0_" x1="3.5" x2="17.5" y1="13.5" y2="12"><stop stop-color="#FABC12"></stop><stop offset=".46" stop-color="#FABC12" stop-opacity="0"></stop></linearGradient></defs></svg></div>
+      <div class="barcell" style="display:flex;border-radius:2px;overflow:hidden"><div class="seg" style="width:52.381%;background:#121F87"><span style="color:#FBFAF6">52%</span></div><div class="seg" style="width:19.048%;background:#DCD8CE"><span style="color:#3C3A35">19%</span></div><div class="seg" style="width:28.571%;background:#C8A27A"><span style="color:#3A2A18">29%</span></div><div class="half"></div></div>
+      <div class="value">65%</div>
+      <div class="aside">11-4-6</div>
+    </div>
+    <div class="row">
+      <div class="rank">5</div>
+      <div class="name">MiniMax M3<span class="sub">4.7 → 13.4 images / task</span></div>
+      <div class="mark-cell"><svg height="22" style="flex:none;line-height:1" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="lobe-icons-minimax-_R_0_" x1="0%" x2="100.182%" y1="50.057%" y2="50.057%"><stop offset="0%" stop-color="#E2167E"></stop><stop offset="100%" stop-color="#FE603C"></stop></linearGradient></defs><path d="M16.278 2c1.156 0 2.093.927 2.093 2.07v12.501a.74.74 0 00.744.709.74.74 0 00.743-.709V9.099a2.06 2.06 0 012.071-2.049A2.06 2.06 0 0124 9.1v6.561a.649.649 0 01-.652.645.649.649 0 01-.653-.645V9.1a.762.762 0 00-.766-.758.762.762 0 00-.766.758v7.472a2.037 2.037 0 01-2.048 2.026 2.037 2.037 0 01-2.048-2.026v-12.5a.785.785 0 00-.788-.753.785.785 0 00-.789.752l-.001 15.904A2.037 2.037 0 0113.441 22a2.037 2.037 0 01-2.048-2.026V18.04c0-.356.292-.645.652-.645.36 0 .652.289.652.645v1.934c0 .263.142.506.372.638.23.131.514.131.744 0a.734.734 0 00.372-.638V4.07c0-1.143.937-2.07 2.093-2.07zm-5.674 0c1.156 0 2.093.927 2.093 2.07v11.523a.648.648 0 01-.652.645.648.648 0 01-.652-.645V4.07a.785.785 0 00-.789-.78.785.785 0 00-.789.78v14.013a2.06 2.06 0 01-2.07 2.048 2.06 2.06 0 01-2.071-2.048V9.1a.762.762 0 00-.766-.758.762.762 0 00-.766.758v3.8a2.06 2.06 0 01-2.071 2.049A2.06 2.06 0 010 12.9v-1.378c0-.357.292-.646.652-.646.36 0 .653.29.653.646V12.9c0 .418.343.757.766.757s.766-.339.766-.757V9.099a2.06 2.06 0 012.07-2.048 2.06 2.06 0 012.071 2.048v8.984c0 .419.343.758.767.758.423 0 .766-.339.766-.758V4.07c0-1.143.937-2.07 2.093-2.07z" fill="url(#lobe-icons-minimax-_R_0_)" fill-rule="nonzero"></path></svg></div>
+      <div class="barcell" style="display:flex;border-radius:2px;overflow:hidden"><div class="seg" style="width:50.000%;background:#121F87"><span style="color:#FBFAF6">50%</span></div><div class="seg" style="width:21.429%;background:#DCD8CE"><span style="color:#3C3A35">21%</span></div><div class="seg" style="width:28.571%;background:#C8A27A"><span style="color:#3A2A18">29%</span></div><div class="half"></div></div>
+      <div class="value">64%</div>
+      <div class="aside">7-3-4</div>
+    </div>
+    <div class="row">
+      <div class="rank">6</div>
+      <div class="name">Kimi K3<span class="sub">8.0 → 7.5 images / task</span></div>
+      <div class="mark-cell"><span style="width:26px;height:26px;border-radius:6px;background:#1A1915;display:flex;align-items:center;justify-content:center"><svg height="17" style="flex:none;line-height:1" viewBox="0 0 24 24" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M21.846 0a1.923 1.923 0 110 3.846H20.15a.226.226 0 01-.227-.226V1.923C19.923.861 20.784 0 21.846 0z" fill="#1783FF"></path><path d="M11.065 11.199l7.257-7.2c.137-.136.06-.41-.116-.41H14.3a.164.164 0 00-.117.051l-7.82 7.756c-.122.12-.302.013-.302-.179V3.82c0-.127-.083-.23-.185-.23H3.186c-.103 0-.186.103-.186.23V19.77c0 .128.083.23.186.23h2.69c.103 0 .186-.102.186-.23v-3.25c0-.069.025-.135.069-.178l2.424-2.406a.158.158 0 01.205-.023l6.484 4.772a7.677 7.677 0 003.453 1.283c.108.012.2-.095.2-.23v-3.06c0-.117-.07-.212-.164-.227a5.028 5.028 0 01-2.027-.807l-5.613-4.064c-.117-.078-.132-.279-.028-.381z" fill="#fff"></path></svg></span></div>
+      <div class="barcell" style="display:flex;border-radius:2px;overflow:hidden"><div class="seg" style="width:36.842%;background:#121F87"><span style="color:#FBFAF6">37%</span></div><div class="seg" style="width:26.316%;background:#DCD8CE"><span style="color:#3C3A35">26%</span></div><div class="seg" style="width:36.842%;background:#C8A27A"><span style="color:#3A2A18">37%</span></div><div class="half"></div></div>
+      <div class="value">50%</div>
+      <div class="aside">7-5-7</div>
+    </div></div>
+</body></html>

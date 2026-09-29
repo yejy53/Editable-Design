@@ -8,3 +8,7 @@ out/
 *.tar.gz
 *.zip
 .venv/
+.next/
+*.tsbuildinfo
+next-env.d.ts
+site-dist/

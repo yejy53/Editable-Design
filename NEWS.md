@@ -6,9 +6,9 @@ A concise, date-based record of user-visible project updates. New entries are ad
 
 ## 2026-09-08
 
-- 🔬 **Paper Fig v2, developed with GPT-6:** turn method descriptions into paper workflow and architecture diagrams in the requested visual style, with editable PowerPoint output. [Install with Codex](./README.md#paper-fig).
+- 🔬 **Paper Fig v2, developed with GPT-6:** turn method descriptions into paper workflow and architecture diagrams in the requested visual style, with editable PowerPoint output. [Install with Codex](./docs/paper-fig.md#install-and-use-paper-fig).
 - Added drawing-prompt guidance for the full-page composition, region proportions, labels, connections, and meaningful image assets. The Skill saves the prompt before generating the visual draft.
-- Featured three Paper Fig results at the [top of the Gallery](./README.md#paper-figures): OmniManip, Compact3D, and ICEdit. These static images use full-resolution lossless WebP previews and link to the original PNGs, without loading additional videos.
+- Featured three Paper Fig results at the [Paper Fig examples](./docs/paper-fig.md#examples): OmniManip, Compact3D, and ICEdit. These static images use full-resolution lossless WebP previews and link to the original PNGs, without loading additional videos.
 - Credited [PaperGallery](https://github.com/LongHZ140516/PaperGallery) and the original papers for the reference cases. The examples illustrate generated results, not a comparative benchmark.
 - Moved News and the new Skill entry ahead of Overview, and removed the previous “Attention Is All You Need” academic-poster example.
 - Added direct links to the [arXiv abstract](https://arxiv.org/abs/2609.04034), [paper PDF](https://arxiv.org/pdf/2609.04034), and [Hugging Face paper page](https://huggingface.co/papers/2609.04034).
@@ -46,3 +46,7 @@ A concise, date-based record of user-visible project updates. New entries are ad
 - Added click-to-play HD overview and replay video pages to reduce GitHub README loading cost.
 - Improved Replay initialization and synchronized the main creation path with the Layers animation.
 - Added automatic recognition of clean HTML, Editable Design editor pages, and exploded-layer boards to `html-to-pptx`.
+
+## 2026-08-16
+
+- 📝 **[How to hacking Design Arena: What Makes Generated Websites Fascinating?](https://yejy53.github.io/Editable-Design/en/blog/genclaw-next/)** — First published on August 16, 2026. Design guidance, context distillation, and visual references, explored through simplified internal simulations. [English](https://yejy53.github.io/Editable-Design/en/blog/genclaw-next/) · [中文](https://yejy53.github.io/Editable-Design/zh/blog/genclaw-next/).
