@@ -1,0 +1,5 @@
+:HL["/Editable-Design/_next/static/media/230ba499f08c3c16-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Editable-Design/_next/static/media/23a025b8958f483d-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Editable-Design/_next/static/css/04e80305d88364a3.css","style"]
+:HL["/Editable-Design/_next/static/css/2f95514ea904b008.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"locale","param":{"type":"d","key":"zh","siblings":null},"prefetchHints":16,"slots":{"children":{"name":"blog","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"genclaw-next","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"kmERL9u4bfGvoNXKN-BjH"}

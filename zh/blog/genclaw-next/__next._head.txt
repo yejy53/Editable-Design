@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[484,[],"ViewportBoundary"]
+3:I[484,[],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[6869,[],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"How to hacking Design Arena · Editable Visual Design"}],["$","meta","1",{"name":"description","content":"我们花了一段时间研究一个具体问题：当模型写出一个网页、一张海报、一页 slide 时，究竟是什么决定了人们觉得它“好看”。"}],["$","link","2",{"rel":"canonical","href":"https://yejy53.github.io/Editable-Design/zh/blog/genclaw-next/"}],["$","link","3",{"rel":"alternate","hrefLang":"zh-CN","href":"https://yejy53.github.io/Editable-Design/zh/blog/genclaw-next/"}],["$","link","4",{"rel":"alternate","hrefLang":"en","href":"https://yejy53.github.io/Editable-Design/en/blog/genclaw-next/"}],["$","link","5",{"rel":"icon","href":"/Editable-Design/icon.svg?6c42080192108101","type":"image/svg+xml","sizes":"any"}],["$","$L5","6",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"kmERL9u4bfGvoNXKN-BjH"}

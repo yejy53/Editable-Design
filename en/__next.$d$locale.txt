@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[7121,[],""]
+3:I[4581,[],""]
+:HL["/Editable-Design/_next/static/css/04e80305d88364a3.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/Editable-Design/_next/static/css/04e80305d88364a3.css","precedence":"next"}]],["$","html",null,{"lang":"en","className":"__variable_0a4033 __variable_579ce2","data-theme":"light","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(function(){try{var t=localStorage.getItem(\"editable-design-theme\");if(t!==\"light\"&&t!==\"dark\")t=\"light\";document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme=\"light\"}})();"}}]}],["$","body",null,{"children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]}]]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"kmERL9u4bfGvoNXKN-BjH"}
